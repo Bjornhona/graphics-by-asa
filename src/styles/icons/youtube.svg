@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #0e4e4e;
+      }
+
+      .cls-3 {
+        fill: rgba(114, 170, 170, .25);
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="40.99" cy="19.33" fx="48.23" fy="10.03" r="33.07" gradientUnits="userSpaceOnUse">
+      <stop offset=".11" stop-color="#72aaaa"/>
+      <stop offset=".24" stop-color="#608f8f" stop-opacity=".84"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Ellipse_1_Image" data-name="Ellipse 1 Image">
+    <g id="Layer_5" data-name="Layer 5">
+      <circle class="cls-2" cx="32" cy="32" r="32"/>
+      <path class="cls-3" d="m20.47,4.93c-5.5,9.68,9.08,15.91,15.91,21.1,6.98,5.29,16,16.76,24.14,9.48,5.11-4.58.99-21.01-9.59-28.76C40.73-.72,23.83-.98,20.47,4.93Z"/>
+      <path class="cls-4" d="m20.47,4.93c-5.5,9.68,9.08,15.91,15.91,21.1,6.98,5.29,16,16.76,24.14,9.48,5.11-4.58.99-21.01-9.59-28.76C40.73-.72,23.83-.98,20.47,4.93Z"/>
+    </g>
+  </g>
+  <g id="github">
+    <path id="youtube" class="cls-1" d="m44.15,21.27c-1.9,0-24.89.2-24.89.2-1.81,0-2.33,2.08-2.33,3.19v15.28c0,2.08,1.02,2.76,2.61,2.76h24.55c1.71,0,3.01-.97,3.01-3.19v-15.13c0-2.08-1.05-3.12-2.95-3.12Zm-15.7,15.17v-9.47l8.48,4.74-8.48,4.74Z"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #0e4e4e;
+      }
+
+      .cls-3 {
+        fill: rgba(114, 170, 170, .25);
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="40.99" cy="19.33" fx="48.23" fy="10.03" r="33.07" gradientUnits="userSpaceOnUse">
+      <stop offset=".11" stop-color="#72aaaa"/>
+      <stop offset=".24" stop-color="#608f8f" stop-opacity=".84"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Ellipse_1_Image" data-name="Ellipse 1 Image">
+    <g id="Layer_5" data-name="Layer 5">
+      <circle class="cls-2" cx="32" cy="32" r="32"/>
+      <path class="cls-3" d="m20.47,4.93c-5.5,9.68,9.08,15.91,15.91,21.1,6.98,5.29,16,16.76,24.14,9.48,5.11-4.58.99-21.01-9.59-28.76C40.73-.72,23.83-.98,20.47,4.93Z"/>
+      <path class="cls-4" d="m20.47,4.93c-5.5,9.68,9.08,15.91,15.91,21.1,6.98,5.29,16,16.76,24.14,9.48,5.11-4.58.99-21.01-9.59-28.76C40.73-.72,23.83-.98,20.47,4.93Z"/>
+    </g>
+  </g>
+  <g id="github">
+    <g id="linkedin">
+      <rect class="cls-1" x="19.82" y="23.92" width="5.17" height="17.16"/>
+      <path class="cls-1" d="m38.5,23.92c-2.45,0-5.57,2.04-5.57,2.04v-2.04h-4.33v17.16h4.29v-10.46s.4-2.53,3.49-2.53,3.41,1.68,3.41,2.93v10.06h4.21v-13.39c0-2-3.05-3.77-5.49-3.77Z"/>
+      <path class="cls-1" d="m22.43,15.78c-1.75,0-3.17,1.42-3.17,3.17s1.42,3.17,3.17,3.17,3.17-1.42,3.17-3.17-1.42-3.17-3.17-3.17Z"/>
+    </g>
+  </g>
+</svg>

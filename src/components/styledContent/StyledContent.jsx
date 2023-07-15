@@ -4,7 +4,9 @@ const StyledContent = ({title, children}) => {
   return (
     <div id="styled-content">
       <div className='content'>
-        <div className='page-head'>{title}</div>
+        <div className='page-head'>
+          <h1>{title}</h1>
+        </div>
         <div className='page-body'>{children}</div>
       </div>
     </div>

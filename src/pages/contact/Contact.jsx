@@ -4,7 +4,7 @@ import './contact.scss';
 const Contact = () => {
   return (
     <div id="contact">
-    <StyledContent title='Contact'>
+    <StyledContent title='contact'>
       some other home text.
     </StyledContent>
   </div>

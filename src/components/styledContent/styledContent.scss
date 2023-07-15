@@ -9,12 +9,28 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
 
     .page-head {
-      padding: 20px;
+      padding: 30px;
       border-bottom: 1px solid lightgrey;
+
+      h1 {
+        margin-bottom: 0;
+        font-weight: normal;
+        color: #555555;
+      }
     }
 
     .page-body {
       padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #styled-content {
+    .content {
+      max-width: 100%;
+      margin: 0;
+      box-shadow: none;
     }
   }
 }

@@ -7,7 +7,7 @@ import Home from './pages/home/Home';
 import Resume from './pages/resume/Resume';
 import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
-
+import Portfolio from './pages/portfolio/Portfolio';
 import './App.scss';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="portfolio" element={<Portfolio />} /> */}
+            <Route path="portfolio" element={<Portfolio />} />
             <Route path="resume" element={<Resume />} />
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />

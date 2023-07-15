@@ -14,6 +14,14 @@ import '../App.scss';
 
 const Layout = () => {
   const year = new Date().getFullYear();
+  const socialMedia = [
+    [facebook, "facebook"],
+    [twitter, "twitter"],
+    [instagram, "instagram"],
+    [linkedin, "linkedin"],
+    [github, "github"],
+    [youtube, "youtube"]
+  ];
 
   return (
     <div id="layout">
@@ -23,22 +31,18 @@ const Layout = () => {
             <a href="https://www.graphicsbyasa.com/">
               <div className="logo-container"><img src={logo} className="App-logo" alt="logo" /></div>
             </a>
-            <p>Menu</p>
             <nav>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/portfolio">Portfolio</NavLink>
-              <NavLink to="/resume">Resume</NavLink>
-              <NavLink to="/blog">Blog</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/">home</NavLink>
+              <NavLink to="/portfolio">portfolio</NavLink>
+              <NavLink to="/resume">resume</NavLink>
+              <NavLink to="/blog">blog</NavLink>
+              <NavLink to="/contact">contact</NavLink>
             </nav>
-            <p>Follow me</p>
+            <h3>Follow me</h3>
             <div className="social-media-icons">
-              <img src={facebook} className="social-media-icon" alt="facebook" />
-              <img src={twitter} className="social-media-icon" alt="twitter" />
-              <img src={instagram} className="social-media-icon" alt="instagram" />
-              <img src={linkedin} className="social-media-icon" alt="linkedin" />
-              <img src={github} className="social-media-icon" alt="github" />
-              <img src={youtube} className="social-media-icon" alt="youtube" />
+              {socialMedia.map((social, index) => {
+                return <img src={social[0]} kay={index} className="social-media-icon" alt={social[1]} />
+              })}
             </div>
           </div>
           <div className="header-bottom">

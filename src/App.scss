@@ -2,39 +2,16 @@ body {
   font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #7d7d7b;
   background-color: #e0e0e0;
-  --wp--preset--font-size--small: 13px;
-  --wp--preset--font-size--medium: 20px;
-  --wp--preset--font-size--large: 36px;
-  --wp--preset--font-size--x-large: 42px;
-  font-size: 20px;
-}
-
-html {
-  --wp--preset--font-size--normal: 16px;
-  --wp--preset--font-size--huge: 42px;
-  --wp-admin--admin-bar--height: 32px;
+  font-size: 16px;
 }
 
 .App {
   width: 100vw;
 }
 
-a {
-  color: #8f8f8f;
-  text-decoration: none;
-  outline: none;
-
-  &:hover {
-    color: #2e2e2e;
-  }
-
-  &:active, &:focus, &.active {
-    color: #2e2e2e
-  }
-}
-
-p, h1, h2, h3 {
+p, h1, h2, h3, a {
   margin-top: 0;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -44,13 +21,34 @@ h1 {
 
 h2 {
   font-size: 36px;
+  line-height: 1;
 }
 
 h3 {
-  font-size: .8125em;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #7d7d7b;
+  line-height: 1;
 }
 
 p {
-  font-size: 0.95em;
+  font-size: .8125em;
   line-height: 1.7em;
+}
+
+a {
+  color: #8f8f8f;
+  text-decoration: none;
+  outline: none;
+  line-height: 25px;
+  font-size: .75em;
+  font-weight: bold;
+
+  &:hover {
+    color: #2e2e2e;
+  }
+
+  &:active, &:focus, &.active {
+    color: #2e2e2e
+  }
 }

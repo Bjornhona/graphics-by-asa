@@ -2,14 +2,17 @@
   .content {
     position: relative;
     background-color: white;
-    height: 1200px;
+    min-height: calc(100vh - 80px);
     float: none;
     max-width: 770px;
     margin: 0 40px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
 
     .page-head {
-      padding: 30px;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      height: 75px;
       border-bottom: 1px solid #ebebeb;
 
       h1 {

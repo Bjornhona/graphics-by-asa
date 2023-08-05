@@ -1,3 +1,45 @@
 #home {
+  .home-inner-content {
+    margin-top: calc(50px + 500px);
+    padding: 100px 30px 50px;
+  }
+}
 
+.body-image-over {
+  position: absolute;
+  z-index: 2;
+  left: -320px;
+  right: 0;
+  top: 136px;
+  height: 500px;
+
+  img {
+    height: 110%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .body-image-text {
+    position: absolute;
+    top: calc(50% - 45px);
+    right: 0;
+    left: 320px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+
+    .inner-text {
+      color: #fff;
+      max-width: 55%;
+      text-align: center;
+
+      h2 {
+        text-align: left;
+        color: #fff;
+        margin: 0;
+        font-size: 55px;
+      }
+    }
+  }
 }

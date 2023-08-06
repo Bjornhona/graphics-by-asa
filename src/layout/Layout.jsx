@@ -89,7 +89,7 @@ const Layout = () => {
         {myLogo()}
         {!showNav && <BurgerIcon className="burger-menu" onClick={() => setShowNav(!showNav)} />}
       </div>
-      <div className={showNav ? 'layout-body show-nav-body' : 'layout-body'}>
+      <div className={showNav ? 'layout-body nav-body' : 'layout-body'}>
         <Outlet />
       </div>
     </div>

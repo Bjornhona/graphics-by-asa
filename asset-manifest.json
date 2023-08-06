@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/graphics-by-asa/static/css/main.5d077354.css",
-    "main.js": "/graphics-by-asa/static/js/main.a9c8f798.js",
+    "main.js": "/graphics-by-asa/static/js/main.666b1856.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/FlowerPortfolio1.jpg": "/graphics-by-asa/static/media/FlowerPortfolio1.e50eba31d5bc29bc1523.jpg",
     "static/media/NotoSansDisplay-Italic.ttf": "/graphics-by-asa/static/media/NotoSansDisplay-Italic.2305069a52e7fedf0159.ttf",
@@ -26,11 +26,11 @@
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.5d077354.css.map": "/graphics-by-asa/static/css/main.5d077354.css.map",
-    "main.a9c8f798.js.map": "/graphics-by-asa/static/js/main.a9c8f798.js.map",
+    "main.666b1856.js.map": "/graphics-by-asa/static/js/main.666b1856.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d077354.css",
-    "static/js/main.a9c8f798.js"
+    "static/js/main.666b1856.js"
   ]
 }

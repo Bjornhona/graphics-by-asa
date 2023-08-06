@@ -53,11 +53,11 @@ const Layout = () => {
   const myNavigation = () => {
     return (
       <nav ref={ref} className={!showNav ? 'show-nav-navigation' : null}>
-        <NavLink to="/">home</NavLink>
-        <NavLink to="/portfolio">portfolio</NavLink>
-        <NavLink to="/resume">resume</NavLink>
-        <NavLink to="/blog">blog</NavLink>
-        <NavLink to="/contact">contact</NavLink>
+        <NavLink to="/" onClick={() => setShowNav(false)}>home</NavLink>
+        <NavLink to="/portfolio" onClick={() => setShowNav(false)}>portfolio</NavLink>
+        <NavLink to="/resume" onClick={() => setShowNav(false)}>resume</NavLink>
+        <NavLink to="/blog" onClick={() => setShowNav(false)}>blog</NavLink>
+        <NavLink to="/contact" onClick={() => setShowNav(false)}>contact</NavLink>
         <CloseIcon onClick={() => setShowNav(false)} />
       </nav>
     );

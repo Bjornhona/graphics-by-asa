@@ -63,6 +63,23 @@ const Layout = () => {
     );
   }
 
+  const followMe = (
+    <div className="follow-me">
+      <h3>Follow me</h3>
+      <div className="social-media-icons">
+        {socialMedia.map((social, index) => {
+          return <img src={social[0]} key={index} className="social-media-icon" alt={social[1]} />
+        })}
+      </div>
+    </div>
+  );
+
+  const copyrights = (
+    <div className="header-bottom">
+      <p>{year} | All rights reserved | <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a></p>
+    </div>
+  );
+
   return (
     <div id="layout">
       {showNav && myNavigation()}
@@ -71,18 +88,9 @@ const Layout = () => {
           <div className="header-top">
             {myLogo()}
             {myNavigation()}
-            <div>
-              <h3>Follow me</h3>
-              <div className="social-media-icons">
-                {socialMedia.map((social, index) => {
-                  return <img src={social[0]} key={index} className="social-media-icon" alt={social[1]} />
-                })}
-              </div>
-            </div>
+            {followMe}
           </div>
-          <div className="header-bottom">
-            <p>{year} | All rights reserved | <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a></p>
-          </div>
+          {copyrights}
         </div>
       </header>
       <div className={`top-header ${showNav ? 'show-nav-top-header' : null}`}>
@@ -91,7 +99,11 @@ const Layout = () => {
       </div>
       <div className={showNav ? 'layout-body nav-body' : 'layout-body'}>
         <Outlet />
+        {followMe}
       </div>
+      <footer>
+        {copyrights}
+      </footer>
     </div>
   )
 }

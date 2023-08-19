@@ -75,7 +75,7 @@ const Layout = () => {
   );
 
   const copyrights = (
-    <div className="header-bottom">
+    <div className={showNav ? 'header-bottom nav-bottom' : 'header-bottom'}>
       <p>{year} | All rights reserved | <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a></p>
     </div>
   );

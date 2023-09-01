@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.754c978c.css",
+    "main.css": "/graphics-by-asa/static/css/main.0015ee61.css",
     "main.js": "/graphics-by-asa/static/js/main.e5973479.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/FlowerPortfolio1.jpg": "/graphics-by-asa/static/media/FlowerPortfolio1.e50eba31d5bc29bc1523.jpg",
@@ -25,12 +25,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.754c978c.css.map": "/graphics-by-asa/static/css/main.754c978c.css.map",
+    "main.0015ee61.css.map": "/graphics-by-asa/static/css/main.0015ee61.css.map",
     "main.e5973479.js.map": "/graphics-by-asa/static/js/main.e5973479.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.754c978c.css",
+    "static/css/main.0015ee61.css",
     "static/js/main.e5973479.js"
   ]
 }

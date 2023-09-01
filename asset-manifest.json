@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.4ca9f207.css",
-    "main.js": "/graphics-by-asa/static/js/main.09b55ce8.js",
+    "main.css": "/graphics-by-asa/static/css/main.5a119e69.css",
+    "main.js": "/graphics-by-asa/static/js/main.1dcc8795.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/FlowerPortfolio1.jpg": "/graphics-by-asa/static/media/FlowerPortfolio1.e50eba31d5bc29bc1523.jpg",
     "static/media/NotoSansDisplay-Italic.ttf": "/graphics-by-asa/static/media/NotoSansDisplay-Italic.2305069a52e7fedf0159.ttf",
@@ -17,20 +17,20 @@
     "static/media/More-sales2.png": "/graphics-by-asa/static/media/More-sales2.80a2a0d5f24b66958320.png",
     "static/media/logo2.svg": "/graphics-by-asa/static/media/logo2.3f6d50256b8560aa56edc5b40af9b10c.svg",
     "static/media/close-button.svg": "/graphics-by-asa/static/media/close-button.c6864f4fc8a04ecb94c155d0c6c0f0db.svg",
-    "static/media/github.svg": "/graphics-by-asa/static/media/github.44beb4b7a4b9b055023a332c65aad624.svg",
-    "static/media/instagram.svg": "/graphics-by-asa/static/media/instagram.a28466f402d95dbedd42e2a36e13f2e6.svg",
-    "static/media/linkedin.svg": "/graphics-by-asa/static/media/linkedin.f92f893d2e2e6bf127b7397309a56c99.svg",
-    "static/media/twitter.svg": "/graphics-by-asa/static/media/twitter.3f6a377a962aa00873860a2f59f50630.svg",
-    "static/media/youtube.svg": "/graphics-by-asa/static/media/youtube.f405714b97263e48899ef8ce1799107f.svg",
-    "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba77329acfa4b3.svg",
+    "static/media/github.svg": "/graphics-by-asa/static/media/github.44beb4b7a4b9b055023a.svg",
+    "static/media/instagram.svg": "/graphics-by-asa/static/media/instagram.a28466f402d95dbedd42.svg",
+    "static/media/linkedin.svg": "/graphics-by-asa/static/media/linkedin.f92f893d2e2e6bf127b7.svg",
+    "static/media/twitter.svg": "/graphics-by-asa/static/media/twitter.3f6a377a962aa0087386.svg",
+    "static/media/youtube.svg": "/graphics-by-asa/static/media/youtube.f405714b97263e48899e.svg",
+    "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.4ca9f207.css.map": "/graphics-by-asa/static/css/main.4ca9f207.css.map",
-    "main.09b55ce8.js.map": "/graphics-by-asa/static/js/main.09b55ce8.js.map",
+    "main.5a119e69.css.map": "/graphics-by-asa/static/css/main.5a119e69.css.map",
+    "main.1dcc8795.js.map": "/graphics-by-asa/static/js/main.1dcc8795.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ca9f207.css",
-    "static/js/main.09b55ce8.js"
+    "static/css/main.5a119e69.css",
+    "static/js/main.1dcc8795.js"
   ]
 }

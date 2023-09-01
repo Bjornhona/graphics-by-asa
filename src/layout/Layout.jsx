@@ -34,8 +34,8 @@ const Layout = () => {
       <div className="logo-container"><img src={logo} className="App-logo" alt="logo" /></div>
     </a>;
 
-  const MyNavigation = () =>
-    <nav ref={ref} className={!showNav ? 'show-nav-navigation' : null}>
+  const MyNavigation = ({innerRef}) =>
+    <nav ref={innerRef} className={!showNav ? 'show-nav-navigation' : null}>
       {navigation.map((nav, index) => 
         <NavLink to={nav.link} key={index} onClick={() => setShowNav(false)}>{nav.name}</NavLink>)}
       <CloseIcon onClick={() => setShowNav(false)} />
@@ -45,11 +45,11 @@ const Layout = () => {
     <div className="follow-me">
       <h3>Follow me</h3>
       <div className="social-media-icons">
-        {socialMediaIcons.map((social, index) => {
-          return <a href={social.link} target="_blank" key={index}>
+        {socialMediaIcons.map((social, index) =>
+          <a href={social.link} target="_blank" rel="noreferrer" key={index}>
             <img src={social.icon} key={index} className="social-media-icon" alt={"Social Media Icon"} />
           </a>
-        })}
+        )}
       </div>
     </div>;
 
@@ -60,7 +60,7 @@ const Layout = () => {
 
   return (
     <div id="layout">
-      {showNav && <MyNavigation />}
+      {showNav && <MyNavigation innerRef={ref} />}
       <header>
         <div className='inside'>
           <div className="header-top">

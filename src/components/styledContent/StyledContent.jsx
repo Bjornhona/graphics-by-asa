@@ -5,7 +5,7 @@ const StyledContent = ({title, children}) => {
     <div id="styled-content">
       <div className='content'>
         <div className='page-head'>
-          <h1>{title}</h1>
+          <h4>{title}</h4>
         </div>
         <div className='page-body'>{children}</div>
       </div>

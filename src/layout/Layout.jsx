@@ -5,28 +5,16 @@ import {
 } from "react-router-dom";
 import './layout.scss';
 import logo from '../logo2.svg';
-import twitter from '../styles/icons/twitter.svg';
-import linkedin from '../styles/icons/linkedin.svg';
-import instagram from '../styles/icons/instagram.svg';
-import github from '../styles/icons/github.svg';
-import youtube from '../styles/icons/youtube.svg';
-import facebook from '../styles/icons/facebook.svg';
 import '../App.scss';
 import { ReactComponent as BurgerIcon } from './burger-icon.svg';
 import { ReactComponent as CloseIcon } from './close-button.svg';
+import { socialMediaIcons } from './social_media';
+import { navigation } from './navigation';
 
 const Layout = () => {
   const [showNav, setShowNav] = useState(false);
   const year = new Date().getFullYear();
   const ref = useRef(null);
-  const socialMedia = [
-    [facebook, "facebook"],
-    [twitter, "twitter"],
-    [instagram, "instagram"],
-    [linkedin, "linkedin"],
-    [github, "github"],
-    [youtube, "youtube"]
-  ];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -42,67 +30,58 @@ const Layout = () => {
     };
   }, [ref]);
 
-  const myLogo = () => {
-    return (
-      <a href="https://www.graphicsbyasa.com/">
-        <div className="logo-container"><img src={logo} className="App-logo" alt="logo" /></div>
-      </a>
-    );
-  }
+  const MyLogo = () =>
+    <a href="https://www.graphicsbyasa.com/">
+      <div className="logo-container"><img src={logo} className="App-logo" alt="logo" /></div>
+    </a>;
 
-  const myNavigation = () => {
-    return (
-      <nav ref={ref} className={!showNav ? 'show-nav-navigation' : null}>
-        <NavLink to="/" onClick={() => setShowNav(false)}>home</NavLink>
-        <NavLink to="/portfolio" onClick={() => setShowNav(false)}>portfolio</NavLink>
-        <NavLink to="/resume" onClick={() => setShowNav(false)}>resume</NavLink>
-        <NavLink to="/blog" onClick={() => setShowNav(false)}>blog</NavLink>
-        <NavLink to="/contact" onClick={() => setShowNav(false)}>contact</NavLink>
-        <CloseIcon onClick={() => setShowNav(false)} />
-      </nav>
-    );
-  }
+  const MyNavigation = () =>
+    <nav ref={ref} className={!showNav ? 'show-nav-navigation' : null}>
+      {navigation.map((nav, index) => 
+        <NavLink to={nav.link} key={index} onClick={() => setShowNav(false)}>{nav.name}</NavLink>)}
+      <CloseIcon onClick={() => setShowNav(false)} />
+    </nav>;
 
-  const followMe = (
+  const FollowMe = () =>
     <div className="follow-me">
       <h3>Follow me</h3>
       <div className="social-media-icons">
-        {socialMedia.map((social, index) => {
-          return <img src={social[0]} key={index} className="social-media-icon" alt={social[1]} />
+        {socialMediaIcons.map((social, index) => {
+          return <a href={social.link} target="_blank" key={index}>
+            <img src={social.icon} key={index} className="social-media-icon" alt={"Social Media Icon"} />
+          </a>
         })}
       </div>
-    </div>
-  );
+    </div>;
 
-  const copyrights = (
+  const Copyrights = () =>
     <div className={showNav ? 'header-bottom nav-bottom' : 'header-bottom'}>
       <p>{year} | All rights reserved | <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a></p>
-    </div>
-  );
+    </div>;
 
   return (
     <div id="layout">
-      {showNav && myNavigation()}
+      {showNav && <MyNavigation />}
       <header>
         <div className='inside'>
           <div className="header-top">
-            {myLogo()}
-            {myNavigation()}
-            {followMe}
+            <MyLogo />
+            <MyNavigation />
+            <FollowMe />
           </div>
-          {copyrights}
+          <Copyrights />
         </div>
       </header>
       <div className={`top-header ${showNav ? 'show-nav-top-header' : null}`}>
-        {myLogo()}
+        <MyLogo />
         {!showNav && <BurgerIcon className="burger-menu" onClick={() => setShowNav(!showNav)} />}
       </div>
       <div className={showNav ? 'layout-body nav-body' : 'layout-body'}>
         <Outlet />
-        {followMe}
+        <FollowMe />
       </div>
       <footer>
-        {copyrights}
+        <Copyrights />
       </footer>
     </div>
   )

@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import './layout.scss';
 import logo from '../logo2.svg';
-import '../App.scss';
 import { ReactComponent as BurgerIcon } from './burger-icon.svg';
 import { ReactComponent as CloseIcon } from './close-button.svg';
 import { socialMediaIcons } from './social_media';
@@ -23,10 +22,10 @@ const Layout = () => {
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mouseup", handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mouseup", handleClickOutside);
     };
   }, [ref]);
 

@@ -1,9 +1,34 @@
+@use "../../app.scss" as s;
+// .inner-content {
+//   margin-top: calc(50px + 500px);
+// }
+
+// .inner-container {
+//   display: flex;
+//   padding: 100px 0 50px;
+//   overflow-wrap: break-word;
+// }
+
 #home {
   .home-inner-content {
-    display: flex;
-    margin-top: calc(50px + 500px);
-    padding: 100px 0 50px;
-    overflow-wrap: break-word;
+    @include s.content;
+  }
+
+  .home-inner-container {
+    @include s.container;
+
+    &__centered {
+      @include s.container;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      max-width: 290px;
+      margin: 0 auto;
+
+      p, button {
+        margin-bottom: 30px;
+      }
+    }
 
     h1 {
       max-width: calc(50% - 15px);
@@ -14,6 +39,7 @@
   .home-kpi-container {
     display: flex;
     gap: 30px;
+    padding-bottom: 50px;
 
     .home-kpi {
       text-align: center;
@@ -97,15 +123,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  #home {
-    .home-inner-content {
-      display: block;
-      margin-top: calc(50px + 500px);
+  // .home-inner-content {
+  //   margin-top: calc(50px + 500px);
+  //   .inner-container {
+  //     display: block;
+  //   }
+  // }
 
-      h1 {
-        margin-right: 0;
-        max-width: 100%;
-      }
+  #home {
+    h1 {
+      margin-right: 0;
+      max-width: 100%;
     }
 
     .home-kpi-container {

@@ -53,7 +53,11 @@ h4 {
 }
 
 h5 {
-  //
+  font-size: 24px;
+  margin: 0 0 15px;
+  color: #555555;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 h6 {
@@ -83,6 +87,16 @@ a {
   }
 }
 
+@mixin content {
+  margin-top: calc(50px + 500px);
+}
+
+@mixin container {
+  display: flex;
+  padding: 100px 0 50px;
+  overflow-wrap: break-word;
+}
+
 @media screen and (max-width: 600px) {
   h2 {
     font-size: 1.2em;
@@ -92,3 +106,42 @@ a {
     // font-size: 12px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  @mixin content {
+    margin-top: calc(50px + 500px);
+  }
+
+  @mixin container {
+    display: block;
+  }
+}
+
+// .page {
+//   container: summary / inline-size;
+// }
+
+// @container summary {
+//   margin-top: calc(50px + 500px);
+//   // display: flex;
+//   // padding: 100px 0 50px;
+//   // overflow-wrap: break-word;
+
+//   .content {
+//     // container: content / inline-size;
+//     display: flex;
+//     padding: 100px 0 50px;
+//     overflow-wrap: break-word;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   margin-top: calc(50px + 500px);
+//   // display: flex;
+//   // padding: 100px 0 50px;
+//   // overflow-wrap: break-word;
+
+//   .content {
+//     display: block;
+//   }
+// }

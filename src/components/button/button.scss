@@ -1,0 +1,15 @@
+button {
+  color: #46a3a2;
+  border: 1px solid #46a3a2;
+  background-color: #ffffff;
+  padding: 15px 45px;
+  font-size: 16px;
+  text-transform: uppercase;
+  // transition: all .2s ease-in-out;
+  margin: 0 auto;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #46a3a2;
+  }
+}

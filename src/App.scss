@@ -17,11 +17,11 @@ p, h1, h2, h3, a {
 }
 
 h1 {
+  // font-size: 55px;
   // font-size: 1.1em;
   // line-height: 0.7em;
-  line-height: 1;
   font-size: 45px;
-  // font-size: 55px;
+  line-height: 1;
   font-family: 'Raleway';
   font-weight: 600;
   color: #555555;
@@ -29,11 +29,11 @@ h1 {
 }
 
 h2 {
-  line-height: 0.7em;
-  line-height: 1;
   // font-size: 1.1em;
   // font-size: 45px;
+  // line-height: 0.7em;
   font-size: 32px;
+  line-height: 1;
   font-weight: 500;
   color: #555555;
   text-transform: uppercase;
@@ -41,27 +41,39 @@ h2 {
 
 h3 {
   font-size: 0.875em;
-  font-weight: bold;
   line-height: 1;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1.1em;
   line-height: 0.7em;
-  color: #555555;
   font-weight: 500;
+  color: #555555;
 }
 
 h5 {
   font-size: 24px;
-  margin: 0 0 15px;
+  line-height: 1;
+  font-weight: 500;
   color: #555555;
   text-transform: capitalize;
-  font-weight: 500;
+  margin: 0 0 15px;
 }
 
 h6 {
-  //
+  font-size: 0.83em;
+  line-height: 1.1em;
+  font-weight: 500;
+  color: #46a3a2;
+  margin: 0 0 15px 0;
+}
+
+button {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 p {
@@ -71,12 +83,12 @@ p {
 }
 
 a {
+  font-size: .75em;
+  line-height: 25px;
+  font-weight: bold;
   color: #8f8f8f;
   text-decoration: none;
   outline: none;
-  line-height: 25px;
-  font-size: .75em;
-  font-weight: bold;
 
   &:hover {
     color: #2e2e2e;
@@ -102,9 +114,9 @@ a {
     font-size: 1.2em;
   }
 
-  p {
+  // p {
     // font-size: 12px;
-  }
+  // }
 }
 
 @media screen and (max-width: 768px) {

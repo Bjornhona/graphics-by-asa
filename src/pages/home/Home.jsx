@@ -5,6 +5,9 @@ import ConversionRateImage from "./Conversion-rates2.png";
 import MoreSalesImage from "./More-sales2.png";
 import MoreExposureImage from "./More-exposure2.png";
 import Button from '../../components/button/Button';
+import Separator from '../../components/separator/Separator';
+import Testimonials from './testimonials/Testimonials';
+import ImageGallery from './imageGallery/ImageGallery';
 
 const Home = () => {
   return (
@@ -20,6 +23,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="images-banner">
+        {/* <a href=""> */}
+        <div className="banner-image">
+          <img src="./images/Angsviolen-hemsida.jpg" alt="" />
+        </div>
+        {/* </a> */}
+      </div>
+
       <div id="home">
         <StyledContent title='home'>
           <div className="home-inner-content">
@@ -54,11 +66,18 @@ const Home = () => {
               <p>Whether it’s e-newsletters and websites, blogs and social media, or printed materials, high-quality visuals grab attention at a much higher rate than applications using low-quality, stock or nonexistent imaging.</p>
             </div>
           </div>
+          <div className="image-gallery-reference">
+            <ImageGallery />
+          </div>
           <div className="home-inner-container__centered">
-            <h5>Get in touch</h5>
-            <p>Make your business stand out with professional and attractive graphic design!</p>
+            <div className="home-inner-text">
+              <h5>Get in touch</h5>
+              <p>Make your business stand out with professional and attractive graphic design!</p>
+            </div>
             <Button text={'Contact me'} />
           </div>
+          <Separator />
+          <Testimonials />
         </StyledContent>
       </div>
     </>

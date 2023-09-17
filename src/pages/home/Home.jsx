@@ -66,9 +66,7 @@ const Home = () => {
               <p>Whether it’s e-newsletters and websites, blogs and social media, or printed materials, high-quality visuals grab attention at a much higher rate than applications using low-quality, stock or nonexistent imaging.</p>
             </div>
           </div>
-          <div className="image-gallery-reference">
-            <ImageGallery />
-          </div>
+          <ImageGallery />
           <div className="home-inner-container__centered">
             <div className="home-inner-text">
               <h5>Get in touch</h5>

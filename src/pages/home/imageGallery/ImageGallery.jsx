@@ -1,39 +1,21 @@
 import './imageGallery.scss';
-import angsviolen1 from './images/Angsviolen-hemsida.jpg';
-import angsviolen2 from './images/Angsviolen-hemsida2.jpg';
 
 const ImageGallery = () => {
+
+  const importAll = (r) => {
+    return r.keys().map(r);
+  }
+  
+  const imageList = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+
   return (
-    <div id="image-gallery">
-      <div className="image">
-        <img src={angsviolen1} alt="my-art-work" />
-      </div>
-      <div className="image">
-        <img src={angsviolen2} alt="my-art-work" />
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
-      </div>
-      <div className="image">
-        {/* <img src={angsviolen} alt="my-art-work" /> */}
+    <div className="image-gallery-reference">
+      <div id="image-gallery">
+        {imageList.map((image, index) =>
+          <div className="image">
+            <img key={index} src={image} alt={`my-art-work-${index}`} />
+          </div>
+        )}
       </div>
     </div>
   )

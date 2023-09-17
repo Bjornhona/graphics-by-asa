@@ -1,10 +1,11 @@
 .image-gallery-reference {
+  --items: 5;
+  --width: 100vw;
   position: relative;
+  height: calc((var(--width) / var(--items)) * 2);
 }
 
 #image-gallery {
-  --items: 5;
-  --width: 100vw;
   position: absolute;
   top: 0;
   left: -320px;
@@ -45,6 +46,10 @@
 }
 
 @media screen and (max-width: 543px) {
+  .image-gallery-reference {
+    height: calc(var(--width) * var(--items) * 2);
+  }
+
   #image-gallery {
     grid-template-columns: 1fr;
 

@@ -15,7 +15,7 @@ const Home = () => {
   const [animate, setAnimate] = useState(false);
 
   const onScroll = () => {
-    const topPos = localRef.current.getBoundingClientRect().bottom + window.pageYOffset;
+    const topPos = localRef.current.getBoundingClientRect().top + window.pageYOffset;
     const scrollPos = window.scrollY + window.innerHeight;
 
     if (topPos < scrollPos) {

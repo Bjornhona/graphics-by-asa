@@ -1,27 +1,27 @@
 #testimonials {
   display: flex;
-  // width: 100%;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // padding: 40px 35px 20px 40px;
-  // height: calc(100% - 60px);
   gap: 30px;
+  animation: zoom-in-zoom-out 1s ease 1;
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.05, 1.05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 
   .testimonial {
     position: relative;
     background-image: url('./apostrophe.png');
     background-repeat: no-repeat;
-    // padding: 30px 30px 0;
-    // color: #46a3a2;
-    // margin-left: 30px;
-    // OUTER CONTAINERS SHOULD TAKE THE HEIGHT OF THE CHILD
 
     &__inner {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
       padding: 30px 30px 0;
-      // z-index: 10;
     }
   }
 }

@@ -12,8 +12,8 @@ const ImageGallery = () => {
     <div className="image-gallery-reference">
       <div id="image-gallery">
         {imageList.map((image, index) =>
-          <div className="image">
-            <img key={index} src={image} alt={`my-art-work-${index}`} />
+          <div key={index} className="image">
+            <img src={image} alt={`my-art-work-${index}`} />
           </div>
         )}
       </div>

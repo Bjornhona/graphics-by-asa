@@ -1,4 +1,5 @@
 import './home.scss';
+import { useState, useLayoutEffect, useRef } from 'react';
 import StyledContent from '../../components/styledContent/StyledContent';
 import FlowersImage from "./FlowerPortfolio1.jpg";
 import ConversionRateImage from "./Conversion-rates2.png";
@@ -10,6 +11,23 @@ import Testimonials from './testimonials/Testimonials';
 import ImageGallery from './imageGallery/ImageGallery';
 
 const Home = () => {
+  const localRef = useRef(null);
+  const [animate, setAnimate] = useState(false);
+
+  const onScroll = () => {
+    const topPos = localRef.current.getBoundingClientRect().bottom + window.pageYOffset;
+    const scrollPos = window.scrollY + window.innerHeight;
+
+    if (topPos < scrollPos) {
+      setAnimate(true);
+    }
+  };
+
+  useLayoutEffect(() => {
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [onScroll]);
+
   return (
     <>
       <div className="body-image-over">
@@ -24,14 +42,6 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="images-banner">
-        {/* <a href=""> */}
-        <div className="banner-image">
-          <img src="./images/Angsviolen-hemsida.jpg" alt="" />
-        </div>
-        {/* </a> */}
-      </div>
-
       <div id="home">
         <StyledContent title='home'>
           <div className="home-inner-content">
@@ -43,6 +53,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="home-kpi-container">
             <div className="home-kpi">
               <div className="home-kpi-image">
@@ -66,7 +77,9 @@ const Home = () => {
               <p>Whether it’s e-newsletters and websites, blogs and social media, or printed materials, high-quality visuals grab attention at a much higher rate than applications using low-quality, stock or nonexistent imaging.</p>
             </div>
           </div>
+
           <ImageGallery />
+
           <div className="home-inner-container__centered">
             <div className="home-inner-text">
               <h5>Get in touch</h5>
@@ -74,8 +87,11 @@ const Home = () => {
             </div>
             <Button text={'Contact me'} />
           </div>
+
           <Separator />
-          <Testimonials />
+
+          <Testimonials animate={animate} localRef={localRef} />
+
         </StyledContent>
       </div>
     </>

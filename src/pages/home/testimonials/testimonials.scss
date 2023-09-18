@@ -1,6 +1,4 @@
-#testimonials {
-  display: flex;
-  gap: 30px;
+.animation {
   animation: zoom-in-zoom-out 1s ease 1;
 
   @keyframes zoom-in-zoom-out {
@@ -14,6 +12,11 @@
       transform: scale(1, 1);
     }
   }
+}
+
+#testimonials {
+  display: flex;
+  gap: 30px;
 
   .testimonial {
     position: relative;

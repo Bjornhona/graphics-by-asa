@@ -1,8 +1,9 @@
 import './testimonials.scss';
 
-const Testimonials = () => {
+const Testimonials = ({ animate, localRef }) => {
+
   return (
-    <div className="home-inner-container__centered">
+    <div className={`home-inner-container__centered ${!!animate && 'animation'}`} ref={localRef}>
       <h5>Client testimonials</h5>
       <div id="testimonials">
         <div className="testimonial">

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.473e22ff.css",
-    "main.js": "/graphics-by-asa/static/js/main.c5f9197c.js",
+    "main.css": "/graphics-by-asa/static/css/main.543a09f3.css",
+    "main.js": "/graphics-by-asa/static/js/main.fc08881d.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/F4HBostader-hemsida.jpg": "/graphics-by-asa/static/media/F4HBostader-hemsida.5ffa405a35fd3cc14808.jpg",
     "static/media/SculptedGoddess-hemsida.jpg": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.fab7bc0fee09a01779e9.jpg",
@@ -10,6 +10,7 @@
     "static/media/Buscarella-hemsida.png": "/graphics-by-asa/static/media/Buscarella-hemsida.73d5874c740517719b60.png",
     "static/media/Future4Homes-hemsida.jpg": "/graphics-by-asa/static/media/Future4Homes-hemsida.0a4aa8438f34635b1c79.jpg",
     "static/media/TLW-hemsida2.jpg": "/graphics-by-asa/static/media/TLW-hemsida2.7157226861bbd7b0ad0d.jpg",
+    "static/media/designer-profile.jpg": "/graphics-by-asa/static/media/designer-profile.7d86ea4b5c66e390c837.jpg",
     "static/media/FlowerPortfolio1.jpg": "/graphics-by-asa/static/media/FlowerPortfolio1.e50eba31d5bc29bc1523.jpg",
     "static/media/NotoSansDisplay-Italic.ttf": "/graphics-by-asa/static/media/NotoSansDisplay-Italic.2305069a52e7fedf0159.ttf",
     "static/media/NotoSansDisplay-Light.ttf": "/graphics-by-asa/static/media/NotoSansDisplay-Light.8b4e710a530c52e9a9e4.ttf",
@@ -35,12 +36,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.473e22ff.css.map": "/graphics-by-asa/static/css/main.473e22ff.css.map",
-    "main.c5f9197c.js.map": "/graphics-by-asa/static/js/main.c5f9197c.js.map",
+    "main.543a09f3.css.map": "/graphics-by-asa/static/css/main.543a09f3.css.map",
+    "main.fc08881d.js.map": "/graphics-by-asa/static/js/main.fc08881d.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.473e22ff.css",
-    "static/js/main.c5f9197c.js"
+    "static/css/main.543a09f3.css",
+    "static/js/main.fc08881d.js"
   ]
 }

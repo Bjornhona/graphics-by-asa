@@ -101,8 +101,8 @@
     bottom: 0;
     left: 40px;
     right: 40px;
-    background-color: #fff;
-    color: #8f8f8f;
+    background-color: s.$white;
+    color: s.$light-gray;
     padding-top: 20px;
     padding-bottom: 15px;
     height: 95px;
@@ -137,11 +137,11 @@
       right: 0;
       width: 250px;
       height: 100%;
-      background: #fff;
+      background: s.$white;
       z-index: 100;
       padding: 40px 20px;
-      background-color: #333;
-      color: #FFF;
+      background-color: s.$darker-gray;
+      color: s.$white;
       overflow: auto;
       transition: 200ms;
       display: flex;
@@ -154,7 +154,7 @@
 
       a {
         margin: 0 20px 15px;
-        color: rgba(255,255,255,.7);
+        color: s.$inverted-links;
         -o-transition: .5s;
         -ms-transition: .5s;
         -moz-transition: .5s;
@@ -192,8 +192,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #FFFFFF;
-      border-bottom: 1px solid #ebebeb;
+      background-color: s.$white;
+      border-bottom: 1px solid s.$lighter-gray;
       padding: 20px 20px 15px 20px;
 
       .logo-container {
@@ -209,7 +209,7 @@
         height: 20px;
         width: 23px;
         cursor: pointer;
-        fill: #555555;
+        fill: s.$dark-gray;
         -o-transition: .5s;
         -ms-transition: .5s;
         -moz-transition: .5s;
@@ -230,7 +230,7 @@
 
       .follow-me {
         display: block;
-        background-color: #fff;
+        background-color: s.$white;
         padding: 40px 30px;
 
         .social-media-icons {
@@ -253,7 +253,7 @@
 
     footer {
       display: block;
-      background-color: #eeeeee;
+      background-color: s.$super-light-gray;
     }
     
     .header-bottom {

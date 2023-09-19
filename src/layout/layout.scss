@@ -1,3 +1,5 @@
+@use "../app.scss" as s;
+
 #layout {
   position: relative;
 
@@ -5,10 +7,10 @@
     position: fixed;
     width: 250px;
     height: 100%;
-    background: #fff;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    background: s.$white;
+    -webkit-box-shadow: 0 1px 1px s.$selected-background;
+    -moz-box-shadow: 0 1px 1px s.$selected-background;
+    box-shadow: 0 1px 1px s.$selected-background;
     z-index: 100;
     line-height: 25px;
 
@@ -69,7 +71,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #72aaaa; // #0e4e4e
+    background-color: s.$medium-blue;
     width: auto;
     margin-left: 250px;
     height: 100%;
@@ -106,13 +108,17 @@
     height: 95px;
 
     a {
-      color: #797979;
+      color: s.$medium-blue;
       font-size: 100%;
       line-height: 1.7em;
       font-weight: 500;
 
       &:hover {
-        color: #2e2e2e;
+        color: s.$light-blue;
+      }
+
+      &:active, &:focus, &.active {
+        color: s.$light-blue;
       }
     }
   }

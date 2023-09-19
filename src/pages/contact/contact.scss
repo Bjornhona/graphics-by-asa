@@ -1,0 +1,18 @@
+@use "../../app.scss" as s;
+
+#contact {
+  a {
+    color: s.$medium-blue;
+    font-size: 100%;
+    line-height: 1.7em;
+    font-weight: 500;
+
+    &:hover {
+      color: s.$light-blue;
+    }
+
+    &:active, &:focus, &.active {
+      color: s.$light-blue;
+    }
+  }
+}

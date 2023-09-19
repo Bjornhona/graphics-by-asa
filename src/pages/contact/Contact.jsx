@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <div id="contact">
     <StyledContent title='contact'>
-      some other home text.
+      <p>Hi there,</p>
+      <p>Sounds like a great idea, tell me about it!</p>
+      <p>Send me an email to <a href={"mailto:info@graphicsbyasa.com"}>info@graphicsbyasa.com</a> or fill out the form below.</p>
     </StyledContent>
   </div>
   )

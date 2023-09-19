@@ -128,14 +128,14 @@
     justify-content: center;
 
     .inner-text {
-      color: #fff;
+      color: s.$white;
       max-width: 55%;
       text-align: center;
       overflow-wrap: break-word;
 
       h1 {
         text-align: left;
-        color: #fff;
+        color: s.$white;
         margin: 0;
         font-size: 55px;
       }

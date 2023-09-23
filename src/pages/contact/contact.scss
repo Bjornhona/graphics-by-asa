@@ -16,8 +16,35 @@
     }
   }
 
-  img {
-    width: 100%;
+  .contact-image-container {
+    position: relative;
     margin: 15px 0 30px;
+
+    .contact-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      padding: 30px;
+    }
+
+    .contact-me-text {
+      position: absolute;
+      top: 130px;
+      left: 0;
+      padding: 30px;
+      z-index: 1000;
+      width: 50%;
+      
+      p {
+        color: s.$dark-gray;
+        font-size: 0.83em;
+        line-height: 1.1rem;
+      }
+    }
+
+    .contact-image {
+      width: 100%;
+    }
   }
 }

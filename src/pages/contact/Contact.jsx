@@ -2,8 +2,10 @@ import StyledContent from '../../components/styledContent/StyledContent';
 import './contact.scss';
 import image from './designer-profile.jpg';
 import logo from '../../logo2.svg';
+import ContactForm from './contact_form/ContactForm';
 
 const Contact = () => {
+
   return (
     <div id="contact">
       <StyledContent title='contact'>
@@ -20,6 +22,7 @@ const Contact = () => {
           <img src={image} alt={"me"} className="contact-image" />
         </div>
         <h4>Fill out the form and I´ll get back to you</h4>
+        <ContactForm />
       </StyledContent>
     </div>
   )

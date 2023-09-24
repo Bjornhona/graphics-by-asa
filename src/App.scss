@@ -99,6 +99,21 @@ a {
   }
 }
 
+button {
+  color: #46a3a2;
+  font-weight: 500;
+  border: 2px solid #46a3a2;
+  background-color: #ffffff;
+  padding: 15px 45px;
+  transition: all .2s ease-in-out;
+  margin: 0 auto;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #46a3a2;
+  }
+}
+
 @mixin content {
   margin-top: calc(50px + 500px);
 }

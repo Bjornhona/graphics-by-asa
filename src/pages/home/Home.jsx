@@ -5,7 +5,6 @@ import FlowersImage from "./FlowerPortfolio1.jpg";
 import ConversionRateImage from "./Conversion-rates2.png";
 import MoreSalesImage from "./More-sales2.png";
 import MoreExposureImage from "./More-exposure2.png";
-import Button from '../../components/button/Button';
 import Separator from '../../components/separator/Separator';
 import Testimonials from './testimonials/Testimonials';
 import ImageGallery from './imageGallery/ImageGallery';
@@ -85,7 +84,7 @@ const Home = () => {
               <h5>Get in touch</h5>
               <p>Make your business stand out with professional and attractive graphic design!</p>
             </div>
-            <Button text={'Contact me'} />
+            <button>Contact me</button>
           </div>
 
           <Separator />

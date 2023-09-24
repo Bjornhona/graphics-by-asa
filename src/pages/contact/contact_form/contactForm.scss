@@ -1,4 +1,48 @@
+@use "../../../app.scss" as s;
+
 #contact-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+  p {
+    margin: 0;
+  }
+
+  .form-box {
+    position: relative;
+
+    input, textarea {
+      width: 100%;
+      background-color: s.$white;
+      color: s.$medium-gray;
+      align-content: center;
+      border: 2px solid s.$lighter-gray;
+      width: 95%;
+      padding: 10px 2%;
+      border-radius: 0px;
+    }
+
+    input {
+      height: 30px;
+    }
+
+    textarea {
+      height: 155px;
+      font-family: "Noto Sans Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+    }
+
+    .error-message {
+      position: absolute;
+      bottom: -20px;
+      left: 5px;
+      color: s.$warning;
+      font-size: 12px;
+    }
+  }
+
+  button {
+    margin: 0 auto 30px 0;
+  }
 }

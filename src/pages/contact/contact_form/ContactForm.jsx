@@ -1,12 +1,25 @@
+import { useRef } from 'react';
 import './contactForm.scss';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = () => {
+    emailjs.sendForm('graphics_by_asa', 'template_1vkh2g9', form.current, 'c0a4FmxU7xtzDBpPU')
+    .then((result) => {
+          console.log('SUCCESS!', result.status, result.text);
+      }, (error) => {
+          console.log('FAILED...', error);
+      });
+  };
 
   const formik = useFormik({
     initialValues: {
       name: '',
+      username: '',
       email: '',
       message: ''
     },
@@ -20,13 +33,16 @@ const ContactForm = () => {
       message: Yup.string()
         .max(200, 'Must be 200 characters or less')
     }),
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (values, { resetForm }) => {
+      if (values.username.length < 1) {
+        sendEmail();
+      }
+      resetForm();
     }
   });
 
   return (
-    <form id="contact-form" onSubmit={formik.handleSubmit}>
+    <form id="contact-form" ref={form} onSubmit={formik.handleSubmit}>
       <div className='form-box'>
         <label htmlFor="name"><p>Your Name (required)</p></label>
         <input
@@ -39,6 +55,23 @@ const ContactForm = () => {
         />
         {formik.touched.name && formik.errors.name ? (
           <div className='error-message'>{formik.errors.name}</div>
+        ) : null}
+      </div>
+
+      <div className='form-box'>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.username}
+          placeholder="Your Username (required)"
+          tabIndex="-1"
+          autoComplete="new-password"
+        />
+        {formik.touched.username && formik.errors.username ? (
+          <div className='error-message'>{formik.errors.username}</div>
         ) : null}
       </div>
 
@@ -72,7 +105,13 @@ const ContactForm = () => {
         ) : null}
       </div>
 
-      <button type="submit">Send</button>
+      <button
+        type="submit"
+        // className="g-recaptcha"
+        // data-sitekey="6LenNGUoAAAAAC8plPARE4R_XS8Z4Nph7kq4gGO9"
+        // data-callback='onSubmit' 
+        // data-action='submit'
+      >Send</button>
     </form>
   );
 }

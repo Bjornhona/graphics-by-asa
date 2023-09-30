@@ -5,7 +5,6 @@ import logo from '../../logo2.svg';
 import ContactForm from './contact_form/ContactForm';
 
 const Contact = () => {
-
   const currentYear = new Date().getFullYear();
   const yearsOfExperienceDeveloper = currentYear - 2018;
   const yearsOfExperienceFreelancer = currentYear - 2017;

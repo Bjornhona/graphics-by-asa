@@ -1,16 +1,18 @@
 @use "../../../app.scss" as s;
 
 #contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
   p {
     margin: 0;
   }
 
   .form-box {
     position: relative;
+    margin-bottom: 20px;
+
+    input[name="username"] {
+      position: absolute;
+      left: -999999999px;
+    }
 
     input, textarea {
       width: 100%;

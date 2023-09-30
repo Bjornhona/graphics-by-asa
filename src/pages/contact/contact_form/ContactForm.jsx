@@ -3,12 +3,14 @@ import './contactForm.scss';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
+import reCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   const form = useRef();
 
   const sendEmail = () => {
-    emailjs.sendForm('graphics_by_asa', 'template_1vkh2g9', form.current, 'c0a4FmxU7xtzDBpPU')
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
     .then((result) => {
           console.log('SUCCESS!', result.status, result.text);
       }, (error) => {
@@ -103,6 +105,12 @@ const ContactForm = () => {
         {formik.touched.message && formik.errors.message ? (
           <div className='error-message'>{formik.errors.message}</div>
         ) : null}
+      </div>
+
+      <div className='form-box'>
+        {/* <div className="g-recaptcha" sitekey={process.env.REACT_APP_SITE_KEY}></div> */}
+        {/* <div className="g-recaptcha" data-sitekey={process.env.REACT_APP_SITE_KEY}></div> */}
+        {/* <ReCaptcha sitekey={process.env.REACT_APP_SITE_KEY} /> */}
       </div>
 
       <button

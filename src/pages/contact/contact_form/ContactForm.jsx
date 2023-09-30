@@ -3,7 +3,7 @@ import './contactForm.scss';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
-import reCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   const form = useRef();
@@ -110,13 +110,13 @@ const ContactForm = () => {
       <div className='form-box'>
         {/* <div className="g-recaptcha" sitekey={process.env.REACT_APP_SITE_KEY}></div> */}
         {/* <div className="g-recaptcha" data-sitekey={process.env.REACT_APP_SITE_KEY}></div> */}
-        {/* <ReCaptcha sitekey={process.env.REACT_APP_SITE_KEY} /> */}
+        <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
       </div>
 
       <button
         type="submit"
         // className="g-recaptcha"
-        // data-sitekey="6LenNGUoAAAAAC8plPARE4R_XS8Z4Nph7kq4gGO9"
+        // data-sitekey={process.env.REACT_APP_SITE_KEY}
         // data-callback='onSubmit' 
         // data-action='submit'
       >Send</button>

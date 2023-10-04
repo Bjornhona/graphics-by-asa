@@ -13,8 +13,11 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Graphics by Asa</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>function onSubmit(token) {document.getElementById("demo-form").submit()}</script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?sitekey=%REACT_APP_CAPTCHA_SITE_KEY%"></script> -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=REACT_APP_CAPTCHA_SITE_KEY"></script> -->
+    <!-- <script>function onSubmit(token) {document.getElementById("demo-form").submit()}</script> -->
   </head>
   <body>
     <div id="root"></div>

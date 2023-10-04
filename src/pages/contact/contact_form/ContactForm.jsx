@@ -1,11 +1,11 @@
 import { useRef } from 'react';
 import './contactForm.scss';
 import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
-import ReCAPTCHA from "react-google-recaptcha";
+// import axios from 'axios';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   const form = useRef();
 
   const sendEmail = () => {
@@ -23,19 +23,22 @@ const ContactForm = () => {
       name: '',
       username: '',
       email: '',
-      message: ''
+      message: '',
+      // recaptcha: ''
     },
-    validationSchema: Yup.object({
-      name: Yup.string()
+    validationSchema: yup.object({
+      name: yup.string()
         .max(15, 'Must be 15 characters or less')
         .required('Required'),
-      email: Yup.string()
+      email: yup.string()
         .email('Invalid email address')
         .required('Required'),
-      message: Yup.string()
-        .max(200, 'Must be 200 characters or less')
+      message: yup.string()
+        .max(200, 'Must be 200 characters or less'),
+      // recaptcha: yup.bool().required()
     }),
-    onSubmit: (values, { resetForm }) => {
+    onSubmit: async (values, { resetForm }) => {
+      // https://www.makeuseof.com/react-google-recaptcha-integrate/
       if (values.username.length < 1) {
         sendEmail();
       }
@@ -62,7 +65,6 @@ const ContactForm = () => {
 
       <div className='form-box'>
         <input
-          id="username"
           name="username"
           type="text"
           onChange={formik.handleChange}
@@ -107,19 +109,22 @@ const ContactForm = () => {
         ) : null}
       </div>
 
-      <div className='form-box'>
-        {/* <div className="g-recaptcha" sitekey={process.env.REACT_APP_SITE_KEY}></div> */}
-        {/* <div className="g-recaptcha" data-sitekey={process.env.REACT_APP_SITE_KEY}></div> */}
-        <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
-      </div>
+      {/* <div className='form-box'>
+        <div
+          className="g-recaptcha"
+          name="recaptcha"
+          onChange={formik.handleChange}
+          // onChange={(response) => formik.setFieldValue("recaptcha", response)}
+          onBlur={formik.handleBlur}
+          data-sitekey={process.env.REACT_APP_CAPTCHA_SITE_KEY}
+          value={formik.values.recaptcha}
+        ></div>
+        {formik.touched.recaptcha && formik.errors.recaptcha ? (
+          <div className='error-message'>{formik.errors.recaptcha}</div>
+        ) : null}
+      </div> */}
 
-      <button
-        type="submit"
-        // className="g-recaptcha"
-        // data-sitekey={process.env.REACT_APP_SITE_KEY}
-        // data-callback='onSubmit' 
-        // data-action='submit'
-      >Send</button>
+      <button type="submit">Send</button>
     </form>
   );
 }

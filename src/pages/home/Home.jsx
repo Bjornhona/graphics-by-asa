@@ -1,5 +1,5 @@
 import './home.scss';
-import { useState, useLayoutEffect, useRef } from 'react';
+import { useState, useLayoutEffect, useRef, useCallback } from 'react';
 import StyledContent from '../../components/styledContent/StyledContent';
 import FlowersImage from "./FlowerPortfolio1.jpg";
 import ConversionRateImage from "./Conversion-rates2.png";
@@ -13,14 +13,14 @@ const Home = () => {
   const localRef = useRef(null);
   const [animate, setAnimate] = useState(false);
 
-  const onScroll = () => {
+  const onScroll = useCallback(() => {
     const topPos = localRef.current.getBoundingClientRect().top + window.pageYOffset;
     const scrollPos = window.scrollY + window.innerHeight;
 
     if (topPos < scrollPos) {
       setAnimate(true);
     }
-  };
+  }, []);
 
   useLayoutEffect(() => {
     window.addEventListener('scroll', onScroll);

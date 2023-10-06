@@ -16,8 +16,10 @@ const ContactForm = (props) => {
         toast.success('Your message was sent correctly! I will get back to you soon.', {
           position: toast.POSITION.TOP_RIGHT
         });
-      }, (error) => {
-        console.log('FAILED...', error);
+      }, () => {
+        toast.error('Failed to send your message! Please try again later.', {
+          position: toast.POSITION.TOP_RIGHT
+        });
       });
   };
 

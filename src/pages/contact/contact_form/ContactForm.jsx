@@ -3,7 +3,8 @@ import './contactForm.scss';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
-// import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = (props) => {
   const form = useRef();
@@ -11,10 +12,12 @@ const ContactForm = (props) => {
   const sendEmail = () => {
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-    .then((result) => {
-          console.log('SUCCESS!', result.status, result.text);
+    .then(() => {
+        toast.success('Your message was sent correctly! I will get back to you soon.', {
+          position: toast.POSITION.TOP_RIGHT
+        });
       }, (error) => {
-          console.log('FAILED...', error);
+        console.log('FAILED...', error);
       });
   };
 
@@ -23,21 +26,19 @@ const ContactForm = (props) => {
       name: '',
       username: '',
       email: '',
-      message: '',
-      // recaptcha: ''
+      message: ''
     },
     validationSchema: yup.object({
       name: yup.string()
-        .max(15, 'Must be 15 characters or less')
+        .max(60, 'Must be 60 characters or less')
         .required('Required'),
       email: yup.string()
         .email('Invalid email address')
         .required('Required'),
       message: yup.string()
-        .max(200, 'Must be 200 characters or less'),
-      // recaptcha: yup.bool().required()
+        .max(800, 'Must be 800 characters or less'),
     }),
-    onSubmit: async (values, { resetForm }) => {
+    onSubmit: (values, { resetForm }) => {
       // https://www.makeuseof.com/react-google-recaptcha-integrate/
       if (values.username.length < 1) {
         sendEmail();
@@ -109,22 +110,8 @@ const ContactForm = (props) => {
         ) : null}
       </div>
 
-      {/* <div className='form-box'>
-        <div
-          className="g-recaptcha"
-          name="recaptcha"
-          onChange={formik.handleChange}
-          // onChange={(response) => formik.setFieldValue("recaptcha", response)}
-          onBlur={formik.handleBlur}
-          data-sitekey={process.env.REACT_APP_CAPTCHA_SITE_KEY}
-          value={formik.values.recaptcha}
-        ></div>
-        {formik.touched.recaptcha && formik.errors.recaptcha ? (
-          <div className='error-message'>{formik.errors.recaptcha}</div>
-        ) : null}
-      </div> */}
-
       <button type="submit">Send</button>
+      <ToastContainer />
     </form>
   );
 }

@@ -32,7 +32,7 @@ h2 {
   // font-size: 1.1rem;
   // font-size: 45px;
   // line-height: 0.7rem;
-  font-size: 32px;
+  font-size: 2rem; // 32px
   line-height: 1;
   font-weight: 500;
   color: $dark-gray;
@@ -40,20 +40,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.875rem;
-  line-height: 1;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 1.1rem;
-  line-height: 0.7rem;
-  font-weight: 500;
-  color: $dark-gray;
-}
-
-h5 {
-  font-size: 24px;
+  font-size: 1.5rem; // 24px
   line-height: 1;
   font-weight: 500;
   color: $dark-gray;
@@ -61,29 +48,52 @@ h5 {
   margin: 0 0 15px;
 }
 
+h4 {
+  font-size: 1.125rem; // 18px
+  line-height: 1.1rem;
+  font-weight: 500;
+  color: $dark-gray;
+}
+
+h5 {
+  font-size: 0.875rem; // 14px
+  line-height: 1;
+  font-weight: bold;
+}
+
 h6 {
-  font-size: 0.83em;
+  font-size: 0.875rem; // 14px
   line-height: 1.1rem;
   font-weight: 500;
   color: $medium-blue;
   margin: 0 0 15px 0;
 }
 
-button {
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
 p {
-  font-size: 0.9em;
-  // font-size: 14px;
+  font-size: 0.875rem; // 14px
   line-height: 1.7rem;
 }
 
+button {
+  font-size: 1rem; // 16px
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #46a3a2;
+  border: 2px solid #46a3a2;
+  background-color: #ffffff;
+  padding: 15px 45px;
+  transition: all .2s ease-in-out;
+  margin: 0 auto;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #46a3a2;
+  }
+}
+
 a {
-  font-size: .75rem;
+  font-size: .75rem; // 12px
   line-height: 25px;
   font-weight: bold;
   color: $light-gray;
@@ -99,29 +109,24 @@ a {
   }
 }
 
-button {
-  color: #46a3a2;
-  font-weight: 500;
-  border: 2px solid #46a3a2;
-  background-color: #ffffff;
-  padding: 15px 45px;
-  transition: all .2s ease-in-out;
-  margin: 0 auto;
-
-  &:hover {
-    color: #ffffff;
-    background-color: #46a3a2;
-  }
-}
-
 @mixin content {
-  margin-top: calc(50px + 500px);
+  margin-top: 55px;
 }
 
 @mixin container {
   display: flex;
   padding: 100px 0 50px;
   overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  @mixin content {
+    margin-top: 55px;
+  }
+
+  @mixin container {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -133,42 +138,3 @@ button {
     // font-size: 12px;
   // }
 }
-
-@media screen and (max-width: 768px) {
-  @mixin content {
-    margin-top: calc(50px + 500px);
-  }
-
-  @mixin container {
-    display: block;
-  }
-}
-
-// .page {
-//   container: summary / inline-size;
-// }
-
-// @container summary {
-//   margin-top: calc(50px + 500px);
-//   // display: flex;
-//   // padding: 100px 0 50px;
-//   // overflow-wrap: break-word;
-
-//   .content {
-//     // container: content / inline-size;
-//     display: flex;
-//     padding: 100px 0 50px;
-//     overflow-wrap: break-word;
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   margin-top: calc(50px + 500px);
-//   // display: flex;
-//   // padding: 100px 0 50px;
-//   // overflow-wrap: break-word;
-
-//   .content {
-//     display: block;
-//   }
-// }

@@ -43,7 +43,7 @@ const Layout = () => {
 
   const FollowMe = () =>
     <div className="follow-me">
-      <h3>Follow me</h3>
+      <h5>Follow me</h5>
       <div className="social-media-icons">
         {socialMediaIcons.map((social, index) =>
           <a href={social.link} target="_blank" rel="noreferrer" key={index}>

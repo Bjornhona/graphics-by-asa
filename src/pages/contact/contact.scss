@@ -21,6 +21,7 @@
     margin: 15px 0 30px;
 
     .contact-logo {
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
@@ -45,6 +46,83 @@
 
     .contact-image {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #contact {
+    .contact-image-container {
+      .contact-logo {
+        display: none;
+      }
+
+      .contact-me-text {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #contact {
+    .contact-image-container {
+      .contact-me-text {
+        padding: 15px;
+        font-size: 0.75rem;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    .contact-image-container {
+      .contact-logo {
+        display: block;
+      }
+
+      .contact-me-text {
+        top: 130px;
+        padding: 30px;
+        font-size: 0.875rem;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 653px) {
+  #contact {
+    .contact-image-container {
+      .contact-logo {
+        display: none;
+      }
+
+      .contact-me-text {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 543px) {
+  #contact {
+    .contact-image-container {
+      .contact-me-text {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact {
+    .contact-image-container {
+      .contact-me-text {
+        display: none;
+      }
     }
   }
 }

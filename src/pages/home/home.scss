@@ -1,13 +1,4 @@
 @use "../../app.scss" as s;
-// .inner-content {
-//   margin-top: calc(50px + 500px);
-// }
-
-// .inner-container {
-//   display: flex;
-//   padding: 100px 0 50px;
-//   overflow-wrap: break-word;
-// }
 
 #home {
   .home-inner-content {
@@ -32,32 +23,6 @@
         max-width: 290px;
         margin: 0 auto;
       }
-
-      // .testimonials {
-      //   display: flex;
-      //   // width: 100%;
-      //   // flex-direction: column;
-      //   // justify-content: space-between;
-      //   // padding: 40px 35px 20px 40px;
-      //   // height: calc(100% - 60px);
-      //   gap: 30px;
-
-      //   .testimonial {
-      //     position: relative;
-      //     // padding: 30px 30px 0;
-      //     // color: #46a3a2;
-      //     // margin-left: 30px;
-      //     // OUTER CONTAINERS SHOULD TAKE THE HEIGHT OF THE CHILD
-
-      //     &__inner {
-      //       // position: absolute;
-      //       // top: 0;
-      //       // left: 0;
-      //       padding: 30px 30px 0;
-      //       // z-index: 10;
-      //     }
-      //   }
-      // }
     }
 
     h1 {
@@ -92,85 +57,7 @@
 
       h2 {
         margin: 30px 0 15px;
-        // font-size: 32px;
       }
-    }
-  }
-}
-
-.body-image-over {
-  position: absolute;
-  z-index: 2;
-  left: -320px;
-  right: 0;
-  top: 146px;
-  height: 500px;
-
-  .image-scale-helper {
-    height: 110%;
-    overflow: hidden;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      animation: zoom-in 30s linear;
-    }
-  }
-
-  .body-image-text {
-    position: absolute;
-    top: calc(50% - 45px);
-    right: 0;
-    left: 320px;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-
-    .inner-text {
-      color: s.$white;
-      max-width: 55%;
-      text-align: center;
-      overflow-wrap: break-word;
-
-      h1 {
-        text-align: left;
-        color: s.$white;
-        margin: 0;
-        font-size: 55px;
-      }
-    }
-  }
-}
-
-.images-banner {
-  position: absolute;
-  z-index: 2;
-  // left: -320px;
-  left: 0;
-  right: 0;
-  top: 600px;
-  // height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-
-
-  .banner-image {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-
-    img {
-      position: absolute;
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-      left: 50%;
-      top: 50%;
-      width: auto;
-      max-width: none;
-      height: 101%;
     }
   }
 }
@@ -185,17 +72,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  // .home-inner-content {
-  //   margin-top: calc(50px + 500px);
-  //   .inner-container {
-  //     display: block;
-  //   }
-  // }
-
   #home {
-    h1 {
-      margin-right: 0;
-      max-width: 100%;
+    .home-inner-container {
+      display: block;
+
+      h1 {
+        margin-right: 0;
+        max-width: 100%;
+      }
     }
 
     .home-kpi-container {
@@ -220,32 +104,6 @@
       .inner-text {
         max-width: 90%;
         margin: 0 30px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .body-image-over {
-    .body-image-text {
-      .inner-text {
-        margin: 0 15px;
-
-        h1 {
-          font-size: 3em;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 200px) {
-  .body-image-over {
-    .body-image-text {
-      .inner-text {
-        h1 {
-          font-size: 2em;
-        }
       }
     }
   }

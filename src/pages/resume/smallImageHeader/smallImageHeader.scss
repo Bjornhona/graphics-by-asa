@@ -1,0 +1,76 @@
+@use "../../../app.scss" as s;
+
+.image-header-reference {
+  position: relative;
+  height: 400px;
+
+  #body-image-over {
+    position: absolute;
+    z-index: 2;
+    left: -320px;
+    top: 0;
+    width: 100vw;
+    bottom: 0;
+
+    .image-scale-helper {
+      height: 110%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .body-image-text {
+      position: absolute;
+      top: calc(50% - 45px);
+      right: 0;
+      left: 320px;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+
+      .inner-text {
+        color: s.$white;
+        max-width: 55%;
+        text-align: center;
+        overflow-wrap: break-word;
+
+        h1 {
+          text-align: left;
+          color: s.$white;
+          margin: 0;
+          font-size: 55px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #body-image-over {
+    .body-image-text {
+      .inner-text {
+        margin: 0 15px;
+
+        h1 {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 200px) {
+  #body-image-over {
+    .body-image-text {
+      .inner-text {
+        h1 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}

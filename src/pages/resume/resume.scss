@@ -1,0 +1,15 @@
+@use "../../app.scss" as s;
+
+#resume {
+  .home-inner-content {
+    @include s.content;
+  }
+
+  .home-inner-container {
+    @include s.container;
+
+    &__centered {
+      @include s.container;
+    }
+  }
+}

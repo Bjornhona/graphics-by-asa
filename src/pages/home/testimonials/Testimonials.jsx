@@ -4,7 +4,7 @@ const Testimonials = ({ animate, localRef }) => {
 
   return (
     <div className={`home-inner-container__centered ${!!animate && 'animation'}`} ref={localRef}>
-      <h5>Client testimonials</h5>
+      <h3>Client testimonials</h3>
       <div id="testimonials">
         <div className="testimonial">
           <div className="testimonial__inner">

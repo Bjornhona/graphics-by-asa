@@ -79,16 +79,28 @@ button {
   line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
-  color: #46a3a2;
-  border: 2px solid #46a3a2;
-  background-color: #ffffff;
+  color: $medium-blue;
+  border: 2px solid $medium-blue;
+  background-color: $white;
   padding: 15px 45px;
   transition: all .2s ease-in-out;
   margin: 0 auto;
 
+  &.inverted {
+    border-color: $white;
+    color: $white;
+    background-color: transparent;
+
+    &:hover {
+      color: $medium-blue;
+      border-color: $white;
+      background-color: $white;
+    }
+  }
+
   &:hover {
-    color: #ffffff;
-    background-color: #46a3a2;
+    color: $white;
+    background-color: $medium-blue;
   }
 }
 

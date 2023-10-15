@@ -9,6 +9,25 @@ const Resume = () => {
       <StyledContent title='resume'>
         <SmallImageHeader />
         <div className="home-inner-content">
+          <div className={'left-info-banner'}>
+            <h5>Contact</h5>
+            <a href='mailto:info@graphicsbyasa.com'>info@graphicsbyasa.com</a>
+            {/* <a href='https://www.graphicsbyasa.com'>www.graphicsbyasa.com</a> */}
+            {/* <a href='https://github.com/Bjornhona'>https://github.com/Bjornhona</a> */}
+            <p>+34 - 676 49 69 19</p>
+
+            <h5>Areas of expertise</h5>
+            <p>Web Development · Graphic Design · Web Design · Product Design · UX/UI</p>
+
+            <h5>Programming skills</h5>
+            <p>Javascript · Node.js · Express · React · React Native · Python · C · Flask · SQL · MongoDB · Jest · Node.js · ES6 · HTML5 · CSS</p>
+
+            <h5>Software skills</h5>
+            
+            <h5>Language skills</h5>
+            
+            <button className="inverted">Download CV</button>
+          </div>
           <div className="home-inner-container">
             <h1>Some title</h1>
             <div>

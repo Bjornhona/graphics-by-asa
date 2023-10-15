@@ -2,12 +2,22 @@
 
 #resume {
   .home-inner-content {
-    @include s.content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .left-info-banner {
+      background-color: s.$medium-blue;
+      width: 35%;
+      // height: 100%;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
   }
 
   .home-inner-container {
-    @include s.container;
-
+    @include s.content;
+    width: 65%;
     &__centered {
       @include s.container;
     }

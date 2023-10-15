@@ -1,48 +1,132 @@
 @use "../../../app.scss" as s;
 
-.image-header-reference {
+#image-header-reference {
   position: relative;
-  height: 400px;
 
-  #body-image-over {
+  .hidden-to-get-height {
+    visibility: hidden;
+
+    .body-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      .left-info-banner {
+        width: 35%;
+        height: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+        h5 {
+          margin: 20px 0;
+          font-size: 22px;
+        }
+        button {
+          padding: inherit;
+        }
+        h6 {
+          line-height: 1.25;
+          font-size: 1.17em;
+        }
+      }
+
+      .inner-text {
+        padding: 20px 0;
+        width: 65%;
+        text-align: left;
+        overflow-wrap: break-word;
+
+        h5 {
+          margin-bottom: 20px;
+          font-size: 22px;
+        }
+
+        p {
+          line-height: 1.4rem
+        }
+      }
+    }
+  }
+
+  .body-image-over {
     position: absolute;
     z-index: 2;
     left: -320px;
     top: 0;
-    width: 100vw;
     bottom: 0;
+    width: 100vw;
+    height: max-content;
+    background-image: url('../../../styles/images/FlowerPortfolio1.jpg');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center right;
 
-    .image-scale-helper {
-      height: 110%;
-      overflow: hidden;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .body-image-text {
-      position: absolute;
-      top: calc(50% - 45px);
-      right: 0;
-      left: 320px;
+    .body-boxes {
+      padding-left: 320px;
+      padding-right: 70px;
       z-index: 3;
       display: flex;
       justify-content: center;
+      gap: 30px;
+
+      .left-info-banner {
+        background-color: s.$medium-blue;
+        width: 35%;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+        h5 {
+          color: s.$ultra-dark-blue;
+          margin: 20px 0;
+          font-size: 22px;
+        }
+        button {
+          padding: inherit;
+        }
+        h6 {
+          color: s.$ultra-dark-blue;
+          line-height: 1.25;
+          font-size: 1.17em;
+        }
+      }
 
       .inner-text {
+        padding: 20px 0;
+        width: 65%;
         color: s.$white;
-        max-width: 55%;
-        text-align: center;
+        text-align: left;
         overflow-wrap: break-word;
 
-        h1 {
-          text-align: left;
+        h5 {
           color: s.$white;
-          margin: 0;
-          font-size: 55px;
+          margin-bottom: 20px;
+          font-size: 22px;
+        }
+
+        p {
+          line-height: 1.4rem
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #image-header {
+    .body-image-over {
+      left: -30px;
+      .body-boxes {
+        left: 0;
+        .inner-text {
+          max-width: 100%;
         }
       }
     }
@@ -50,13 +134,16 @@
 }
 
 @media screen and (max-width: 360px) {
-  #body-image-over {
-    .body-image-text {
-      .inner-text {
-        margin: 0 15px;
+  #image-header-reference {
+    .body-image-over {
+      left: -15px;
+      .body-boxes {
+        .inner-text {
+          margin: 0 15px;
 
-        h1 {
-          font-size: 3em;
+          h1 {
+            font-size: 3em;
+          }
         }
       }
     }
@@ -64,11 +151,13 @@
 }
 
 @media screen and (max-width: 200px) {
-  #body-image-over {
-    .body-image-text {
-      .inner-text {
-        h1 {
-          font-size: 2em;
+  #image-header-reference {
+    .body-image-over {
+      .body-boxes {
+        .inner-text {
+          h1 {
+            font-size: 2em;
+          }
         }
       }
     }

@@ -36,7 +36,7 @@
         margin-bottom: 130px;
 
         h5 {
-          padding-top: 20px;
+          padding-top: 10px;
         }
       }
 
@@ -105,7 +105,8 @@
     color: s.$light-gray;
     padding-top: 20px;
     padding-bottom: 15px;
-    height: 95px;
+    // height: 95px;
+    // height: max-content;
 
     a {
       color: s.$medium-blue;

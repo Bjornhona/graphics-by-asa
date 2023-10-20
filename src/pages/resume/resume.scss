@@ -3,21 +3,30 @@
 #resume {
   .home-inner-content {
     display: flex;
-    justify-content: center;
     gap: 30px;
 
     .left-info-banner {
       background-color: s.$medium-blue;
-      width: 35%;
-      // height: 100%;
+      max-width: 226px;
       padding: 20px;
       margin-bottom: 10px;
+      button {
+        padding: inherit;
+      }
     }
   }
 
   .home-inner-container {
     @include s.content;
-    width: 65%;
+    max-width: 340px;
+
+    h5 {
+      color: s.$ultra-dark-blue;
+      margin: 20px 0;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
     &__centered {
       @include s.container;
     }

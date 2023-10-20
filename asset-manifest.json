@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.8b7bbec0.css",
-    "main.js": "/graphics-by-asa/static/js/main.e36ebf11.js",
+    "main.css": "/graphics-by-asa/static/css/main.5c1ad6d4.css",
+    "main.js": "/graphics-by-asa/static/js/main.ac53e213.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/F4HBostader-hemsida.jpg": "/graphics-by-asa/static/media/F4HBostader-hemsida.5ffa405a35fd3cc14808.jpg",
     "static/media/SculptedGoddess-hemsida.jpg": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.fab7bc0fee09a01779e9.jpg",
@@ -23,6 +23,7 @@
     "static/media/Raleway-Regular.ttf": "/graphics-by-asa/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
     "static/media/Raleway-SemiBold.ttf": "/graphics-by-asa/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
     "static/media/Linkyart-hemsida.jpg": "/graphics-by-asa/static/media/Linkyart-hemsida.6760fdd4bfb202c3d676.jpg",
+    "static/media/Image-me1.jpg": "/graphics-by-asa/static/media/Image-me1.b57fb982ec0e38739213.jpg",
     "static/media/More-exposure2.png": "/graphics-by-asa/static/media/More-exposure2.591da69b0465dcec4c8d.png",
     "static/media/Conversion-rates2.png": "/graphics-by-asa/static/media/Conversion-rates2.8f69ef16fd1816fc8902.png",
     "static/media/More-sales2.png": "/graphics-by-asa/static/media/More-sales2.80a2a0d5f24b66958320.png",
@@ -36,12 +37,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.8b7bbec0.css.map": "/graphics-by-asa/static/css/main.8b7bbec0.css.map",
-    "main.e36ebf11.js.map": "/graphics-by-asa/static/js/main.e36ebf11.js.map",
+    "main.5c1ad6d4.css.map": "/graphics-by-asa/static/css/main.5c1ad6d4.css.map",
+    "main.ac53e213.js.map": "/graphics-by-asa/static/js/main.ac53e213.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b7bbec0.css",
-    "static/js/main.e36ebf11.js"
+    "static/css/main.5c1ad6d4.css",
+    "static/js/main.ac53e213.js"
   ]
 }

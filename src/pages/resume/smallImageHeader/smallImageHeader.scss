@@ -15,21 +15,29 @@
       gap: 30px;
 
       .left-info-banner {
-        max-width: 226px;
-        height: 100%;
+        flex: 0;
+        -ms-flex-preferred-size: calc(40% - 18px);
+        flex-basis: calc(40% - 18px);
+        max-width: calc(40% - 18px);
         padding: 20px;
         margin-top: 20px;
         text-align: center;
+
         img {
           width: 100%;
         }
+
         h5 {
           margin: 20px 0;
           font-size: 22px;
+          text-transform: uppercase;
         }
+
         button {
           padding: inherit;
+          display: block;
         }
+        
         h6 {
           line-height: 1.25;
           font-size: 1.17em;
@@ -38,7 +46,6 @@
 
       .inner-text {
         padding: 20px 0;
-        //width: 65%;
         max-width: 340px;
         text-align: left;
         overflow-wrap: break-word;
@@ -46,10 +53,7 @@
         h5 {
           margin-bottom: 20px;
           font-size: 22px;
-        }
-
-        p {
-          line-height: 1.4rem
+          text-transform: uppercase;
         }
       }
     }
@@ -81,7 +85,10 @@
 
       .left-info-banner {
         background-color: s.$medium-blue;
-        max-width: 226px;
+        flex: 0;
+        -ms-flex-preferred-size: calc(40% - 18px);
+        flex-basis: calc(40% - 18px);
+        max-width: calc(40% - 18px);
         padding: 20px;
         margin-top: 20px;
         text-align: center;
@@ -98,6 +105,7 @@
         }
         button {
           padding: inherit;
+          display: block;
         }
         h6 {
           color: s.$ultra-dark-blue;
@@ -108,7 +116,6 @@
 
       .inner-text {
         padding: 20px 0;
-        //width: 65%;
         max-width: 340px;
         color: s.$white;
         text-align: left;
@@ -120,10 +127,6 @@
           font-size: 22px;
           text-transform: uppercase;
         }
-
-        p {
-          line-height: 1.4rem
-        }
       }
     }
   }
@@ -131,7 +134,7 @@
 
 @media screen and (max-width: 768px) {
   #image-header {
-    .body-image-over {
+    .body-image-over, .hidden-to-get-height {
       left: -30px;
       .body-boxes {
         left: 0;
@@ -145,7 +148,7 @@
 
 @media screen and (max-width: 360px) {
   #image-header-reference {
-    .body-image-over {
+    .body-image-over, .hidden-to-get-height {
       left: -15px;
       .body-boxes {
         .inner-text {
@@ -162,7 +165,7 @@
 
 @media screen and (max-width: 200px) {
   #image-header-reference {
-    .body-image-over {
+    .body-image-over, .hidden-to-get-height {
       .body-boxes {
         .inner-text {
           h1 {

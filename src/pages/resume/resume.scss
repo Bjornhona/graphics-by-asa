@@ -7,28 +7,38 @@
 
     .left-info-banner {
       background-color: s.$medium-blue;
-      max-width: 226px;
+      flex: 0;
+      -ms-flex-preferred-size: calc(40% - 18px);
+      flex-basis: calc(40% - 18px);
+      max-width: calc(40% - 18px);
       padding: 20px;
       margin-bottom: 10px;
+      
       button {
+        display: block;
         padding: inherit;
       }
-    }
-  }
 
-  .home-inner-container {
-    @include s.content;
-    max-width: 340px;
-
-    h5 {
-      color: s.$ultra-dark-blue;
-      margin: 20px 0;
-      font-size: 14px;
-      text-transform: uppercase;
+      p {
+        color: s.$white;
+        text-align: center;
+      }
     }
 
-    &__centered {
-      @include s.container;
+    .home-inner-container {
+      // @include s.content;
+      max-width: 340px;
+  
+      h5 {
+        color: s.$dark-blue;
+        margin: 20px 0;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+  
+      &__centered {
+        @include s.container;
+      }
     }
   }
 }

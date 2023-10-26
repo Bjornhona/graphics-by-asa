@@ -33,7 +33,7 @@
         flex-direction: column;
         gap: 10px;
         overflow-y: scroll;
-        margin-bottom: 130px;
+        margin-bottom: 80px;
 
         h5 {
           padding-top: 10px;
@@ -105,8 +105,6 @@
     color: s.$light-gray;
     padding-top: 20px;
     padding-bottom: 15px;
-    // height: 95px;
-    // height: max-content;
 
     a {
       color: s.$medium-blue;

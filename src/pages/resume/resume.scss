@@ -11,12 +11,21 @@
       -ms-flex-preferred-size: calc(40% - 18px);
       flex-basis: calc(40% - 18px);
       max-width: calc(40% - 18px);
-      padding: 20px;
+      padding: 25px 20px 20px;
       margin-bottom: 10px;
       
       button {
         display: block;
-        padding: inherit;
+        padding: 15px;
+      }
+
+      h5 {
+        padding: 5px 0 5px 10px;
+        margin: 0 0 10px;
+        background-color: s.$white;
+        color: s.$dark-blue;
+        font-size: 16px;
+        text-transform: uppercase;
       }
 
       p {
@@ -26,8 +35,8 @@
     }
 
     .home-inner-container {
-      // @include s.content;
       max-width: 340px;
+      margin-top: 10px;
   
       h5 {
         color: s.$dark-blue;
@@ -38,6 +47,18 @@
   
       &__centered {
         @include s.container;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #resume {
+    .home-inner-content {
+      display: block;
+
+      .left-info-banner, .home-inner-container {
+        max-width: 100%;
       }
     }
   }

@@ -5,58 +5,6 @@
 
   .hidden-to-get-height {
     visibility: hidden;
-
-    .body-boxes {
-      display: flex;
-      //flex: 1 1 auto;
-      //flex-wrap: wrap;
-      //align-content: flex-start;
-      //align-items: flex-start;
-      gap: 30px;
-
-      .left-info-banner {
-        flex: 0;
-        -ms-flex-preferred-size: calc(40% - 18px);
-        flex-basis: calc(40% - 18px);
-        max-width: calc(40% - 18px);
-        padding: 20px;
-        margin-top: 20px;
-        text-align: center;
-
-        img {
-          width: 100%;
-        }
-
-        h5 {
-          margin: 20px 0;
-          font-size: 22px;
-          text-transform: uppercase;
-        }
-
-        button {
-          padding: inherit;
-          display: block;
-        }
-        
-        h6 {
-          line-height: 1.25;
-          font-size: 1.17em;
-        }
-      }
-
-      .inner-text {
-        padding: 20px 0;
-        max-width: 340px;
-        text-align: left;
-        overflow-wrap: break-word;
-
-        h5 {
-          margin-bottom: 20px;
-          font-size: 22px;
-          text-transform: uppercase;
-        }
-      }
-    }
   }
 
   .body-image-over {
@@ -75,12 +23,12 @@
     .body-boxes {
       padding-left: 320px;
       padding-right: 70px;
-      z-index: 3;
+    }
+  }
+
+  .body-image-over, .hidden-to-get-height {
+    .body-boxes {
       display: flex;
-      //flex: 1 1 auto;
-      //flex-wrap: wrap;
-      //align-content: flex-start;
-      //align-items: flex-start;
       gap: 30px;
 
       .left-info-banner {
@@ -104,8 +52,8 @@
           text-transform: uppercase;
         }
         button {
-          padding: inherit;
           display: block;
+          padding: 15px;
         }
         h6 {
           color: s.$ultra-dark-blue;
@@ -133,12 +81,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  #image-header {
+  #image-header-reference {
+    .body-image-over {
+      .body-boxes {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
     .body-image-over, .hidden-to-get-height {
       left: -30px;
+      
       .body-boxes {
-        left: 0;
-        .inner-text {
+        flex-direction: column;
+        gap: 0;
+
+        .left-info-banner, .inner-text {
           max-width: 100%;
         }
       }
@@ -148,30 +105,19 @@
 
 @media screen and (max-width: 360px) {
   #image-header-reference {
+    .hidden-to-get-height {
+      margin-bottom: 20px;
+    }
     .body-image-over, .hidden-to-get-height {
       left: -15px;
       .body-boxes {
-        .inner-text {
-          margin: 0 15px;
-
-          h1 {
-            font-size: 3em;
-          }
-        }
+        display: block;
       }
     }
-  }
-}
-
-@media screen and (max-width: 200px) {
-  #image-header-reference {
-    .body-image-over, .hidden-to-get-height {
+    .body-image-over {
       .body-boxes {
-        .inner-text {
-          h1 {
-            font-size: 2em;
-          }
-        }
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }

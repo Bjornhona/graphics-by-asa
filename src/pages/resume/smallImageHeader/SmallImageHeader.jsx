@@ -7,7 +7,7 @@ const SmallImageHeader = () => {
     return (
       <div className="body-boxes">
         <div className={'left-info-banner'}>
-          <img  src={MeImage} alt='me' />
+          <img src={MeImage} alt='me' />
           <h5>Åsa Eriksson</h5>
           <h6>Frontend Developer & UX/UI Designer</h6>
           <button className="inverted">Download CV</button>

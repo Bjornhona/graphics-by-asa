@@ -128,7 +128,7 @@ a {
 
 @mixin container {
   display: flex;
-  padding: 100px 0 50px;
+  // padding: 100px 0 50px;
   overflow-wrap: break-word;
 }
 
@@ -146,8 +146,10 @@ a {
   h2 {
     font-size: 1.2em;
   }
-
-  // p {
-    // font-size: 12px;
-  // }
 }
+
+// @media screen and (max-width: 360px) {
+  // p {
+  //   font-size: 0.6875rem; // 12px
+  // }
+// }

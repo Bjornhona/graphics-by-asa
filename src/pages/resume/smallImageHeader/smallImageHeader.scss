@@ -7,23 +7,26 @@
     visibility: hidden;
   }
 
-  .body-image-over {
+  .background-image {
     position: absolute;
     z-index: 2;
     left: -320px;
     top: 0;
     bottom: 0;
     width: 100vw;
-    height: max-content;
     background-image: url('../../../styles/images/FlowerPortfolio1.jpg');
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center right;
+  }
 
-    .body-boxes {
-      padding-left: 320px;
-      padding-right: 70px;
-    }
+  .body-image-over {
+    position: absolute;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   .body-image-over, .hidden-to-get-height {
@@ -33,13 +36,12 @@
 
       .left-info-banner {
         background-color: s.$medium-blue;
-        flex: 0;
         -ms-flex-preferred-size: calc(40% - 18px);
         flex-basis: calc(40% - 18px);
         max-width: calc(40% - 18px);
-        padding: 20px;
         margin-top: 20px;
         text-align: center;
+        padding: 20px;
         
         img {
           width: 100%;
@@ -71,7 +73,7 @@
 
         h5 {
           color: s.$white;
-          margin-bottom: 20px;
+          margin: 20px 0;
           font-size: 22px;
           text-transform: uppercase;
         }
@@ -82,18 +84,17 @@
 
 @media screen and (max-width: 768px) {
   #image-header-reference {
-    .body-image-over {
-      .body-boxes {
-        padding-left: 30px;
-        padding-right: 30px;
-      }
+    .background-image {
+      left: -30px;
     }
     .body-image-over, .hidden-to-get-height {
-      left: -30px;
-      
       .body-boxes {
         flex-direction: column;
         gap: 0;
+
+        .inner-text {
+          margin: 0 0 20px;
+        }
 
         .left-info-banner, .inner-text {
           max-width: 100%;
@@ -105,20 +106,8 @@
 
 @media screen and (max-width: 360px) {
   #image-header-reference {
-    .hidden-to-get-height {
-      margin-bottom: 20px;
-    }
-    .body-image-over, .hidden-to-get-height {
+    .background-image {
       left: -15px;
-      .body-boxes {
-        display: block;
-      }
-    }
-    .body-image-over {
-      .body-boxes {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
     }
   }
 }

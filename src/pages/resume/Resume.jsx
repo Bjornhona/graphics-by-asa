@@ -1,8 +1,21 @@
 import StyledContent from '../../components/styledContent/StyledContent';
 import './resume.scss';
 import SmallImageHeader from './smallImageHeader/SmallImageHeader';
+import mailIcon from '../../styles/icons/resumeIcons/Email.png';
+import homeIcon from '../../styles/icons/resumeIcons/Home.png';
+import gitIcon from '../../styles/icons/resumeIcons/Github.png';
+import phoneIcon from '../../styles/icons/resumeIcons/PhoneNumber.png';
+import basicLanguage from '../../styles/images/skills/LanguageBasic.png';
+import upperIntermediateLanguage from '../../styles/images/skills/LanguageUpperIntermediate.png';
+import fluentLanguage from '../../styles/images/skills/LanguageFluent.png';
+import nativeLanguage from '../../styles/images/skills/LanguageNative1.png';
+import nineteen from '../../styles/images/skills/19.png';
+import seventeen from '../../styles/images/skills/17.png';
+import fifteen from '../../styles/images/skills/15.png';
+import fourteen from '../../styles/images/skills/14.png';
 
 const Resume = () => {
+  
   return (
     <div id="resume">
       <StyledContent title='resume'>
@@ -10,20 +23,48 @@ const Resume = () => {
         <div className="home-inner-content">
           <div className={'left-info-banner'}>
             <h5>Contact</h5>
-            {/* <a href='mailto:info@graphicsbyasa.com'>info@graphicsbyasa.com</a> */}
-            {/* <a href='https://www.graphicsbyasa.com'>www.graphicsbyasa.com</a> */}
-            {/* <a href='https://github.com/Bjornhona'>https://github.com/Bjornhona</a> */}
-            {/* <p>+34 - 676 49 69 19</p> */}
+            <div className='contact-content'>
+              <div className='icon-row'><img src={mailIcon} alt='mail' /><a href='mailto:info@graphicsbyasa.com'>info@graphicsbyasa.com</a></div>
+              <div className='icon-row'><img src={homeIcon} alt='home' /><a href='https://www.graphicsbyasa.com'>www.graphicsbyasa.com</a></div>
+              <div className='icon-row'><img src={gitIcon} alt='git' /><a href='https://github.com/Bjornhona'>https://github.com/Bjornhona</a></div>
+              <div className='icon-row'><img src={phoneIcon} alt='phone' /><p>+34 - 676 49 69 19</p></div>
+            </div>
 
             <h5>Areas of expertise</h5>
-            <p>Web Development · Graphic Design · Web Design · Product Design · UX/UI</p>
+            <div className='areas-of-expertise'>
+              <p>Web Development · Graphic Design · Web Design · Product Design · UX/UI</p>
+            </div>
 
             <h5>Programming skills</h5>
-            <p>Javascript · Node.js · Express · React · React Native · Python · C · Flask · SQL · MongoDB · Jest · Node.js · ES6 · HTML5 · CSS</p>
+            <div className='programming-skills'>
+              <p>Javascript · Node.js · Express · React · React Native · Python · C · Flask · SQL · MongoDB · Jest · Node.js · ES6 · HTML5 · CSS</p>
+            </div>
 
             <h5>Software skills</h5>
+            <div className='software-skills'>
+              <p>Figma</p>
+              <img src={seventeen} alt='Figma'/>
+              <p>Sketch</p>
+              <img src={nineteen} alt='Sketch'/>
+              <p>Adobe XD</p>
+              <img src={nineteen} alt='Adobe XD'/>
+              <p>Photoshop</p>
+              <img src={fourteen} alt='Photoshop'/>
+              <p>Indesign</p>
+              <img src={fifteen} alt='Indesign'/>
+              <p>Illustrator</p>
+              <img src={nineteen} alt='Illustrator'/>
+              <p>Wordpress</p>
+              <img src={seventeen} alt='Wordpress'/>
+            </div>
             
             <h5>Language skills</h5>
+            <div className='language-skills'>
+              <div className='language'><img src={nativeLanguage} alt='basic language'/><p>Swedish</p></div>
+              <div className='language'><img src={fluentLanguage} alt='basic language'/><p>English</p><p>Spanish</p></div>
+              <div className='language'><img src={upperIntermediateLanguage} alt='basic language'/><p>German</p></div>
+              <div className='language'><img src={basicLanguage} alt='basic language'/><p>French</p></div>
+            </div>
             
             <button className="inverted">Download CV</button>
           </div>

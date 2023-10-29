@@ -6,6 +6,7 @@
     gap: 30px;
 
     .left-info-banner {
+      display: relative;
       background-color: s.$medium-blue;
       flex: 0;
       -ms-flex-preferred-size: calc(40% - 18px);
@@ -31,6 +32,70 @@
       p {
         color: s.$white;
         text-align: center;
+      }
+
+      .contact-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 15px;
+        word-break: break-all;
+
+        img {
+          width: 25px;
+          padding-right: 5px;
+        }
+
+        a, p {
+          text-overflow: visible;
+          text-align: left;
+          color: s.$white;
+          font-weight: 500;
+          font-size: 12px;
+          margin: 0;
+          line-height: 1;
+
+          &::after {
+            content: "\a";
+            white-space: pre;
+          }
+        }
+
+        .icon-row {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .areas-of-expertise, .programming-skills {
+        padding-bottom: 10px;
+      }
+
+      .software-skills {
+        p {
+          margin: 0;
+          text-align: left;
+        }
+
+        img {
+          width: 100%;
+          padding-bottom: 20px;
+        }
+      }
+
+      .language-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 10px;
+        margin-bottom: 30px;
+
+        p {
+          margin: 0;
+        }
+        
+        img {
+          width: 100%;
+        }
       }
     }
 

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.1d4c1ca2.css",
-    "main.js": "/graphics-by-asa/static/js/main.bba8495c.js",
+    "main.css": "/graphics-by-asa/static/css/main.a2e71e60.css",
+    "main.js": "/graphics-by-asa/static/js/main.17b0644d.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/F4HBostader-hemsida.jpg": "/graphics-by-asa/static/media/F4HBostader-hemsida.5ffa405a35fd3cc14808.jpg",
     "static/media/SculptedGoddess-hemsida.jpg": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.fab7bc0fee09a01779e9.jpg",
@@ -24,6 +24,10 @@
     "static/media/Raleway-SemiBold.ttf": "/graphics-by-asa/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
     "static/media/Linkyart-hemsida.jpg": "/graphics-by-asa/static/media/Linkyart-hemsida.6760fdd4bfb202c3d676.jpg",
     "static/media/Image-me1.jpg": "/graphics-by-asa/static/media/Image-me1.b57fb982ec0e38739213.jpg",
+    "static/media/Github.png": "/graphics-by-asa/static/media/Github.e1b28101d952282849da.png",
+    "static/media/PhoneNumber.png": "/graphics-by-asa/static/media/PhoneNumber.5a204d251033bfa1483e.png",
+    "static/media/Email.png": "/graphics-by-asa/static/media/Email.5e8ade7d92f6deff5ef8.png",
+    "static/media/Home.png": "/graphics-by-asa/static/media/Home.87ad14abfb5cf207a965.png",
     "static/media/More-exposure2.png": "/graphics-by-asa/static/media/More-exposure2.591da69b0465dcec4c8d.png",
     "static/media/Conversion-rates2.png": "/graphics-by-asa/static/media/Conversion-rates2.8f69ef16fd1816fc8902.png",
     "static/media/More-sales2.png": "/graphics-by-asa/static/media/More-sales2.80a2a0d5f24b66958320.png",
@@ -37,12 +41,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.1d4c1ca2.css.map": "/graphics-by-asa/static/css/main.1d4c1ca2.css.map",
-    "main.bba8495c.js.map": "/graphics-by-asa/static/js/main.bba8495c.js.map",
+    "main.a2e71e60.css.map": "/graphics-by-asa/static/css/main.a2e71e60.css.map",
+    "main.17b0644d.js.map": "/graphics-by-asa/static/js/main.17b0644d.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d4c1ca2.css",
-    "static/js/main.bba8495c.js"
+    "static/css/main.a2e71e60.css",
+    "static/js/main.17b0644d.js"
   ]
 }

@@ -1,7 +1,7 @@
 import './smallImageHeader.scss';
 import MeImage from '../../../styles/images/Image-me1.jpg';
 
-const SmallImageHeader = () => {
+const SmallImageHeader = ({ downloadCv }) => {
 
   const bodyBoxes = () => {
     return (
@@ -10,7 +10,7 @@ const SmallImageHeader = () => {
           <img src={MeImage} alt='me' />
           <h5>Åsa Eriksson</h5>
           <h6>Frontend Developer & UX/UI Designer</h6>
-          <button className="inverted">Download CV</button>
+          <button className="inverted" onClick={downloadCv}>Download CV</button>
         </div>
         <div className="inner-text">
           <h5>Frontend developer & UX/UI designer</h5>

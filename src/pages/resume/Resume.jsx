@@ -1,3 +1,4 @@
+import { Link } from 'react';
 import StyledContent from '../../components/styledContent/StyledContent';
 import './resume.scss';
 import SmallImageHeader from './smallImageHeader/SmallImageHeader';
@@ -13,13 +14,19 @@ import nineteen from '../../styles/images/skills/19.png';
 import seventeen from '../../styles/images/skills/17.png';
 import fifteen from '../../styles/images/skills/15.png';
 import fourteen from '../../styles/images/skills/14.png';
+import myCV from './CV-AsaEriksson2023.pdf';
+import { saveAs } from 'file-saver';
 
 const Resume = () => {
+
+  const downloadCv = () => {
+    saveAs(myCV, 'CV-AsaEriksson2023.pdf');
+  }
   
   return (
     <div id="resume">
       <StyledContent title='resume'>
-        <SmallImageHeader />
+        <SmallImageHeader downloadCv={downloadCv} />
         <div className="home-inner-content">
           <div className={'left-info-banner'}>
             <h5>Contact</h5>
@@ -66,13 +73,13 @@ const Resume = () => {
               <div className='language'><img src={basicLanguage} alt='basic language'/><p>French</p></div>
             </div>
             
-            <button className="inverted">Download CV</button>
+            <button className="inverted" onClick={downloadCv}>Download CV</button>
           </div>
           <div className="home-inner-container">
             <h5>Work Experience</h5>
             <div>
               <p><strong>Hexad Gmbh · Frontend Developer and UX/UI Designer · Jun 2019 -</strong></p>
-              <p>Designing and developing customized software for larger clients. JavaScript, React, React Native, Jest, Agile, Jira and Adobe XD.</p>
+              <p>Designing and developing customized software for larger clients. JavaScript, React, React Native, Jest, Agile, Jira, Figma, Sketch and Adobe XD.</p>
 
               <p><strong>Grant Thornton · Frontend Developer and UX/UI Designer · Dec 2018 - Jun 2019</strong></p>
               <p>Designing and developing customized internal software adapted to company regulations and current laws. JavaScript, React, Node.js, TypeScript, Docker, Agile, DevOps and Adobe XD.</p>

@@ -1,21 +1,11 @@
-import { Link } from 'react';
+import { Fragment } from 'react';
 import StyledContent from '../../components/styledContent/StyledContent';
 import './resume.scss';
 import SmallImageHeader from './smallImageHeader/SmallImageHeader';
-import mailIcon from '../../styles/icons/resumeIcons/Email.png';
-import homeIcon from '../../styles/icons/resumeIcons/Home.png';
-import gitIcon from '../../styles/icons/resumeIcons/Github.png';
-import phoneIcon from '../../styles/icons/resumeIcons/PhoneNumber.png';
-import basicLanguage from '../../styles/images/skills/LanguageBasic.png';
-import upperIntermediateLanguage from '../../styles/images/skills/LanguageUpperIntermediate.png';
-import fluentLanguage from '../../styles/images/skills/LanguageFluent.png';
-import nativeLanguage from '../../styles/images/skills/LanguageNative1.png';
-import nineteen from '../../styles/images/skills/19.png';
-import seventeen from '../../styles/images/skills/17.png';
-import fifteen from '../../styles/images/skills/15.png';
-import fourteen from '../../styles/images/skills/14.png';
 import myCV from './CV-AsaEriksson2023.pdf';
 import { saveAs } from 'file-saver';
+import WorkExperience from './workExperience/WorkExperience';
+import { softwareSkillsData, languageSkillsData, contactData } from './data';
 
 const Resume = () => {
 
@@ -27,14 +17,19 @@ const Resume = () => {
     <div id="resume">
       <StyledContent title='resume'>
         <SmallImageHeader downloadCv={downloadCv} />
+        
         <div className="home-inner-content">
           <div className={'left-info-banner'}>
             <h5>Contact</h5>
             <div className='contact-content'>
-              <div className='icon-row'><img src={mailIcon} alt='mail' /><a href='mailto:info@graphicsbyasa.com'>info@graphicsbyasa.com</a></div>
-              <div className='icon-row'><img src={homeIcon} alt='home' /><a href='https://www.graphicsbyasa.com'>www.graphicsbyasa.com</a></div>
-              <div className='icon-row'><img src={gitIcon} alt='git' /><a href='https://github.com/Bjornhona'>https://github.com/Bjornhona</a></div>
-              <div className='icon-row'><img src={phoneIcon} alt='phone' /><p>+34 - 676 49 69 19</p></div>
+              {contactData.map((contact, index) => {
+                return (
+                  <div key={index} className='icon-row'>
+                    <img src={contact.icon} alt={contact.type} />
+                    {contact.component}
+                  </div>
+                )
+              })}
             </div>
 
             <h5>Areas of expertise</h5>
@@ -49,78 +44,32 @@ const Resume = () => {
 
             <h5>Software skills</h5>
             <div className='software-skills'>
-              <p>Figma</p>
-              <img src={seventeen} alt='Figma'/>
-              <p>Sketch</p>
-              <img src={nineteen} alt='Sketch'/>
-              <p>Adobe XD</p>
-              <img src={nineteen} alt='Adobe XD'/>
-              <p>Photoshop</p>
-              <img src={fourteen} alt='Photoshop'/>
-              <p>Indesign</p>
-              <img src={fifteen} alt='Indesign'/>
-              <p>Illustrator</p>
-              <img src={nineteen} alt='Illustrator'/>
-              <p>Wordpress</p>
-              <img src={seventeen} alt='Wordpress'/>
+              {softwareSkillsData.map((skill, index) => {
+                return (
+                  <Fragment key={index}>
+                    <p>{skill.tool}</p>
+                    <img src={skill.image} alt={skill.tool} />
+                  </Fragment>
+                )
+              })}
             </div>
             
             <h5>Language skills</h5>
             <div className='language-skills'>
-              <div className='language'><img src={nativeLanguage} alt='basic language'/><p>Swedish</p></div>
-              <div className='language'><img src={fluentLanguage} alt='basic language'/><p>English</p><p>Spanish</p></div>
-              <div className='language'><img src={upperIntermediateLanguage} alt='basic language'/><p>German</p></div>
-              <div className='language'><img src={basicLanguage} alt='basic language'/><p>French</p></div>
+              {languageSkillsData.map((skill, index) => {
+                return (
+                  <div key={index} className='language'>
+                    <img src={skill.image} alt={skill.level} />
+                    {skill.languages.map((language, index) => <p key={index}>{language}</p>)}
+                  </div>
+                )
+              })}
             </div>
             
             <button className="inverted" onClick={downloadCv}>Download CV</button>
           </div>
-          <div className="home-inner-container">
-            <h5>Work Experience</h5>
-            <div>
-              <p><strong>Hexad Gmbh · Frontend Developer and UX/UI Designer · Jun 2019 -</strong></p>
-              <p>Designing and developing customized software for larger clients. JavaScript, React, React Native, Jest, Agile, Jira, Figma, Sketch and Adobe XD.</p>
 
-              <p><strong>Grant Thornton · Frontend Developer and UX/UI Designer · Dec 2018 - Jun 2019</strong></p>
-              <p>Designing and developing customized internal software adapted to company regulations and current laws. JavaScript, React, Node.js, TypeScript, Docker, Agile, DevOps and Adobe XD.</p>
-
-              <p><strong>Graphics by Åsa · Graphics and Web Design · Aug 2017 - Jun 2019</strong></p>
-              <p>Freelancer offering services in Graphic Design and Web Design. Photoshop, Illustrator, InDesign, Blender, WordPress, Premiere Pro and Sketch.</p>
-
-              <p><strong>Swedish-Spanish Chamber of Commerce in Barcelona · Director · Apr 2014 - Jul 2017</strong></p>
-              <p>Contracted to Digitalize and Maintain the Chamber. Expertise in Community Management, Online Marketing, International Relations and Public Relations. Organization of Networking activities.</p>
-
-              <p><strong>ROLLS ROYCE AB, Kristinehamn, Sweden · R&D · Aug 1999 - Jun 2002</strong></p>
-              <p>Design, construction, and maintenance of hydraulic systems in large- scale vessels and cruise ships. Manuals and AutoCAD drawings.</p>
-
-              <h5>NON RELATED EXPERIENCE</h5>
-
-              <p>
-                Technical support at Brother Project by Sellbytel (2013-2014)<br/>
-                Product Design and Innovation at Tambakunda (2012-2013)<br/>
-                Co-founder of ViLetarUpp.se (2010-2012)<br/>
-                Air hostess at Spanair (2003-2012)<br/>
-                Research Associate at Chalmers University sponsored by Volvo and SAAB (1999)</p>
-
-              <h5>EDUCATION</h5>
-
-              <p><strong>Full-stack Developer, MERN</strong><br/>
-                Ironhack Bootcamp, Barcelona, Sept – Nov 2018<br/>
-                Web development MERN: JavaScript, MongoDB, Express, React, Node.js</p>
-
-              <p><strong>Master of Digital Communications in Engineering Projects</strong><br/>
-                Technical University of Cataluña, Cataluña, Spain<br/>
-                Product Design and Project Management. 3D renderings and animations in CatiaV5, SolidWorks, Blender, Sketch-Up.</p>
-
-              <p><strong>Graphic Design</strong><br/>
-                distansskolan.se, Sweden, Aug 2012 – Aug 2013<br/>
-                Graphic Design studies using Dreamweaver, Photoshop, Illustrator, InDesign and Flash.</p>
-
-              <p><strong>Master of Science in Industrial Engineering and Technical Design</strong><br/>
-                Luleå University of Technology, Luleå, Sweden<br/>
-                Ergonomic Design, Product Design and Industrial Design of machinery considering ergonomic aspects.</p>
-            </div>
-          </div>
+          <WorkExperience />
         </div>
       </StyledContent>
     </div>

@@ -1,0 +1,23 @@
+@use "../../../app.scss" as s;
+
+#home-inner-container {
+  max-width: 340px;
+  margin-top: 10px;
+
+  h5 {
+    color: s.$dark-blue;
+    margin: 20px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__centered {
+    @include s.container;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home-inner-container {
+    max-width: 100%;
+  }
+}

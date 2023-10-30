@@ -98,22 +98,6 @@
         }
       }
     }
-
-    .home-inner-container {
-      max-width: 340px;
-      margin-top: 10px;
-  
-      h5 {
-        color: s.$dark-blue;
-        margin: 20px 0;
-        font-size: 14px;
-        text-transform: uppercase;
-      }
-  
-      &__centered {
-        @include s.container;
-      }
-    }
   }
 }
 
@@ -122,7 +106,7 @@
     .home-inner-content {
       display: block;
 
-      .left-info-banner, .home-inner-container {
+      .left-info-banner {
         max-width: 100%;
       }
     }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.ac42ea85.css",
-    "main.js": "/graphics-by-asa/static/js/main.1c04e753.js",
+    "main.css": "/graphics-by-asa/static/css/main.433fbd58.css",
+    "main.js": "/graphics-by-asa/static/js/main.db9e8e2a.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/F4HBostader-hemsida.jpg": "/graphics-by-asa/static/media/F4HBostader-hemsida.5ffa405a35fd3cc14808.jpg",
     "static/media/SculptedGoddess-hemsida.jpg": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.fab7bc0fee09a01779e9.jpg",
@@ -42,12 +42,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.ac42ea85.css.map": "/graphics-by-asa/static/css/main.ac42ea85.css.map",
-    "main.1c04e753.js.map": "/graphics-by-asa/static/js/main.1c04e753.js.map",
+    "main.433fbd58.css.map": "/graphics-by-asa/static/css/main.433fbd58.css.map",
+    "main.db9e8e2a.js.map": "/graphics-by-asa/static/js/main.db9e8e2a.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac42ea85.css",
-    "static/js/main.1c04e753.js"
+    "static/css/main.433fbd58.css",
+    "static/js/main.db9e8e2a.js"
   ]
 }

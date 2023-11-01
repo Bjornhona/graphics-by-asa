@@ -1,0 +1,50 @@
+#project-gallery {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  // padding-top: 14px;
+
+  .container {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  /* mason layout with pure css */
+  .masonry-bricks-container {
+    // padding: .4em 0;
+    column-count: 4;
+    // column-gap: .5rem;
+    gap: 0;
+    // margin-bottom: 3rem;
+    // margin-bottom: 0;
+  }
+
+  .masonry-bricks-container img,
+  .masonry-bricks-container div {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    // border-radius: 4px;
+    break-inside: avoid;
+    // margin-bottom: .4rem;
+    // margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .masonry-bricks-container {
+      column-count: 3;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .masonry-bricks-container {
+      column-count: 2;
+    }
+
+    .container {
+      max-width: 100%;
+      // padding: 0 .5rem;
+    }
+  }
+}

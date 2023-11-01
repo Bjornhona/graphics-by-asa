@@ -1,0 +1,37 @@
+@use "../../app.scss" as s;
+
+#portfolio {
+  margin-top: s.$m;
+  
+  .tag-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: inline-flex;
+    gap: s.$xs;
+    align-items: center;
+    background-color: s.$medium-brown;
+    // min-height: s.$xl;
+    margin: 0;
+    padding: s.$m;
+    list-style-type: none;
+    color: s.$white;
+    flex-wrap: wrap;
+
+    p {
+      margin: 0;
+      line-height: 1;
+    }
+
+    li {
+      padding: s.$xs s.$s;
+      border-radius: 4px;
+
+      &:hover, &.selected {
+        background: rgba(0,0,0, .1);
+        cursor: 'pointer';
+      }
+    }
+  }
+}

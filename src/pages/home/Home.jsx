@@ -1,5 +1,6 @@
 import './home.scss';
 import { useState, useLayoutEffect, useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom'
 import StyledContent from '../../components/styledContent/StyledContent';
 import ConversionRateImage from "./Conversion-rates2.png";
 import MoreSalesImage from "./More-sales2.png";
@@ -73,7 +74,7 @@ const Home = () => {
             <h3>Get in touch</h3>
             <p>Make your business stand out with professional and attractive graphic design!</p>
           </div>
-          <button>Contact me</button>
+          <Link to="/contact"><button>Contact me</button></Link>
         </div>
 
         <Separator />

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './projectGallery.scss';
 
 const ProjectGallery = () => {
@@ -10,66 +10,70 @@ const ProjectGallery = () => {
         src={`https://picsum.photos/200/${Math.floor(
           Math.random() * (300 - 200 + 1) + 200
         )}`}
-        // style={{ width: "100%", height: "50%" }}
         alt="whatever test"
       />
     </div>
   ));
-  // console.log(items);
-
-  // const importProjects = (r) => {
-    // return r.keys().map(r);
-    // return r.keys().forEach((key) => (cache1[key] = r(key)));
-  // }
 
   // const projects = importProjects(require.context('./projects', false, /\.(png|jpe?g|svg)$/));
   // const projects = importProjects(require.context('./projects/quoteGenerator', false, /^\.\/.*\.png$/));
   // const projects = importProjets(require.context('./img/projets',true,/\.jpg$/));
 
-  const importProjects = () => {
-    const projectNameList = ['quoteGenerator'];
+  useEffect(() => {
+    const newProjects = [];
+    const projectNameList = [];
+    const files = require.context(`../../../projects`, true);
+    const fileKeys = files.keys();
 
-    projectNameList.forEach(projectName => {
-      let projectImages = [];
-      // const projects = importProjects(require.context('./projects/quoteGenerator', false,  /\.(png|jpe?g|svg)$/));
-      // const projects = importProjects(require.context(`./projects/${projectName}/`, false,  /\.(png|jpe?g|svg)$/));
-      // const fs = require('fs');
-      // const dir = `./projects/${projectName}`;
-      // fs.readdir(dir, (err, files) => {
-      //   console.log(files.length);
-      // });
-      import(`./projects/${projectName}/1.png`)
-        .then(res => {
-          // console.log(res.default);
-          projectImages.push(res.default);
-        });
-      
-      // setProjects({
-      //   ...projects,
-      //   [projectName]: {
-      //     images: projectImages
-      //   }
-      // });
-      console.log(projectImages);
-      let newProjects = [...projects];
-      if (projects?.find(p => p.name === projectName)?.length < 1) {
-        newProjects = [...projects, {name: projectName}];
-        console.log(newProjects);
-      }
-      const getProject = newProjects?.length > 0 ? newProjects.find(p => p.name === projectName) : undefined;
-      console.log(getProject);
-      // getProject[0] = {...getProject, images: projectImages}
-      // console.log(newProjects);
+    fileKeys.reduce((res, modulePath) => {
+      const pathName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1')
+      const projectFolders = pathName.split('/')[0];
+      projectNameList.push(projectFolders);
+    }, {});
+
+    const uniqueProjectFolders = [...new Set(projectNameList)];
+
+    uniqueProjectFolders.forEach(projectName => {
+      const projectImages = [];
+
+      fileKeys.map(file => {
+        if (file.includes(projectName)) {
+          projectImages.push(file.slice(2));
+        }
+      });
+
+      newProjects.push({
+        name: projectName,
+        images: projectImages  
+      });
     });
-  }
-  importProjects();
+    setProjects(newProjects);
+  }, []);
 
   // console.log(projects);
+
+  const getImage = (file) => {
+    // console.log(file);
+    import(`../../../projects/${file}`)
+    .then(res => {
+      // console.log(res.default)
+      const Image = res.default;
+        return <img src={Image} alt='some' />
+        // return <Image />
+    });
+  }
 
   return (
     <div id='project-gallery'>
       <div className="container masonry">
-        {items}
+        {/* {items} */}
+        {projects.map((project, index) => {
+          return (
+            <div key={index} className='grid-item'>
+              {getImage(project.images[0])}
+            </div>
+          )
+        })}
       </div>
     </div>
   )

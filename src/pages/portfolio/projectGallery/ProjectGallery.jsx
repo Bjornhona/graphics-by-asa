@@ -3,17 +3,7 @@ import './projectGallery.scss';
 
 const ProjectGallery = () => {
   const [projects, setProjects] = useState([]);
-
-  const items = Array.from({ length: 15 }).map((_, index) => (
-    <div key={index} className='grid-item'>
-      <img
-        src={`https://picsum.photos/200/${Math.floor(
-          Math.random() * (300 - 200 + 1) + 200
-        )}`}
-        alt="whatever test"
-      />
-    </div>
-  ));
+  const [images, setImages] = useState([]);
 
   // const projects = importProjects(require.context('./projects', false, /\.(png|jpe?g|svg)$/));
   // const projects = importProjects(require.context('./projects/quoteGenerator', false, /^\.\/.*\.png$/));
@@ -24,6 +14,7 @@ const ProjectGallery = () => {
     const projectNameList = [];
     const files = require.context(`../../../projects`, true);
     const fileKeys = files.keys();
+    const projectImages = [];
 
     fileKeys.reduce((res, modulePath) => {
       const pathName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1')
@@ -37,7 +28,8 @@ const ProjectGallery = () => {
       const projectImages = [];
 
       fileKeys.map(file => {
-        if (file.includes(projectName)) {
+        const fileEnd = file.split('.').slice(-1)[0];
+        if (file.includes(projectName) && (fileEnd === 'jpg' || fileEnd === 'jpeg' || fileEnd === 'png')) {
           projectImages.push(file.slice(2));
         }
       });
@@ -47,30 +39,36 @@ const ProjectGallery = () => {
         images: projectImages  
       });
     });
+
+    const getImages = async () => {
+      await newProjects.reverse().forEach(async project => {
+        const file = project.images[0];
+        console.log(file);
+          await import(`../../../projects/${file}`)
+          .then(res => {
+            console.log(res.default);
+            projectImages.push(res.default);
+          });
+      });
+    }
+    getImages()
+    .then(() => {
+      setImages(projectImages);
+    })
+
     setProjects(newProjects);
   }, []);
 
-  // console.log(projects);
-
-  const getImage = (file) => {
-    // console.log(file);
-    import(`../../../projects/${file}`)
-    .then(res => {
-      // console.log(res.default)
-      const Image = res.default;
-        return <img src={Image} alt='some' />
-        // return <Image />
-    });
-  }
+// console.log(images);
+// console.log(projects);
 
   return (
     <div id='project-gallery'>
       <div className="container masonry">
-        {/* {items} */}
-        {projects.map((project, index) => {
+        {images.map((image, index) => {
           return (
             <div key={index} className='grid-item'>
-              {getImage(project.images[0])}
+              <img src={image} alt='some' />
             </div>
           )
         })}

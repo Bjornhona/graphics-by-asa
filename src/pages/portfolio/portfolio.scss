@@ -3,18 +3,14 @@
 #portfolio {
   margin-top: 14px;
   margin-bottom: -(s.$xl);
-  // margin-top: s.$m;
+  margin-top: -(s.$xl);
 
   .tag-banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     display: inline-flex;
     gap: s.$xs;
     align-items: center;
     background-color: s.$medium-brown;
-    // min-height: s.$xl;
+    width: calc(100% - s.$m * 2);
     margin: 0;
     padding: s.$m;
     list-style-type: none;
@@ -40,6 +36,7 @@
 
 @media only screen and (max-width: 768px) {
   #portfolio {
+    margin-top: 0;
     margin-bottom: 0;
   }
 }

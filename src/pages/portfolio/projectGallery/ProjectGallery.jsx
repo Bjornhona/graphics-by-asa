@@ -64,7 +64,7 @@ const ProjectGallery = () => {
 
   return (
     <div id='project-gallery'>
-      <div className="container masonry">
+      <div className="masonry">
         {images.map((image, index) => {
           return (
             <div key={index} className='grid-item'>

@@ -14,8 +14,8 @@ const Home = () => {
   const localRef = useRef(null);
   const [animate, setAnimate] = useState(false);
 
-  const onScroll = useCallback(() => {
-    const topPos = localRef.current.getBoundingClientRect().top + window.pageYOffset;
+  const onScroll = useCallback(async () => {
+    const topPos = await localRef.current.getBoundingClientRect().top + window.pageYOffset;
     const scrollPos = window.scrollY + window.innerHeight;
 
     if (topPos < scrollPos) {

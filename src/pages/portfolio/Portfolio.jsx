@@ -8,7 +8,8 @@ const Portfolio = () => {
 
   useEffect(() => {
     const newState = [];
-    tagData.forEach(tag => {
+    newState.push({name: 'All', isSelected: true});
+    tagData.slice(1).forEach(tag => {
       newState.push({ name: tag.name, isSelected: false });
     });
     setState(newState);
@@ -29,6 +30,8 @@ const Portfolio = () => {
     setState(newState);
   };
 
+  const selectedTag = state.length > 0 && state.find(s => s.isSelected).name;
+
   return (
     <div id="portfolio">
       <ul className='tag-banner'>
@@ -36,7 +39,7 @@ const Portfolio = () => {
           return <li key={index} className={tag.isSelected ? 'selected' : undefined} onClick={() => onSelectTag(tag)}><p>{tag.name}</p></li>
         })}
       </ul>
-      <ProjectGallery />
+      {state.length > 0 && <ProjectGallery selectedTag={selectedTag} />}
     </div>
   )
 }

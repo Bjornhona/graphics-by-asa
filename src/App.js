@@ -1,3 +1,4 @@
+import { ProjectsProvider } from './pages/portfolio/projectGallery/ProjectsContext';
 import {
   Routes,
   Route
@@ -8,22 +9,27 @@ import Resume from './pages/resume/Resume';
 import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
 import Portfolio from './pages/portfolio/Portfolio';
+import PortfolioItem from './pages/portfolio/portfolioItem/PortfolioItem';
 import PageNotFound from './pages/not_found/PageNotFound';
 import './App.scss';
 
 function App() {
+
   return (
     <div className="App">
+      <ProjectsProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="portfolio" element={<Portfolio />} />
-            <Route path="resume" element={<Resume />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:id" element={<PortfolioItem />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
+      </ProjectsProvider>
     </div>
   );
 }

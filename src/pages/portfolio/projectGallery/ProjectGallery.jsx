@@ -1,75 +1,88 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { ProjectsContext } from './ProjectsContext';
 import './projectGallery.scss';
+import ProjectItem from './projectItem/ProjectItem';
 
-const ProjectGallery = () => {
-  const [projects, setProjects] = useState([]);
-  const [images, setImages] = useState([]);
+const ProjectGallery = ({selectedTag}) => {
+  // const [projects, setProjects] = useState([]);
+  const projectsContext = useContext(ProjectsContext);
+  const projects = projectsContext.state.newProjects;
+  
+  console.log(projectsContext);
+  // console.log(projects);
 
-  // const projects = importProjects(require.context('./projects', false, /\.(png|jpe?g|svg)$/));
-  // const projects = importProjects(require.context('./projects/quoteGenerator', false, /^\.\/.*\.png$/));
-  // const projects = importProjets(require.context('./img/projets',true,/\.jpg$/));
+  const handleSave = (value, key, projectName, newProjects) => {
+    newProjects.map(newProject => {
+      if (newProject.name === projectName) {
+         newProject[key] = value;
+      }
+    });
+    // setProjects(newProjects);
+    projectsContext.dispatch({newProjects});
+  };
 
   useEffect(() => {
     const newProjects = [];
     const projectNameList = [];
     const files = require.context(`../../../projects`, true);
     const fileKeys = files.keys();
-    const projectImages = [];
 
     fileKeys.reduce((res, modulePath) => {
       const pathName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1')
       const projectFolders = pathName.split('/')[0];
-      projectNameList.push(projectFolders);
+
+      projectFolders !== "." && projectNameList.push(projectFolders);
     }, {});
 
     const uniqueProjectFolders = [...new Set(projectNameList)];
 
     uniqueProjectFolders.forEach(projectName => {
-      const projectImages = [];
+      const projectImageUrls = [];
+
+      newProjects.push({
+        name: projectName
+      });
 
       fileKeys.map(file => {
         const fileEnd = file.split('.').slice(-1)[0];
         if (file.includes(projectName) && (fileEnd === 'jpg' || fileEnd === 'jpeg' || fileEnd === 'png')) {
-          projectImages.push(file.slice(2));
+          projectImageUrls.push(file.slice(2));
+        }
+        if (file.includes(projectName) && (fileEnd === 'json' )) {
+          import(`../../../projects/${file.slice(2)}`)
+          .then(res => {
+            handleSave(res.default, 'data', projectName, newProjects);
+          });
         }
       });
 
-      newProjects.push({
-        name: projectName,
-        images: projectImages  
-      });
+      const getImages = async () => {
+        const results = await Promise.all(projectImageUrls.map(async (file) => {
+          const image = await import(`../../../projects/${file}`)
+          .then(res => res.default);
+          file = image;
+          return file
+        }));
+        handleSave(results, 'images', projectName, newProjects);
+      }
+      getImages()
     });
-
-    const getImages = async () => {
-      await newProjects.reverse().forEach(async project => {
-        const file = project.images[0];
-        console.log(file);
-          await import(`../../../projects/${file}`)
-          .then(res => {
-            console.log(res.default);
-            projectImages.push(res.default);
-          });
-      });
-    }
-    getImages()
-    .then(() => {
-      setImages(projectImages);
-    })
-
-    setProjects(newProjects);
   }, []);
 
-// console.log(images);
-// console.log(projects);
+  const hasSelectedTag = (project) => {
+    if (selectedTag === 'All') {
+      return true;
+    } else {
+      return project.data.tags.includes(selectedTag);
+    }
+  }
 
   return (
     <div id='project-gallery'>
       <div className="masonry">
-        {images.map((image, index) => {
+        {projects && projects.length > 0 && [...projects].reverse().map((project, index) => {
           return (
-            <div key={index} className='grid-item'>
-              <img src={image} alt='some' />
-            </div>
+            hasSelectedTag(project) && <ProjectItem key={index} projectId={project.data?.id} />
           )
         })}
       </div>

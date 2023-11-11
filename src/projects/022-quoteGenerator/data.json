@@ -1,0 +1,23 @@
+{
+  "id": "022",
+  "tags": ["Web"],
+  "thumb": {
+    "title": "Quote generator",
+    "text": "Project using an external API and a local json as backup. Shows a new quote on pressing a button or shares it as a Twitter post."
+  },
+  "page": {
+    "title": "Quote generator",
+    "subTitle": "Quote generator – External and local data",
+    "text": "Project using an external API and a local json as backup. Shows a new Quote on pressing a button or shares it as a Twitter post. Manipulates DOM to create click functions and loading.",
+    "project": "Web application",
+    "programLanguages": "Vanilla Javascipt, HTML, SCSS",
+    "github": {
+      "text": "Quote generator",
+      "link": "https://github.com/Bjornhona/quote-generator"
+    },
+    "demos": [{
+      "text": "Quote generator demo",
+      "link": "https://bjornhona.github.io/quote-generator"
+    }]
+  }
+}

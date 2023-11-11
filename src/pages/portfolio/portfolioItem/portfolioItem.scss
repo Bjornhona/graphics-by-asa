@@ -1,0 +1,11 @@
+@use "../../../app.scss" as s;
+
+#portfolio-item {
+  .awssld__controls button {
+    color: s.$white;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

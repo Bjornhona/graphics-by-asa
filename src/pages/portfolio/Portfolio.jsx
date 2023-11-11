@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './portfolio.scss';
 import { tagData } from './tagData';
 import ProjectGallery from './projectGallery/ProjectGallery';
+import PortfolioContainer from './PortfolioContainer';
 
 const Portfolio = () => {
   const [state, setState] = useState([]);
@@ -34,12 +35,14 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio">
-      <ul className='tag-banner'>
-        {state.map((tag, index) => {
-          return <li key={index} className={tag.isSelected ? 'selected' : undefined} onClick={() => onSelectTag(tag)}><p>{tag.name}</p></li>
-        })}
-      </ul>
-      {state.length > 0 && <ProjectGallery selectedTag={selectedTag} />}
+      <PortfolioContainer>
+        <ul className='tag-banner'>
+          {state.map((tag, index) => {
+            return <li key={index} className={tag.isSelected ? 'selected' : undefined} onClick={() => onSelectTag(tag)}><p>{tag.name}</p></li>
+          })}
+        </ul>
+        {state.length > 0 && <ProjectGallery selectedTag={selectedTag} />}
+      </PortfolioContainer>
     </div>
   )
 }

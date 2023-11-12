@@ -50,9 +50,10 @@ h3 {
 
 h4 {
   font-size: 1.125rem; // 18px
-  line-height: 1.1rem;
+  line-height: 1.2;
   font-weight: 500;
   color: $dark-gray;
+  margin-bottom: $m;
 }
 
 h5 {
@@ -105,7 +106,7 @@ button {
   }
 }
 
-a {
+nav a {
   font-size: .75rem; // 12px
   line-height: 25px;
   font-weight: bold;
@@ -119,6 +120,21 @@ a {
 
   &:active, &:focus, &.active {
     color: $darker-gray;
+  }
+}
+
+a {
+  color: $medium-blue;
+  font-size: 100%;
+  line-height: 1.7em;
+  font-weight: 500;
+
+  &:hover {
+    color: $light-blue;
+  }
+
+  &:active, &:focus, &.active {
+    color: $light-blue;
   }
 }
 

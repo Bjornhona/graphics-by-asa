@@ -1,11 +1,53 @@
 @use "../../../app.scss" as s;
 
 #portfolio-item {
-  .awssld__controls button {
-    color: s.$white;
+  .page-body {
+    display: flex;
+    flex-direction: column;
+    gap: s.$l;
+  }
 
+  .awssld__controls button {
     &:hover {
       background-color: transparent;
+    }
+  }
+
+  .portfolio-item-info {
+    display: flex;
+    gap: s.$l;
+
+    .col {
+      width: 50%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .skill-list {
+    display: flex;
+    gap: s.$xs;
+
+    .skill-tag {
+      display: inline-block;
+      background-color: s.$medium-gray;
+      border-radius: 3px;
+      padding: 5px 7px 5px;
+      color: s.$white;
+    }
+  }
+
+  .links-item {
+    display: flex;
+    align-items: center;
+    gap: s.$s;
+    font-style: italic;
+
+    img {
+      width: s.$m;
+      height: s.$m;
     }
   }
 }

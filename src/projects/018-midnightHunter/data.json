@@ -4,5 +4,20 @@
   "thumb": {
     "title": "Midnight Hunter Game",
     "text": "Midnight Hunter is a Javascript game based on Canvas where you can hunt and catch your true love. Javascript, Canvas, HTML5, CSS."
+  },
+  "page": {
+    "title": "Midnight Hunter Game",
+    "subTitle": "Midnight Hunter – a love hunting game",
+    "text": "Midnight Hunter is a JavaScript game based on Canvas. In order to find the love of your life you need to hunt and catch all the singles available while avoiding your ex’s. Each time you get caught you lose one of your five lives available. You loose if there are no more lives, and you win the game when you’ve hit on the singles. Remember, love don’t come easy!!!",
+    "project": "Game",
+    "programLanguages": "Javascript, Canvas, HTML5, CSS",
+    "github": [{
+      "text": "Midnight Hunter",
+      "link": "https://github.com/Bjornhona/Midnight-Hunter-Game"
+    }],
+    "demos": [{
+      "text": "Play Midnight Hunter",
+      "link": "https://bjornhona.github.io/Midnight-Hunter-Game/"
+    }]
   }
 }

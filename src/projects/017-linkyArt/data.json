@@ -2,7 +2,22 @@
   "id": "017",
   "tags": ["Web"],
   "thumb": {
-    "title": "Homepage Linkyart",
+    "title": "Linkyart",
     "text": "Linkyart is a Platform where Artists and Art Spaces meet. It is coded in Javascript, Express, Node.js, MongoDB, HTML5, CSS."
+  },
+  "page": {
+    "title": "Linkyart",
+    "subTitle": "Linkyart – Meeting platform for artists and art spaces",
+    "text": "Linkyart is a Platform where Artists and Art Spaces meet. The user can login to the platform either as an Astist or Exhibitor in order to create and edit their profile. Here the artists can expose their work and look for available Exhibition Spaces and send them a contact request. The Exhibitors can create and update their profile as well as contact any of the Artists listed on the platform. As a user, the Exhibitors can add several spaces if needed.",
+    "project": "Webpage",
+    "programLanguages": "Javascript, Express, Node.js, MongoDB, HTML5, CSS",
+    "github": [{
+      "text": "Linkyart",
+      "link": "https://github.com/Bjornhona/linkyart"
+    }],
+    "demos": [{
+      "text": "Linkyart demo",
+      "link": "https://linkyart.herokuapp.com/"
+    }]
   }
 }

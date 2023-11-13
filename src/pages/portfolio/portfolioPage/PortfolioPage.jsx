@@ -36,7 +36,8 @@ const PortfolioPage = () => {
             <div className='col'>
               {project?.data.page.subTitle && <h4>{project?.data.page.subTitle}</h4>}
               {project?.data.page.project && <p><strong>Project: </strong>{project?.data.page.project}</p>}
-              {project?.data.page.programLanguages && <p><strong>Program languages: </strong>{project?.data.page.programLanguages}</p>}
+              {project?.data.page.programLanguages && <p><strong>Stack: </strong>{project?.data.page.programLanguages}</p>}
+              {project?.data.page.tools && <p><strong>Tools: </strong>{project?.data.page.tools}</p>}
               {project?.data.page.design && <p><strong>Design: </strong>{project?.data.page.design}</p>}
               {project?.data.page.client && <p><strong>Client: </strong>{project?.data.page.client}</p>}
               {project?.data.page.github && <p><strong>Github: </strong>

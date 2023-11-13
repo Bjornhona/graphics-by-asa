@@ -13,11 +13,11 @@
     "programLanguages": "Javascript, Express, Node.js, MongoDB, React, Redux, CSS",
     "github": [
       {
-        "text": "React App",
+        "text": "Beerio React App",
         "link": "https://github.com/Bjornhona/beerio-react-app"
       },
       {
-        "text": "Node.js API",
+        "text": "Beerio API",
         "link": "https://github.com/Bjornhona/beerio-api"
       }
     ],

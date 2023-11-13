@@ -1,18 +1,20 @@
+@use "../../app.scss" as s;
+
 #styled-content {
   .content {
     position: relative;
-    background-color: white;
+    background-color: s.$white;
     float: none;
     max-width: 770px;
     margin: 0 40px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 1px 1px s.$selected-background;
 
     .page-head {
       padding: 0 30px;
       display: flex;
       align-items: center;
       height: 75px;
-      border-bottom: 1px solid #ebebeb;
+      border-bottom: 1px solid s.$lighter-gray;
 
       h4 {
         margin-bottom: 0;
@@ -20,8 +22,8 @@
     }
 
     .page-body {
-      padding: 30px 30px 20px;
-      border-bottom: 1px solid #ebebeb;
+      padding: 30px;
+      border-bottom: 1px solid s.$lighter-gray;
     }
   }
 }

@@ -11,10 +11,10 @@
     "text": "Project using an external API and a local json as backup. Shows a new Quote on pressing a button or shares it as a Twitter post. Manipulates DOM to create click functions and loading.",
     "project": "Web application",
     "programLanguages": "Vanilla Javascipt, HTML, SCSS",
-    "github": {
+    "github": [{
       "text": "Quote generator",
       "link": "https://github.com/Bjornhona/quote-generator"
-    },
+    }],
     "demos": [{
       "text": "Quote generator demo",
       "link": "https://bjornhona.github.io/quote-generator"

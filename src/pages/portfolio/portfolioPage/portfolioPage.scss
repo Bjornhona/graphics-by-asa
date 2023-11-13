@@ -1,6 +1,6 @@
 @use "../../../app.scss" as s;
 
-#portfolio-item {
+#portfolio-page {
   .page-body {
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     }
   }
 
-  .portfolio-item-info {
+  .portfolio-page-info {
     display: flex;
     gap: s.$l;
 
@@ -48,6 +48,18 @@
     img {
       width: s.$m;
       height: s.$m;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio-page {
+    .portfolio-page-info {
+      flex-direction: column;
+
+      .col {
+        width: 100%;
+      }
     }
   }
 }

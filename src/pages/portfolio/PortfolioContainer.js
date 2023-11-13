@@ -3,7 +3,6 @@ import { ProjectsContext } from './projectGallery/ProjectsContext';
 
 const PortfolioContainer = ({children}) => {
   const projectsContext = useContext(ProjectsContext);
-  const projects = projectsContext.state.newProjects;
 
   const handleSave = (value, key, projectName, newProjects) => {
     newProjects.map(newProject => {

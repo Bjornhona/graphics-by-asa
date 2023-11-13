@@ -10,7 +10,7 @@ const ProjectItem = ({projectId}) => {
 
   return (
     <div id='project-item'>
-      {project && <Link to={`/portfolio/${project.data?.id}`}>
+      {project && <Link to={project?.data.page && `/portfolio/${project.data?.id}`}>
         <div className="overlay">
           <div className="overlay-text">
             <h5>{project.data?.thumb.title}</h5>

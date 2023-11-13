@@ -4,5 +4,13 @@
   "thumb": {
     "title": "Freestyle Mogul",
     "text": "A landing page, designed in Adobe XD for both laptop and mobile. It should inform the visitor about the ski team and offer classes for different ages."
+  },
+  "page": {
+    "title": "Freestyle Mogul",
+    "subTitle": "Freestyle Mogul – Skiing classes and ski team",
+    "text": "Freestyle Mogul Team is a landing page, designed both for laptop and mobile. It should inform the visitor about the ski team and offer classes for different ages. Also a contact form should make it easy for visitors to send a comment or question. It was designed in Adobe XD to give it an interactive preview of how the page will look like after its deployment online. The client asked for an attractive and simple design, that would give a sporty impression and also reflect the cold winter season.",
+    "project": "UX/UI design of Landing page",
+    "design": "AdobeXD",
+    "client": "Fiverr client"
   }
 }

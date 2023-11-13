@@ -4,5 +4,16 @@
   "thumb": {
     "title": "The Eco Trike",
     "text": "A complete creation of a tricicle, the Eco Trike was created as an ecologic alternative for transportation of small merchandise in urban areas."
+  },
+  "page": {
+    "subTitle": "The Eco Trike - Award winning Engineering Design",
+    "text": "The Eco Trike I created in cooperation with the company Tambakunda as an ecologic alternative for transportation of small merchandise in urban areas. Tambakunda is an innovative design tank that design products, services, spaces and brands that allow the creation of highly profitable business models. The project involved the complete creation of a tricycle. It included calculations of strength, materials selection, mechanical and ergonomic analytical tests in CatiaV5, economic estimations of costs etc. I modeled the stearing and function of the assembly in 3D and tested it out in Solidworks. The video made in Solidworks shows the final product. The project was also presented as a Blender video showing the benefits and utilities of the product.",
+    "project": "Design of a vehicle for urban transportation of small merchandise",
+    "tools": "CatiaV5, Solidworks, Blender, InDesign",
+    "client": "Tambakunda - InnoDesign Tank",
+    "demos": [{
+      "text": "Tambakunda",
+      "link": "https://www.tambakunda.com/"
+    }]
   }
 }

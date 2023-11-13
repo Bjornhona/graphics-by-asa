@@ -2,11 +2,10 @@
   "id": "021",
   "tags": ["Web", "UX/UI"],
   "thumb": {
-    "title": "Sculpted Goddess Website",
+    "title": "Sculpted Goddess",
     "text": "Sculpted Goddess is a web application and a tool that helps women sculpt and take care of their bodies in a healthy way. Programmed in Python, Flask, SQL, Javascript, HTML, SCSS and Flexbox. Design in Adobe XD."
   },
   "page": {
-    "title": "Sculpted Goddess",
     "subTitle": "Sculpted Goddess – Recipes and Fitness goals",
     "text": "The project offers a huge database of Recipes with individual nutrition data. The user is able to search for recipes and store their favorite ones for later. An implemented macronutrient calculator asks the user for personal data and goals and then suggests the macronutrient ratio and BMI, Body Mass Index, so that it will be easier to adapt the perfect meal plan. It is a server-side rendered project that uses an external API, Edamam Recipe Search.",
     "project": "Webpage",
@@ -19,6 +18,10 @@
     "demos": [{
       "text": "Sculpted Goddess demo",
       "link": "https://sculpted-goddess.ew.r.appspot.com"
+    },
+    {
+      "text": "Scupted Goddess on YouTube",
+      "link": "https://www.youtube.com/watch?v=0U7HgNMzOM0&t=1s"
     }]
   }
 }

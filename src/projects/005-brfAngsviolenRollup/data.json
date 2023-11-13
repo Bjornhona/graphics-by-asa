@@ -2,7 +2,14 @@
   "id": "005",
   "tags": ["Print"],
   "thumb": {
-    "title": "Roll-up Park & Villas",
+    "title": "Roll-up",
     "text": "A Roll-up created in Adobe InDesign that shows the Real Estate project “Ängsviolen” by Park & Villas."
+  },
+  "page": {
+    "subTitle": "Park & Villas –  Real Estate Construction Firm",
+    "text": "The design of this Roll-up represents a real estate project of high quality, environmental friendly energy systems and an exclusive lifestyle. It shows the ongoing Real Estate project of “Ängsviolen” located in the city of Eksjö in Sweden. The roll-up was exposed during several occasions in Eksjö. It was present during Park & Villas informative events as well as during the 2017 Home Fair where it was exposed in the stand of Eksjö municipality. The Real Estate company Park & Villas specialize in developing and constructing high quality and exclusive lifestyle homes with environmental friendly energy systems. All their projects are concentrated in Sweden.",
+    "project": "Roll-up",
+    "tools": "InDesign",
+    "client": "Park & Villas AB"
   }
 }

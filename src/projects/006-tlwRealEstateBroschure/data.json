@@ -2,7 +2,14 @@
   "id": "006",
   "tags": ["Print"],
   "thumb": {
-    "title": "Real Estate brochure TLW",
+    "title": "TLW brochure",
     "text": "A 12 pages long Real Estate brochure, created in InDesign as a Company Presentation of TLW Real Estate. Photographs corrected in Photoshop."
+  },
+  "page": {
+    "subTitle": "TLW Real Estate – Real Estate Investment Firm",
+    "text": "This Brochure of 12 pages I created to give the company TLW Real Estate a new Company Presentation. It has been created in InDesign and the photos have been improved in Photoshop to go well with a strong orange color. The text is light and clean. The brochure was further developed in several languages and ongoing Projects were added when needed.",
+    "project": "Brochure",
+    "tools": "InDesign, Photoshop",
+    "client": "TLW Real Estate"
   }
 }

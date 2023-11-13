@@ -4,5 +4,15 @@
   "thumb": {
     "title": "Animated Violins",
     "text": "A Product Presentation video made with the 3D animation software Blender. The purpose was to create and present a video showing the design of a fictitious product."
+  },
+  "page": {
+    "subTitle": "Stringvibe - Wooden violins",
+    "text": "This 5 seconds long video I created in Blender, a license free 3D animation program with the purpose to create and present a video showing the design of a fictitious product. I first modeled the violin, set up 5 different scenes with several light effects to make it look appealing, and then finished by animating adding some explaining text. I wanted to create that electric feeling in order to make it clear that the violin is electric.",
+    "project": "Product design presentation, video",
+    "tools": "Blender",
+    "demos": [{
+      "text": "Stringvibe on YouTube",
+      "link": "https://www.youtube.com/watch?v=282URoTnerY"
+    }]
   }
 }

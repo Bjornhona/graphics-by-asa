@@ -16,10 +16,48 @@ const PortfolioPage = () => {
   const project = projects?.find(p => p.data.id === id);
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
+  let linksTo;
+  if (projects) {
+    const projectIndex = projects && projects.findIndex(p => p.data.id === id);
+    let prevProjectId;
+    let nextProjectId;
+
+    if (projectIndex === 0) {
+      prevProjectId = projects[projectIndex + 1].data.id;
+    } else if (projectIndex < projects.length - 1) {
+      prevProjectId = projects[projectIndex + 1].data.id;
+      nextProjectId = projects[projectIndex - 1].data.id;
+    } else {
+      nextProjectId = projects[projectIndex - 1].data.id;
+    }
+
+    const getLinkToPrev = () => {
+      if (prevProjectId) {
+        return {
+          text: projects[projectIndex + 1].data.thumb.title,
+          link: `/portfolio/${prevProjectId}`
+        }
+      }
+    }
+    const getLinkToNext = () => {
+      if (nextProjectId) {
+        return {
+          text: projects[projectIndex - 1].data.thumb.title,
+          link: `/portfolio/${nextProjectId}`
+        }
+      }
+    }
+    linksTo = {
+      prev: getLinkToPrev(),
+      next: getLinkToNext()
+    }
+  }
+  console.log(linksTo);
+
   return (
     <div id='portfolio-page'>
       <PortfolioContainer>
-        <StyledContent title={project?.data.thumb.title}>
+        <StyledContent title={project?.data.thumb.title} linksTo={linksTo}>
           <AutoplaySlider
             play={true}
             cancelOnInteraction={false}

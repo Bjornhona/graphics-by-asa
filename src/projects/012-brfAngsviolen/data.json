@@ -2,14 +2,13 @@
   "id": "012",
   "tags": ["Web"],
   "thumb": {
-    "title": "Brf Ängsviolen Landing page",
+    "title": "Brf Ängsviolen",
     "text": "Brf Ängsviolen is a one-page homepage created for a Real Estate company with the purpose of selling new construction in Eksjö city in Sweden. It is created in Wordpress."
   },
   "page": {
-    "title": "Brf Ängsviolen",
     "subTitle": "Brf Ängsviolen – Real Estate Project Showcase",
     "text": "This is a one-page website of a new construction in Eksjö city in Sweden. It has the purpose to attract possible buyers and shows an image gallery and floor plans of how the project will look like once it is constructed. The page is made with a minimalistic design and has easy access to all the necessary data and is also showcasing the project with its selling design. The design is optimized with a responsive design to make it adjust to any devices.",
-    "project": "Webpage",
+    "project": "Landing page",
     "tools": "Wordpress",
     "client": "Park & Villas AB"
   }

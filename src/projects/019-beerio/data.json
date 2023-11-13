@@ -2,11 +2,10 @@
   "id": "019",
   "tags": ["Web"],
   "thumb": {
-    "title": "Beerio Website",
+    "title": "Beerio",
     "text": "Beerio is a web page coded in Javascript. It gives information about beers and breweries. Back-end in Node.js with express and front-end in React."
   },
   "page": {
-    "title": "Beerio",
     "subTitle": "Beerio – A web page in React with Redux",
     "text": "Beerio is a web page for “The Happy Beer Gourmand”. It give the users information about beers and let them save their favorites and receive recommendations for beers specifically adapted to their search inputs. I decided to code this web site in Javascript. Therefore the Frontend I created in React using Redux as global state and the Backend I created in Node.js. The database I created in MongoDB. All the information about the beers and breweries I have collected from the external API, BreweryDB. The original design I created in Adobe XD and implemented responsively with CSS and Flexbox.",
     "project": "Webpage",

@@ -2,14 +2,17 @@
   "id": "016",
   "tags": ["Web"],
   "thumb": {
-    "title": "eStark IT Website",
+    "title": "eStark IT",
     "text": "eStark IT is a webpage created in Wordpress that offers different graphic packs for start-ups. The different package solutions show some examples of what is included and offers a reasonable price."
   },
   "page": {
-    "title": "eStark IT",
     "subTitle": "eStark IT – Graphic Packs for your Start-up",
     "text": "eStark IT is a webpage created in WordPress that offers different graphic packs for start-ups. The project has apart form the home screen also 4 sub-screens informing about the company and each package. The different package solutions show some examples of what is included and offers a reasonable price. In the contact page the user can pick one of the selected packages and create and order or just leave a message.",
     "project": "Webpage",
-    "tools": "Wordpress"
+    "tools": "Wordpress",
+    "demos": [{
+      "text": "eStarkIt on YouTube",
+      "link": "https://www.youtube.com/watch?v=RqAixMPq0rI&t=6s"
+    }]
   }
 }

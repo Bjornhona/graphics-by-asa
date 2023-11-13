@@ -2,7 +2,13 @@
   "id": "007",
   "tags": ["Web", "Illustration"],
   "thumb": {
-    "title": "Button design for web",
+    "title": "Button design",
     "text": "Three nice little buttons designed with icons to represent “Product Presentation”, “Web Design” and “Graphic Design”. Mainly prepared in Illustrator, but also with some extra features from Photoshop."
+  },
+  "page": {
+    "subTitle": "Icon design – To be used in this homepage",
+    "text": "These nice little buttons I designed for my website in order to represent “Product Presentation”, “Web Design” and “Graphic Design”. It was mainly prepared in Illustrator, but also has some extra small features from Photoshop. They have similar color combinations as my halo flowers.",
+    "project": "Web design, buttons",
+    "tools": "Illustrator"
   }
 }

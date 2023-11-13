@@ -2,7 +2,17 @@
   "id": "004",
   "tags": ["3D", "Animation"],
   "thumb": {
-    "title": "Product Design Racing Go-kart",
+    "title": "Racing Go-kart",
     "text": "A video created in SolidWorks with the purpose to create and present a the design of an assembly of a Racing Go-cart."
+  },
+  "page": {
+    "subTitle": "Stearing of a Racing Go-kart assembly – Engineering project",
+    "text": "This video I created in SolidWorks, a 3D CAD design software that manage product data and dimensions of the final product. The purpose was to create and present a video showing the design of an assembly of a Racing Go-cart. I first modeled the Go-cart parts, then added them in an assembly and ended animating the steering process. The assembly worked well also in the analytical tests I made in the same program and the final drawings of all the trace parts could then be created for its manufacturing.",
+    "project": "Product Design Video",
+    "tools": "SolidWorks",
+    "demos": [{
+      "text": "Racing Go-kart on YouTube",
+      "link": "https://www.youtube.com/watch?v=JKS0qZOfmIg"
+    }]
   }
 }

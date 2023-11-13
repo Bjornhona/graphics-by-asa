@@ -12,12 +12,22 @@
     .page-head {
       padding: 0 30px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       height: 75px;
       border-bottom: 1px solid s.$lighter-gray;
 
       h4 {
         margin-bottom: 0;
+      }
+
+      .links-to {
+        p {
+          display: flex;
+          gap: calc(s.$s * 2);
+          margin: 0;
+          font-size: .75rem;
+        }
       }
     }
 

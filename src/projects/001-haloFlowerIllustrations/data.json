@@ -2,7 +2,13 @@
   "id": "001",
   "tags": ["3D", "Illustration"],
   "thumb": {
-    "title": "Blender flowers",
+    "title": "Halo flowers",
     "text": "One of my personal projects are my halo flowers that I created exclusively for this homepage in 3D."
+  },
+  "page": {
+    "subTitle": "Halo flowers - Illustration Design in 3D",
+    "text": "For fun I prepared a set of illustrated flowers in 3D with the Blender animation program which I love. It is one of my own projects that I created exclusively to improve my company image and homepage. I tried out many color and light combinations before I finally chose my favorite. I later used the same color combinations to prepare my logos, business cards, buttons, and other graphic materials presented on this homepage Graphics by Åsa.",
+    "project": "Illustration for web",
+    "tools": "Blender"
   }
 }

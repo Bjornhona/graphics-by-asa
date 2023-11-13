@@ -2,7 +2,15 @@
   "id": "014",
   "tags": ["Web"],
   "thumb": {
-    "title": "Homepage TLW Real Estate",
+    "title": "TLW Real Estate Website",
     "text": "A complete website for the company TLW Real Estate, created in Wordpress and translated into three languages. It shows ongoing and finished projects and exposes investment objects for possible buyers."
+  },
+  "page": {
+    "title": "TLW Real Estate",
+    "subTitle": "TLW Real Estate – Real Estate Investment Projects",
+    "text": "This is a complete website for the company TLW Real Estate. It is created in WordPress and translated into three languages. The page shows off their ongoing and finished projects as well as gives a good opportunity for possible buyers or investors to choose among the exposed objects. The page gives easy access to all the necessary data and gives an exclusive impression with its selling design. It is made with plenty of “call to action”-links for easy access to sign up and contact requests. The design is optimized with a responsive design to make it adjust to any devices.",
+    "project": "Webpage",
+    "tools": "Wordpress",
+    "client": "TLW Real Estate AB"
   }
 }

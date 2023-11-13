@@ -2,7 +2,7 @@
   "id": "019",
   "tags": ["Web"],
   "thumb": {
-    "title": "Beerio",
+    "title": "Beerio Website",
     "text": "Beerio is a web page coded in Javascript. It gives information about beers and breweries. Back-end in Node.js with express and front-end in React."
   },
   "page": {

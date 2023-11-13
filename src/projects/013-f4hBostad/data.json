@@ -2,7 +2,15 @@
   "id": "013",
   "tags": ["Web"],
   "thumb": {
-    "title": "Homepage F4H Bostad",
+    "title": "F4H Bostad Webpage",
     "text": "A simple homepage of one page that has the purpose to showcase the company in front of possible investors, partners or buyers. I created it in Wordpress and it fits plenty of links to their new construction projects."
+  },
+  "page": {
+    "title": "F4H Bostad",
+    "subTitle": "F4H Bostad – Real Estate Consultancy Firm",
+    "text": "This project is a simple homepage of one page that has the purpose to showcase this real estate company in front of possible investors, partners or buyers. It is located in Småland landscape in Sweden and continually come up with new construction projects. Therefore the page fit plenty of links to their new construction projects. It is made with simplicity in WordPress for easy access to all necessary data and shows off the company image with a selling design. I have further optimized the responsive design to make optimized for any devices.",
+    "project": "Webpage",
+    "tools": "Wordpress",
+    "client": "Future 4 Homes Scandinavia AB"
   }
 }

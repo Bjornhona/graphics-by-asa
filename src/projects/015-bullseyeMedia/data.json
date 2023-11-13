@@ -2,7 +2,15 @@
   "id": "015",
   "tags": ["Web"],
   "thumb": {
-    "title": "Homepage Bullseye Media",
+    "title": "Bullseye Media Website",
     "text": "A media company homepage that reflects effective marketing online through its modern graphics and informative texts. Created in Wordpress."
+  },
+  "page": {
+    "title": "Bullseye Media",
+    "subTitle": "Bullseye Media – Company image and online marketing",
+    "text": "Bullseye Media is a business that improves company image online with online marketing from the most effective platforms. I created the webpage to reflect its effective marketing online by modern graphics and informative texts. It is made with plenty of “call to action”-links for easy access to sign up and contact requests. I optimized the page with a responsive design to make it adjust to any devices.",
+    "project": "Webpage",
+    "tools": "Wordpress",
+    "client": "Bullseye Media AB"
   }
 }

@@ -4,5 +4,13 @@
   "thumb": {
     "title": "Real Estate Presentation Video",
     "text": "An informative presentation of the Real Estate company Park & Villas, created in PowerPoint."
+  },
+  "page": {
+    "title": "Park & Villas",
+    "subTitle": "Park & Villas – Real Estate Construction Firm",
+    "text": "This video is an informative presentation of the Real Estate company Park & Villas. It is prepared in PowerPoint and was presented during a music festival in Sweden on a large outdoor screen in order to promote one of their newest projects. In only a few seconds, the video shows information about the company and with a short text it describes the characteristics of their latest project. I also includes an invitation to their upcoming event. The presentation gives the viewer a feeling of green environments and a high standard living.",
+    "project": "Product Presentation, video",
+    "tools": "PowerPoint",
+    "client": "Park & Villas AB"
   }
 }

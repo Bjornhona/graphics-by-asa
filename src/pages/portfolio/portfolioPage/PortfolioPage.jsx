@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useContext } from 'react';
+import { useRef, useContext } from 'react';
 import { ProjectsContext } from '../projectGallery/ProjectsContext';
 import StyledContent from '../../../components/styledContent/StyledContent';
 import AwesomeSlider from 'react-awesome-slider';
@@ -11,14 +11,15 @@ import linksIcon from './links-icon-1.png';
 
 const PortfolioPage = () => {
   const { id } = useParams();
+  const video = useRef(null);
   const projectsContext = useContext(ProjectsContext);
   const projects = projectsContext.state.newProjects;
-  const project = projects?.find(p => p.data.id === id);
+  const project = projects?.find(p => p.data?.id === id);
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   let linksTo;
   if (projects) {
-    const projectIndex = projects && projects.findIndex(p => p.data.id === id);
+    const projectIndex = projects && projects.findIndex(p => p.data?.id === id);
     let prevProjectId;
     let nextProjectId;
 
@@ -26,7 +27,7 @@ const PortfolioPage = () => {
       prevProjectId = projects[projectIndex + 1].data.id;
     } else if (projectIndex < projects.length - 1) {
       prevProjectId = projects[projectIndex + 1].data.id;
-      nextProjectId = projects[projectIndex - 1].data.id;
+      nextProjectId = projects[projectIndex - 1]?.data.id;
     } else {
       nextProjectId = projects[projectIndex - 1].data.id;
     }
@@ -52,10 +53,32 @@ const PortfolioPage = () => {
       next: getLinkToNext()
     }
   }
-  console.log(linksTo);
+  // project && console.log(project);
+  const handleVideoClick = (e) => {
+    // e.target.play()
+    // console.log(e.target);
+    console.log(video.current);
+    video.current.play();
+    // const newProject = {...project}
+    // newProject?.videos[0].enabled = true;
+
+    // console.log(e);
+    // console.log(project.videos[0]);
+    // return <video src={project.videos[0]} controls />
+    // return <video>
+    //     <source src={project.videos[0]} type="video/mp4" width="800" height="400" controls />
+    //     Sorry, your browser doesn't support videos.
+    //  </video>
+  }
 
   return (
     <div id='portfolio-page'>
+      <div className="jumbotron-video-wrapper">
+        <video ref={video} src={project?.videos[0]} controls />
+        {/* <video ref={video}>
+          <source src={project?.videos[0]} type="video/mp4" controls />
+        </video> */}
+      </div>
       <PortfolioContainer>
         <StyledContent title={project?.data.thumb.title} linksTo={linksTo}>
           <AutoplaySlider
@@ -65,9 +88,16 @@ const PortfolioPage = () => {
             bullets={false}
             mobileTouch={true}
           >
-            {project?.images?.map((image, index) => (
-              <div key={index} data-src={image} />
-            ))}
+            {project?.videos.length < 1
+              ? project?.images?.map((image, index) => (
+                <div key={index} data-src={image} />
+              ))
+              : project?.images?.map((image, index) => (
+                index === project?.images.length - 1
+                  ? <div className='clickable-image' key={index} data-src={image} onClick={(e) => handleVideoClick(e)} />
+                  : <div key={index} data-src={image} />
+              ))
+            }
           </AutoplaySlider>
 
           <div className='portfolio-page-info'>
@@ -80,10 +110,10 @@ const PortfolioPage = () => {
               {project?.data.page.client && <p><strong>Client: </strong>{project?.data.page.client}</p>}
               {project?.data.page.github && <p><strong>Github: </strong>
                 {project?.data.page.github.map((git, index) => (
-                  <>
-                    <a key={index} href={git.link} target='_blank' rel="noreferrer">{git.text}</a>
+                  <div key={index}>
+                    <a href={git.link} target='_blank' rel="noreferrer">{git.text}</a>
                     {index !== project?.data.page.github.length -1 ? ', ' : null}
-                  </>
+                  </div>
                 ))}
               </p>}
             </div>
@@ -102,9 +132,9 @@ const PortfolioPage = () => {
 
           <div>
             {project?.data.page.demos && project?.data.page.demos.map((demo, index) => (
-              <div className={'links-item'}>
-                <img  src={linksIcon} alt='links icon' />
-                <a key={index} href={demo.link} target='_blank' rel="noreferrer">{demo.text}</a>
+              <div key={index} className={'links-item'}>
+                <img src={linksIcon} alt='links icon' />
+                <a href={demo.link} target='_blank' rel="noreferrer">{demo.text}</a>
               </div>
             ))}
           </div>

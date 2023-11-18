@@ -22,9 +22,10 @@
       }
 
       .links-to {
+        display: inline-flex;
+        gap: calc(s.$s * 2);
+        
         p {
-          display: flex;
-          gap: calc(s.$s * 2);
           margin: 0;
           font-size: .75rem;
         }

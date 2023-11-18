@@ -1,6 +1,10 @@
 @use "../../../app.scss" as s;
 
 #portfolio-page {
+  .clickable-image {
+    cursor: pointer;
+  }
+
   .page-body {
     display: flex;
     flex-direction: column;
@@ -8,6 +12,8 @@
   }
 
   .awssld__controls button {
+    --organic-arrow-height: 25px;
+
     &:hover {
       background-color: transparent;
     }

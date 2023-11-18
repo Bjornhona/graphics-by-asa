@@ -8,10 +8,8 @@ const StyledContent = ({title, linksTo, children}) => {
         <div className='page-head'>
           <h4>{title}</h4>
           {linksTo && <div className='links-to'>
-            <p>
-              {linksTo.prev && <Link to={linksTo.prev.link}>← {linksTo.prev.text}</Link>}
-              {linksTo.next && <Link to={linksTo.next.link}>{linksTo.next.text} →</Link>}
-            </p>
+            {linksTo.prev && <Link to={linksTo.prev.link}><p>← {linksTo.prev.text}</p></Link>}
+            {linksTo.next && <Link to={linksTo.next.link}><p>{linksTo.next.text} →</p></Link>}
           </div>}
         </div>
         <div className='page-body'>{children}</div>

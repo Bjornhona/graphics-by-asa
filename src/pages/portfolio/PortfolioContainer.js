@@ -30,6 +30,7 @@ const PortfolioContainer = ({children}) => {
 
     uniqueProjectFolders.forEach(projectName => {
       const projectImageUrls = [];
+      const projectVideoUrls = [];
 
       newProjects.push({
         name: projectName
@@ -40,24 +41,28 @@ const PortfolioContainer = ({children}) => {
         if (file.includes(projectName) && (fileEnd === 'jpg' || fileEnd === 'jpeg' || fileEnd === 'png')) {
           projectImageUrls.push(file.slice(2));
         }
-        if (file.includes(projectName) && (fileEnd === 'json' )) {
+        if (file.includes(projectName) && (fileEnd === 'json')) {
           import(`../../projects/${file.slice(2)}`)
           .then(res => {
             handleSave(res.default, 'data', projectName, newProjects);
           });
         }
+        if (file.includes(projectName) && (fileEnd === 'mp4' )) {
+          projectVideoUrls.push(file.slice(2));
+        }
       });
 
-      const getImages = async () => {
-        const results = await Promise.all(projectImageUrls.map(async (file) => {
-          const image = await import(`../../projects/${file}`)
+      const getMedia = async (urlsList, tag) => {
+        const results = await Promise.all(urlsList.map(async (file) => {
+          const media = await import(`../../projects/${file}`)
           .then(res => res.default);
-          file = image;
+          file = media;
           return file
         }));
-        handleSave(results, 'images', projectName, newProjects);
+        handleSave(results, tag, projectName, newProjects);
       }
-      getImages()
+      getMedia(projectImageUrls, 'images');
+      getMedia(projectVideoUrls, 'videos');
     });
   }, []);
 

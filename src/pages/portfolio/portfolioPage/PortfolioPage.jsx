@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useRef, useContext } from 'react';
+import { useState, useRef, useContext } from 'react';
 import { ProjectsContext } from '../projectGallery/ProjectsContext';
 import StyledContent from '../../../components/styledContent/StyledContent';
 import AwesomeSlider from 'react-awesome-slider';
@@ -12,6 +12,8 @@ import linksIcon from './links-icon-1.png';
 const PortfolioPage = () => {
   const { id } = useParams();
   const video = useRef(null);
+  const [showVideo, setShowVideo] = useState(false);
+
   const projectsContext = useContext(ProjectsContext);
   const projects = projectsContext.state.newProjects;
   const project = projects?.find(p => p.data?.id === id);
@@ -53,32 +55,23 @@ const PortfolioPage = () => {
       next: getLinkToNext()
     }
   }
-  // project && console.log(project);
-  const handleVideoClick = (e) => {
-    // e.target.play()
-    // console.log(e.target);
-    console.log(video.current);
-    video.current.play();
-    // const newProject = {...project}
-    // newProject?.videos[0].enabled = true;
 
-    // console.log(e);
-    // console.log(project.videos[0]);
-    // return <video src={project.videos[0]} controls />
-    // return <video>
-    //     <source src={project.videos[0]} type="video/mp4" width="800" height="400" controls />
-    //     Sorry, your browser doesn't support videos.
-    //  </video>
+  const stopVideo = () => {
+    video.current.pause();
+    video.current.currentTime = 0;
+}
+
+  const handleVideoClick = (isPlaying) => {
+    setShowVideo(isPlaying);
+    isPlaying ? video.current.play() : stopVideo();
   }
 
   return (
     <div id='portfolio-page'>
-      <div className="jumbotron-video-wrapper">
-        <video ref={video} src={project?.videos[0]} controls />
-        {/* <video ref={video}>
-          <source src={project?.videos[0]} type="video/mp4" controls />
-        </video> */}
-      </div>
+      {<div className={`video-wrapper ${showVideo && 'video-active'}`}>
+        <video ref={video} src={project?.videos[0]} type="video/mp4" controls autoplay />
+        <button onClick={() => handleVideoClick(false)}>X</button>
+      </div>}
       <PortfolioContainer>
         <StyledContent title={project?.data.thumb.title} linksTo={linksTo}>
           <AutoplaySlider
@@ -88,13 +81,13 @@ const PortfolioPage = () => {
             bullets={false}
             mobileTouch={true}
           >
-            {project?.videos.length < 1
+            {project?.videos?.length < 1
               ? project?.images?.map((image, index) => (
                 <div key={index} data-src={image} />
               ))
               : project?.images?.map((image, index) => (
                 index === project?.images.length - 1
-                  ? <div className='clickable-image' key={index} data-src={image} onClick={(e) => handleVideoClick(e)} />
+                  ? <div className='clickable-image' key={index} data-src={image} onClick={() => handleVideoClick(true)} />
                   : <div key={index} data-src={image} />
               ))
             }

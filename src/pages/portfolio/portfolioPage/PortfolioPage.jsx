@@ -4,7 +4,9 @@ import { ProjectsContext } from '../projectGallery/ProjectsContext';
 import StyledContent from '../../../components/styledContent/StyledContent';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import 'react-awesome-slider/dist/styles.css';
+// import 'react-awesome-slider/dist/styles.css';
+import styles from 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css';
 import PortfolioContainer from '../PortfolioContainer';
 import './portfolioPage.scss';
 import linksIcon from './links-icon-1.png';
@@ -75,20 +77,22 @@ const PortfolioPage = () => {
       <PortfolioContainer>
         <StyledContent title={project?.data.thumb.title} linksTo={linksTo}>
           <AutoplaySlider
-            play={true}
+            play={false}
             cancelOnInteraction={false}
             interval={3000}
             bullets={false}
             mobileTouch={true}
+            animation={'foldOutAnimation'}
+            cssModule={styles}
           >
             {project?.videos?.length < 1
               ? project?.images?.map((image, index) => (
-                <div key={index} data-src={image} />
+                <div key={index} data-src={image} class='not-clickable-image' />
               ))
               : project?.images?.map((image, index) => (
                 index === project?.images.length - 1
-                  ? <div className='clickable-image' key={index} data-src={image} onClick={() => handleVideoClick(true)} />
-                  : <div key={index} data-src={image} />
+                  ? <div key={index} data-src={image} class='clickable-image' onClick={() => handleVideoClick(true)} />
+                  : <div key={index} data-src={image} class='not-clickable-image' />
               ))
             }
           </AutoplaySlider>

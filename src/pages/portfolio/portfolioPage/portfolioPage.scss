@@ -1,23 +1,19 @@
 @use "../../../app.scss" as s;
 
 #portfolio-page {
-  // position: relative;
-
   .video-wrapper {
     background-color: black;
     display: none;
     position: fixed;
     left: 0;
     top: 0;
+    right: 0;
     bottom: 0;
     z-index: 100;
-    width: 100%;
-    // height: 100%;
-    margin: auto;
       
     video {
       min-width: 100%;
-      // min-height: 100%;
+      max-height: 100%;
       margin: auto;
     }
 
@@ -45,9 +41,26 @@
     display: flex
   }
   
-  // .clickable-image {
-  //   cursor: pointer;
-  // }
+
+  .not-clickable-image, .clickable-image {
+    background-color: var(--content-background-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .clickable-image img {
+    cursor: pointer;
+  }
 
   .page-body {
     display: flex;

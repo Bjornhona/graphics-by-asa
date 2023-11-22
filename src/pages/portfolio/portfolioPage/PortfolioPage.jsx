@@ -70,10 +70,11 @@ const PortfolioPage = () => {
 
   return (
     <div id='portfolio-page'>
-      {<div className={`video-wrapper ${showVideo && 'video-active'}`}>
-        <video ref={video} src={project?.videos[0]} type="video/mp4" controls autoplay />
-        <button onClick={() => handleVideoClick(false)}>X</button>
-      </div>}
+      {project?.videos.length > 0 && 
+        <div className={`video-wrapper ${showVideo && 'video-active'}`}>
+          <video ref={video} src={project?.videos[0]} type="video/mp4" controls autoplay />
+          <button onClick={() => handleVideoClick(false)}>X</button>
+        </div>}
       <PortfolioContainer>
         <StyledContent title={project?.data.thumb.title} linksTo={linksTo}>
           <AutoplaySlider

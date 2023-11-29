@@ -4,7 +4,6 @@ import { ProjectsContext } from '../projectGallery/ProjectsContext';
 import StyledContent from '../../../components/styledContent/StyledContent';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
-// import 'react-awesome-slider/dist/styles.css';
 import styles from 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css';
 import PortfolioContainer from '../PortfolioContainer';
@@ -70,15 +69,20 @@ const PortfolioPage = () => {
 
   return (
     <div id='portfolio-page'>
-      {project?.videos.length > 0 && 
+      {project?.videos?.length > 0 && 
         <div className={`video-wrapper ${showVideo && 'video-active'}`}>
-          <video ref={video} src={project?.videos[0]} type="video/mp4" controls autoplay />
+          <video
+            ref={video}
+            src={project?.videos[0]}
+            type="video/mp4"
+            controls
+          />
           <button onClick={() => handleVideoClick(false)}>X</button>
         </div>}
       <PortfolioContainer>
         <StyledContent title={project?.data.thumb.title} linksTo={linksTo}>
           <AutoplaySlider
-            play={false}
+            play={true}
             cancelOnInteraction={false}
             interval={3000}
             bullets={false}

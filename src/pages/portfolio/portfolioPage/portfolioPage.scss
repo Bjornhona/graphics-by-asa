@@ -40,7 +40,6 @@
   .video-active {
     display: flex
   }
-  
 
   .not-clickable-image, .clickable-image {
     background-color: var(--content-background-color);
@@ -68,11 +67,22 @@
     gap: s.$l;
   }
 
-  .awssld__controls button {
-    --organic-arrow-height: 25px;
+  .awssld {
+    --loader-bar-color: rgba(0,0,0,.3);
+  }
 
-    &:hover {
-      background-color: transparent;
+  .awssld__controls button {
+    background-color: rgba(0,0,0,.7);
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    top: calc(50% - (0.5 * 32px));
+
+    .awssld__controls__arrow-right, .awssld__controls__arrow-left {
+      --organic-arrow-height: 10px;
+      --organic-arrow-color: white;
+      --organic-arrow-thickness: 3px;
+      opacity: 1;
     }
   }
 

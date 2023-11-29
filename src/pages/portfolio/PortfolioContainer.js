@@ -1,17 +1,17 @@
-import { useEffect, useContext } from 'react';
+import { useEffect, useContext, useCallback } from 'react';
 import { ProjectsContext } from './projectGallery/ProjectsContext';
 
 const PortfolioContainer = ({children}) => {
   const projectsContext = useContext(ProjectsContext);
 
-  const handleSave = (value, key, projectName, newProjects) => {
+  const handleSave = useCallback((value, key, projectName, newProjects) => {
     newProjects.map(newProject => {
       if (newProject.name === projectName) {
          newProject[key] = value;
       }
     });
     projectsContext.dispatch({newProjects});
-  };
+  }, []);
 
   useEffect(() => {
     const newProjects = [];

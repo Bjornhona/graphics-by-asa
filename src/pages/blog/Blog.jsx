@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <div id="blog">
     <StyledContent title='blog'>
-      some other home text.
+      blog posts are coming soon...
     </StyledContent>
   </div>
   )

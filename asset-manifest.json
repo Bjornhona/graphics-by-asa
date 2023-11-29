@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/graphics-by-asa/static/css/main.fe067103.css",
-    "main.js": "/graphics-by-asa/static/js/main.65db726d.js",
+    "main.js": "/graphics-by-asa/static/js/main.c14156da.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/eStarkIT.mp4": "/graphics-by-asa/static/media/eStarkIT.d4329c5c0a973b7a235c.mp4",
     "static/media/TLW-real-estate.mp4": "/graphics-by-asa/static/media/TLW-real-estate.c758de74d80f7286b6be.mp4",
@@ -13,11 +13,9 @@
     "static/media/Linkyart.mp4": "/graphics-by-asa/static/media/Linkyart.1b252caf94ee74371407.mp4",
     "static/media/2.jpg": "/graphics-by-asa/static/media/2.f123fcf05ba369360d38.jpg",
     "static/media/F4HBostader-hemsida.jpg": "/graphics-by-asa/static/media/F4HBostader-hemsida.5ffa405a35fd3cc14808.jpg",
-    "static/media/SculptedGoddess-hemsida.jpg": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.fab7bc0fee09a01779e9.jpg",
     "static/media/3.jpg": "/graphics-by-asa/static/media/3.ec0b7f7994f9a1086546.jpg",
     "static/media/Angsviolen-hemsida.jpg": "/graphics-by-asa/static/media/Angsviolen-hemsida.2d5fb65ae7c36591d6b4.jpg",
     "static/media/Beerio-hemsida.jpg": "/graphics-by-asa/static/media/Beerio-hemsida.e0dd9b2732ead77d1814.jpg",
-    "static/media/Buscarella-hemsida.png": "/graphics-by-asa/static/media/Buscarella-hemsida.73d5874c740517719b60.png",
     "static/media/Future4Homes-hemsida.jpg": "/graphics-by-asa/static/media/Future4Homes-hemsida.0a4aa8438f34635b1c79.jpg",
     "static/media/TLW-hemsida2.jpg": "/graphics-by-asa/static/media/TLW-hemsida2.7157226861bbd7b0ad0d.jpg",
     "static/media/designer-profile.jpg": "/graphics-by-asa/static/media/designer-profile.7d86ea4b5c66e390c837.jpg",
@@ -42,6 +40,7 @@
     "static/media/Raleway-Regular.ttf": "/graphics-by-asa/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
     "static/media/Raleway-SemiBold.ttf": "/graphics-by-asa/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
     "static/media/Linkyart-hemsida.jpg": "/graphics-by-asa/static/media/Linkyart-hemsida.6760fdd4bfb202c3d676.jpg",
+    "static/media/SculptedGoddess-hemsida.png": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.33c6099b949a9c5fc460.png",
     "static/media/Image-me1.jpg": "/graphics-by-asa/static/media/Image-me1.b57fb982ec0e38739213.jpg",
     "static/media/CV-AsaEriksson2023.pdf": "/graphics-by-asa/static/media/CV-AsaEriksson2023.dc076ec2895482d4aa0b.pdf",
     "static/media/5.jpeg": "/graphics-by-asa/static/media/5.234ea506845ed53e4478.jpeg",
@@ -50,6 +49,7 @@
     "static/media/1.jpeg": "/graphics-by-asa/static/media/1.b3bbdacf5eb70bed76b5.jpeg",
     "static/media/7.jpeg": "/graphics-by-asa/static/media/7.55f19c7e276e3f5e2797.jpeg",
     "static/media/PhoneNumber.png": "/graphics-by-asa/static/media/PhoneNumber.5a204d251033bfa1483e.png",
+    "static/media/FreestyleMogul-webdesign.jpeg": "/graphics-by-asa/static/media/FreestyleMogul-webdesign.87e8fedf5d438a9272c9.jpeg",
     "static/media/4.jpg": "/graphics-by-asa/static/media/4.29855c905ea8a161f94d.jpg",
     "static/media/Email.png": "/graphics-by-asa/static/media/Email.5e8ade7d92f6deff5ef8.png",
     "static/media/Home.png": "/graphics-by-asa/static/media/Home.87ad14abfb5cf207a965.png",
@@ -67,11 +67,11 @@
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.fe067103.css.map": "/graphics-by-asa/static/css/main.fe067103.css.map",
-    "main.65db726d.js.map": "/graphics-by-asa/static/js/main.65db726d.js.map",
+    "main.c14156da.js.map": "/graphics-by-asa/static/js/main.c14156da.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe067103.css",
-    "static/js/main.65db726d.js"
+    "static/js/main.c14156da.js"
   ]
 }

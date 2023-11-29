@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.29b8ee45.css",
-    "main.js": "/graphics-by-asa/static/js/main.a8e7ceb2.js",
+    "main.css": "/graphics-by-asa/static/css/main.fe067103.css",
+    "main.js": "/graphics-by-asa/static/js/main.65db726d.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/eStarkIT.mp4": "/graphics-by-asa/static/media/eStarkIT.d4329c5c0a973b7a235c.mp4",
+    "static/media/TLW-real-estate.mp4": "/graphics-by-asa/static/media/TLW-real-estate.c758de74d80f7286b6be.mp4",
     "static/media/Stringvibe by Åsa Eriksson 2.mp4": "/graphics-by-asa/static/media/Stringvibe by Åsa Eriksson 2.ffce8ae4f903ec7efac5.mp4",
-    "static/media/Sculpted Goddess - overview (1).mp4": "/graphics-by-asa/static/media/Sculpted Goddess - overview (1).db651951a32f813dcd05.mp4",
+    "static/media/Sculpted Goddess.mp4": "/graphics-by-asa/static/media/Sculpted Goddess.db651951a32f813dcd05.mp4",
+    "static/media/bullseye-media.mp4": "/graphics-by-asa/static/media/bullseye-media.5fde00a4b26c09a726f5.mp4",
+    "static/media/F4H-bostäder.mp4": "/graphics-by-asa/static/media/F4H-bostäder.bf1970b75ed7c230a9c8.mp4",
     "static/media/_Racing Go-kart (s).mp4": "/graphics-by-asa/static/media/_Racing Go-kart (s).cbb070b674d3666546fe.mp4",
+    "static/media/Linkyart.mp4": "/graphics-by-asa/static/media/Linkyart.1b252caf94ee74371407.mp4",
     "static/media/2.jpg": "/graphics-by-asa/static/media/2.f123fcf05ba369360d38.jpg",
     "static/media/F4HBostader-hemsida.jpg": "/graphics-by-asa/static/media/F4HBostader-hemsida.5ffa405a35fd3cc14808.jpg",
     "static/media/SculptedGoddess-hemsida.jpg": "/graphics-by-asa/static/media/SculptedGoddess-hemsida.fab7bc0fee09a01779e9.jpg",
@@ -62,12 +66,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.29b8ee45.css.map": "/graphics-by-asa/static/css/main.29b8ee45.css.map",
-    "main.a8e7ceb2.js.map": "/graphics-by-asa/static/js/main.a8e7ceb2.js.map",
+    "main.fe067103.css.map": "/graphics-by-asa/static/css/main.fe067103.css.map",
+    "main.65db726d.js.map": "/graphics-by-asa/static/js/main.65db726d.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29b8ee45.css",
-    "static/js/main.a8e7ceb2.js"
+    "static/css/main.fe067103.css",
+    "static/js/main.65db726d.js"
   ]
 }

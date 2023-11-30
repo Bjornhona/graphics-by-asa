@@ -5,7 +5,7 @@ const PortfolioContainer = ({children}) => {
   const projectsContext = useContext(ProjectsContext);
 
   const handleSave = useCallback((value, key, projectName, newProjects) => {
-    newProjects.map(newProject => {
+    newProjects.forEach(newProject => {
       if (newProject.name === projectName) {
          newProject[key] = value;
       }
@@ -36,7 +36,7 @@ const PortfolioContainer = ({children}) => {
         name: projectName
       });
 
-      fileKeys.map(file => {
+      fileKeys.forEach(file => {
         const fileEnd = file.split('.').slice(-1)[0];
         if (file.includes(projectName) && (fileEnd === 'jpg' || fileEnd === 'jpeg' || fileEnd === 'png')) {
           projectImageUrls.push(file.slice(2));

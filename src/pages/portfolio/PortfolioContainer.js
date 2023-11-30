@@ -47,7 +47,7 @@ const PortfolioContainer = ({children}) => {
             handleSave(res.default, 'data', projectName, newProjects);
           });
         }
-        if (file.includes(projectName) && (fileEnd === 'mp4' )) {
+        if (file.includes(projectName) && (fileEnd === 'mp4' || fileEnd === 'avi')) {
           projectVideoUrls.push(file.slice(2));
         }
       });

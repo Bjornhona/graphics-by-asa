@@ -62,7 +62,7 @@ const BlogContainer = ({children}) => {
   }, []);
 
   return (
-    <div>
+    <div id="blog-container">
       {children}
     </div>
   )

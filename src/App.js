@@ -28,7 +28,7 @@ function App() {
               <Route path="/portfolio/:id" element={<PortfolioPage />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/blog" element={<Blog />} />
-              <Route path="/blog:id" element={<BlogPost />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>

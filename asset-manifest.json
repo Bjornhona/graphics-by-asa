@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.1153cf86.css",
-    "main.js": "/graphics-by-asa/static/js/main.628c779e.js",
+    "main.css": "/graphics-by-asa/static/css/main.1866057c.css",
+    "main.js": "/graphics-by-asa/static/js/main.4f9b6705.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/eStarkIT.mp4": "/graphics-by-asa/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/TLW-real-estate.mp4": "/graphics-by-asa/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
@@ -72,12 +72,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.1153cf86.css.map": "/graphics-by-asa/static/css/main.1153cf86.css.map",
-    "main.628c779e.js.map": "/graphics-by-asa/static/js/main.628c779e.js.map",
+    "main.1866057c.css.map": "/graphics-by-asa/static/css/main.1866057c.css.map",
+    "main.4f9b6705.js.map": "/graphics-by-asa/static/js/main.4f9b6705.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1153cf86.css",
-    "static/js/main.628c779e.js"
+    "static/css/main.1866057c.css",
+    "static/js/main.4f9b6705.js"
   ]
 }

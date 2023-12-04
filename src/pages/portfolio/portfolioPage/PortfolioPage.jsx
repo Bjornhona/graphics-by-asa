@@ -17,7 +17,7 @@ const PortfolioPage = () => {
 
   const projectsContext = useContext(ProjectsContext);
   const projects = projectsContext.state.newProjects;
-  const project = projects?.find(p => p.data?.id === id);
+  const project = projects && projects.find(p => p.data?.id === id);
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   let linksTo;
@@ -27,12 +27,12 @@ const PortfolioPage = () => {
     let nextProjectId;
 
     if (projectIndex === 0) {
-      prevProjectId = projects[projectIndex + 1].data.id;
+      prevProjectId = projects[projectIndex + 1]?.data?.id;
     } else if (projectIndex < projects.length - 1) {
-      prevProjectId = projects[projectIndex + 1].data.id;
-      nextProjectId = projects[projectIndex - 1]?.data.id;
+      prevProjectId = projects[projectIndex + 1]?.data?.id;
+      nextProjectId = projects[projectIndex - 1]?.data?.id;
     } else {
-      nextProjectId = projects[projectIndex - 1].data.id;
+      nextProjectId = projects[projectIndex - 1]?.data?.id;
     }
 
     const getLinkToPrev = () => {

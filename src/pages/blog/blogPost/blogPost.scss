@@ -1,6 +1,6 @@
-@use "../../app.scss" as s;
+@use "../../../app.scss" as s;
 
-#blog {
+#blog-post {
   #blog-container {
     display: flex;
     flex-direction: column;
@@ -42,15 +42,25 @@
     }
 
     a {
-      font-size: 0.875rem;
+      font-size: 0.875rem; // 14px
     }
 
-    .teaser-text {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-              line-clamp: 4; 
-      -webkit-box-orient: vertical;
+    blockquote {
+      border-left: 5px solid #cdb980;
+      margin: 0;
+      padding: 0 30px 0 30px;
+      font-style: italic;
+      font-size: 0.875rem; // 14px
+      line-height: 1.7em;
+      font-family: Georgia, Times, "Times New Roman", serif;
+    }
+
+    .smaller-text {
+      font-size: 1rem;
+    }
+
+    .list-item {
+      font-size: 0.75rem;
     }
   }
 

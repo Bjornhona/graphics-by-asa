@@ -29,7 +29,10 @@ const Blog = () => {
           <span className='date-text'>Posted on {post.data?.date}</span>
         </div>
         {post.images?.map((image, index) => <div key={index} className='post-image'><img src={image} alt={'Post ' + index} /></div>)}
-        <p>{post.data?.teaser}</p>
+        <div className='teaser-text'>
+          <p>{post.data?.teaser}</p>
+        </div>
+        
         <Link to={`/blog/${post.name}`}>Read more</Link>
       </>
     )

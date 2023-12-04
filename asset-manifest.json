@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graphics-by-asa/static/css/main.1866057c.css",
-    "main.js": "/graphics-by-asa/static/js/main.4f9b6705.js",
+    "main.css": "/graphics-by-asa/static/css/main.73cb6c57.css",
+    "main.js": "/graphics-by-asa/static/js/main.9cb8eeac.js",
     "static/js/787.8088cda2.chunk.js": "/graphics-by-asa/static/js/787.8088cda2.chunk.js",
     "static/media/eStarkIT.mp4": "/graphics-by-asa/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/TLW-real-estate.mp4": "/graphics-by-asa/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
@@ -21,6 +21,7 @@
     "static/media/Screenshot 2023-12-01 at 15.00.14.png": "/graphics-by-asa/static/media/Screenshot 2023-12-01 at 15.00.14.68c9dcf7c95b73fd028a.png",
     "static/media/3.jpg": "/graphics-by-asa/static/media/3.ec0b7f7994f9a1086546.jpg",
     "static/media/Angsviolen-hemsida.jpg": "/graphics-by-asa/static/media/Angsviolen-hemsida.2d5fb65ae7c36591d6b4.jpg",
+    "static/media/Screenshot 2023-12-03 at 09.22.05.png": "/graphics-by-asa/static/media/Screenshot 2023-12-03 at 09.22.05.e5f018260a1cbb5094b5.png",
     "static/media/6.jpg": "/graphics-by-asa/static/media/6.e3cd9cefbfa57e8be042.jpg",
     "static/media/Beerio-hemsida.jpg": "/graphics-by-asa/static/media/Beerio-hemsida.e0dd9b2732ead77d1814.jpg",
     "static/media/Future4Homes-hemsida.jpg": "/graphics-by-asa/static/media/Future4Homes-hemsida.0a4aa8438f34635b1c79.jpg",
@@ -72,12 +73,12 @@
     "static/media/facebook.svg": "/graphics-by-asa/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/graphics-by-asa/index.html",
     "static/media/burger-icon.svg": "/graphics-by-asa/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.1866057c.css.map": "/graphics-by-asa/static/css/main.1866057c.css.map",
-    "main.4f9b6705.js.map": "/graphics-by-asa/static/js/main.4f9b6705.js.map",
+    "main.73cb6c57.css.map": "/graphics-by-asa/static/css/main.73cb6c57.css.map",
+    "main.9cb8eeac.js.map": "/graphics-by-asa/static/js/main.9cb8eeac.js.map",
     "787.8088cda2.chunk.js.map": "/graphics-by-asa/static/js/787.8088cda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1866057c.css",
-    "static/js/main.4f9b6705.js"
+    "static/css/main.73cb6c57.css",
+    "static/js/main.9cb8eeac.js"
   ]
 }

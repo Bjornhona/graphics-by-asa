@@ -1,0 +1,23 @@
+{
+  "id": "023",
+  "tags": ["Web"],
+  "thumb": {
+    "title": "Buscarella",
+    "text": "Pure HTML and css"
+  },
+  "page": {
+    "title": "Buscarella",
+    "subTitle": "Buscarella – Advancing the global communication",
+    "text": "Pure HTML and css",
+    "project": "Web application",
+    "programLanguages": "HTML, SCSS",
+    "github": [{
+      "text": "Buscarella",
+      "link": "https://github.com/Bjornhona/buscarella-homepage"
+    }],
+    "demos": [{
+      "text": "Buscarella demo",
+      "link": "https://bjornhona.github.io/buscarella-homepage/"
+    }]
+  }
+}

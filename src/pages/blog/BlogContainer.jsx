@@ -1,17 +1,8 @@
-import { useEffect, useContext, useCallback } from 'react';
+import { useEffect, useContext } from 'react';
 import { BlogsContext } from './BlogsContext';
 
 const BlogContainer = ({children}) => {
   const blogsContext = useContext(BlogsContext);
-
-  const handleSave = useCallback((value, key, blogName, newBlogs) => {
-    newBlogs.forEach(newBlog => {
-      if (newBlog.name === blogName) {
-        newBlog[key] = value;
-      }
-    });
-    blogsContext.dispatch({newBlogs});
-  }, []);
 
   useEffect(() => {
     const newBlogs = [];
@@ -23,10 +14,19 @@ const BlogContainer = ({children}) => {
       const pathName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1')
       const blogFolders = pathName.split('/')[0];
 
-      blogFolders !== "." && blogsNameList.push(blogFolders);
+      return blogFolders !== "." && blogsNameList.push(blogFolders);
     }, {});
 
     const uniqueBlogFolders = [...new Set(blogsNameList)];
+
+    const handleSave = (value, key, blogName, newBlogs) => {
+      newBlogs.forEach(newBlog => {
+        if (newBlog.name === blogName) {
+          newBlog[key] = value;
+        }
+      });
+      blogsContext.dispatch({newBlogs});
+    };
 
     uniqueBlogFolders.forEach(blogName => {
       const blogImageUrls = [];

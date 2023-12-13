@@ -29,7 +29,7 @@ const BlogPost = () => {
             <p>{chapter.text}</p>
             <ul>
               {chapter.list && chapter.list.map((item, index) => (
-                <p className="list-item"><li key={index}>{item}</li></p>
+                <p className="list-item" key={index}><li>{item}</li></p>
               ))}
             </ul>
             {chapter.blockquote && <blockquote>{chapter.blockquote}</blockquote>}

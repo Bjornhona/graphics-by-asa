@@ -1,17 +1,8 @@
-import { useEffect, useContext, useCallback } from 'react';
+import { useEffect, useContext } from 'react';
 import { ProjectsContext } from './projectGallery/ProjectsContext';
 
 const PortfolioContainer = ({children}) => {
   const projectsContext = useContext(ProjectsContext);
-
-  const handleSave = useCallback((value, key, projectName, newProjects) => {
-    newProjects.forEach(newProject => {
-      if (newProject.name === projectName) {
-         newProject[key] = value;
-      }
-    });
-    projectsContext.dispatch({newProjects});
-  }, []);
 
   useEffect(() => {
     const newProjects = [];
@@ -23,10 +14,19 @@ const PortfolioContainer = ({children}) => {
       const pathName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1')
       const projectFolders = pathName.split('/')[0];
 
-      projectFolders !== "." && projectNameList.push(projectFolders);
+      return projectFolders !== "." && projectNameList.push(projectFolders);
     }, {});
 
     const uniqueProjectFolders = [...new Set(projectNameList)];
+
+    const handleSave = (value, key, projectName, newProjects) => {
+      newProjects.forEach(newProject => {
+        if (newProject.name === projectName) {
+          newProject[key] = value;
+        }
+      });
+      projectsContext.dispatch({newProjects});
+    };
 
     uniqueProjectFolders.forEach(projectName => {
       const projectImageUrls = [];

@@ -64,6 +64,10 @@
         .icon-row {
           display: flex;
           align-items: center;
+
+          span.protectedNumber:before {
+            content: attr(title);
+          }
         }
       }
 

@@ -64,6 +64,18 @@
     }
   }
 
+  .links-item {
+    display: flex;
+    align-items: center;
+    gap: s.$s;
+    font-style: italic;
+
+    img {
+      width: s.$m;
+      height: s.$m;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .post-image {
       height: 35vw;

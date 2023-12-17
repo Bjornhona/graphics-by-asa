@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { BlogsContext } from '../BlogsContext';
 import StyledContent from '../../../components/styledContent/StyledContent';
 import BlogContainer from '../BlogContainer';
+import linksIcon from './links-icon-1.png';
 import './blogPost.scss';
 
 const BlogPost = () => {
@@ -33,6 +34,12 @@ const BlogPost = () => {
               ))}
             </ul>
             {chapter.blockquote && <blockquote>{chapter.blockquote}</blockquote>}
+          </div>
+        ))}
+        {post.data?.links?.map((link, index) => (
+          <div key={index} className={'links-item'}>
+            <img src={linksIcon} alt='links icon' />
+            <a href={link} target='_blank' rel="noreferrer">{link}</a>
           </div>
         ))}
       </>

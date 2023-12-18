@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e551aed1.css",
-    "main.js": "/static/js/main.f8f3165a.js",
+    "main.js": "/static/js/main.8e62fd0a.js",
     "static/js/787.fa40aa6e.chunk.js": "/static/js/787.fa40aa6e.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/TLW-real-estate.mp4": "/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
@@ -10,7 +10,7 @@
     "static/media/Presentationsvideo-park&villas.mp4": "/static/media/Presentationsvideo-park&villas.062f4732cebb22197a20.mp4",
     "static/media/AsanonaTrike.mp4": "/static/media/AsanonaTrike.27682f8825c1c3f6b0a0.mp4",
     "static/media/bullseye-media.mp4": "/static/media/bullseye-media.4f43e6dc233651dad168.mp4",
-    "static/media/_Racing Go-kart (s).mp4": "/static/media/_Racing Go-kart (s).9865d6ec90f5de6788a7.mp4",
+    "static/media/racingGoKart.mp4": "/static/media/racingGoKart.9865d6ec90f5de6788a7.mp4",
     "static/media/2.jpg": "/static/media/2.f123fcf05ba369360d38.jpg",
     "static/media/F4H-bostäder.mp4": "/static/media/F4H-bostäder.7c53601dc0979b4f1c6e.mp4",
     "static/media/Linkyart.mp4": "/static/media/Linkyart.0f3e3af2022d2eda722a.mp4",
@@ -74,11 +74,11 @@
     "index.html": "/index.html",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.e551aed1.css.map": "/static/css/main.e551aed1.css.map",
-    "main.f8f3165a.js.map": "/static/js/main.f8f3165a.js.map",
+    "main.8e62fd0a.js.map": "/static/js/main.8e62fd0a.js.map",
     "787.fa40aa6e.chunk.js.map": "/static/js/787.fa40aa6e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e551aed1.css",
-    "static/js/main.f8f3165a.js"
+    "static/js/main.8e62fd0a.js"
   ]
 }

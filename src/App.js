@@ -40,3 +40,15 @@ function App() {
 }
 
 export default App;
+
+{/* <Route path="/proposals/:proposalId">
+    {({ match }) => (
+        <ProposalDetailsPage talkId={match.params.proposalId}/>
+    )}
+</Route>
+<Route path="/proposals">
+    {() => (
+        <ProposalListPage/>
+    )}
+</Route>
+<Redirect to="/proposals"/> */}

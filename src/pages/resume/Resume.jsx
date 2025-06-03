@@ -10,7 +10,7 @@ import { softwareSkillsData, languageSkillsData, contactData } from './data';
 const Resume = () => {
 
   const downloadCv = () => {
-    saveAs(myCV, 'CV-AsaEriksson2023.pdf');
+    saveAs(myCV, 'CV-AsaEriksson2025.pdf');
   }
   
   return (
@@ -34,12 +34,12 @@ const Resume = () => {
 
             <h5>Areas of expertise</h5>
             <div className='areas-of-expertise'>
-              <p>Web Development · Graphic Design · Web Design · Product Design · UX/UI</p>
+              <p>Web Development · Graphic Design · Web Design · Industrial Design · UX/UI · Project Management</p>
             </div>
 
             <h5>Programming skills</h5>
             <div className='programming-skills'>
-              <p>Javascript · Node.js · Express · React · React Native · Python · C · Flask · SQL · MongoDB · Jest · Node.js · ES6 · HTML5 · CSS</p>
+              <p>Javascript · React · Redux · React Native · NextJs · TypeScript · Jest · Node.js · Express · ES6 · HTML5 · CSS</p>
             </div>
 
             <h5>Software skills</h5>

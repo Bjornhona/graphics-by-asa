@@ -14,7 +14,7 @@ const SmallImageHeader = ({ downloadCv }) => {
         </div>
         <div className="inner-text">
           <h5>Frontend developer & UX/UI designer</h5>
-          <p>I am a Frontend Developer, specialized in React, with a solid background in Industrial Engineering, Graphic Design, Product Design and Web Design. After working as a web design freelancer I continue to develop my web and programming skills at Hexad SL since many years. I consider myself a self-organized person, eager to learn with senior management skills, fluent in Swedish, Spanish and English.</p>
+          <p>Frontend Developer with a strong foundation in React, blending technical expertise with a background in Industrial Engineering, Graphic Design, Product Design, and Web Design. My journey began as a freelance web designer, and over the years, I’ve continuously expanded my skills in web development and programming. Highly self-organized, proactive, and driven by continuous learning, I bring a unique mix of creative and strategic thinking—complemented by fluency in Swedish, Spanish, and English, and proven experience in senior-level leadership and project management.</p>
         </div>
       </div>
     )

@@ -9,11 +9,11 @@ const SmallImageHeader = ({ downloadCv }) => {
         <div className={'left-info-banner'}>
           <img src={MeImage} alt='me' />
           <h5>Åsa Eriksson</h5>
-          <h6>Frontend Developer & UX/UI Designer</h6>
+          <h6>Frontend & UI Developer</h6>
           <button className="inverted" onClick={downloadCv}>Download CV</button>
         </div>
         <div className="inner-text">
-          <h5>Frontend developer & UX/UI designer</h5>
+          <h5>Frontend & UI Developer</h5>
           <p>Frontend Developer with a strong foundation in React, blending technical expertise with a background in Industrial Engineering, Graphic Design, Product Design, and Web Design. My journey began as a freelance web designer, and over the years, I’ve continuously expanded my skills in web development and programming. Highly self-organized, proactive, and driven by continuous learning, I bring a unique mix of creative and strategic thinking—complemented by fluency in Swedish, Spanish, and English, and proven experience in senior-level leadership and project management.</p>
         </div>
       </div>

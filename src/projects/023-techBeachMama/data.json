@@ -1,0 +1,23 @@
+{
+  "id": "023",
+  "tags": ["Web"],
+  "thumb": {
+    "title": "Tech Beach Mama",
+    "text": "Personal Frontend project created in Next.js, styled with Tailwind and using Shadcn components."
+  },
+  "page": {
+    "title": "Tech Beach Mama",
+    "subTitle": "Inpirational Web page for Women who want to start a Tech Career",
+    "text": "Personal Frontend project created in Next.js, styled with Tailwind and using Shadcn components. Used as landing page with traffic driven from social media accounts with the same name. Plays with dark and light themes.",
+    "project": "Web application",
+    "programLanguages": "Next.js, HTML, Tailwind, Shadcn",
+    "github": [{
+      "text": "Tech Beach Mama repository",
+      "link": "https://github.com/Bjornhona/tech-beach-mama"
+    }],
+    "demos": [{
+      "text": "Tech Beach Mama demo",
+      "link": "https://tech-beach-mama.vercel.app/"
+    }]
+  }
+}

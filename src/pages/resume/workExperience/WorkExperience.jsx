@@ -31,6 +31,11 @@ const WorkExperience = () => {
 
         <h5>EDUCATION</h5>
 
+        <p><strong>Introduction to Computer Science CS50</strong><br/>
+          Harvard University, edX, Certificate, Jun – Dec 2020<br/>
+          Abstraction, algorithms, data structures, security, software engineering
+          and web programming: C, Python, SQL, CSS, HTML, Javascript</p>
+
         <p><strong>Full-stack Developer, MERN</strong><br/>
           Ironhack Bootcamp, Barcelona, Sept – Nov 2018<br/>
           Web development MERN: JavaScript, MongoDB, Express, React, Node.js</p>

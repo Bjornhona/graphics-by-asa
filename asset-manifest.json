@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e551aed1.css",
-    "main.js": "/static/js/main.c1225fac.js",
+    "main.js": "/static/js/main.9187a4cb.js",
     "static/js/787.fa40aa6e.chunk.js": "/static/js/787.fa40aa6e.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/TLW-real-estate.mp4": "/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
@@ -38,6 +38,7 @@
     "static/media/NotoSansDisplay-Regular.ttf": "/static/media/NotoSansDisplay-Regular.a66de150ab8ede866e1f.ttf",
     "static/media/3.png": "/static/media/3.616097109068ff6a6449.png",
     "static/media/TLW-hemsida.jpg": "/static/media/TLW-hemsida.e1cd0593307c6306f1a0.jpg",
+    "static/media/CV-AsaEriksson2025.pdf": "/static/media/CV-AsaEriksson2025.59389881113d4431e8b5.pdf",
     "static/media/BullseyeMedia-hemsida.jpg": "/static/media/BullseyeMedia-hemsida.e3c9497b1f806eb1ddab.jpg",
     "static/media/4.png": "/static/media/4.934a5d57ff60fdf05105.png",
     "static/media/1.jpg": "/static/media/1.224c8a705b0cb3416ec9.jpg",
@@ -47,7 +48,6 @@
     "static/media/Linkyart-hemsida.jpg": "/static/media/Linkyart-hemsida.6760fdd4bfb202c3d676.jpg",
     "static/media/SculptedGoddess-hemsida.png": "/static/media/SculptedGoddess-hemsida.33c6099b949a9c5fc460.png",
     "static/media/Image-me1.jpg": "/static/media/Image-me1.b57fb982ec0e38739213.jpg",
-    "static/media/CV-AsaEriksson2023.pdf": "/static/media/CV-AsaEriksson2023.dc076ec2895482d4aa0b.pdf",
     "static/media/5.jpeg": "/static/media/5.234ea506845ed53e4478.jpeg",
     "static/media/Github.png": "/static/media/Github.e1b28101d952282849da.png",
     "static/media/6.jpeg": "/static/media/6.1a2f0050eaccadbf74d8.jpeg",
@@ -72,11 +72,11 @@
     "index.html": "/index.html",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.e551aed1.css.map": "/static/css/main.e551aed1.css.map",
-    "main.c1225fac.js.map": "/static/js/main.c1225fac.js.map",
+    "main.9187a4cb.js.map": "/static/js/main.9187a4cb.js.map",
     "787.fa40aa6e.chunk.js.map": "/static/js/787.fa40aa6e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e551aed1.css",
-    "static/js/main.c1225fac.js"
+    "static/js/main.9187a4cb.js"
   ]
 }

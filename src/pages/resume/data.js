@@ -86,6 +86,6 @@ export const contactData = [
   {
     type: 'phone',
     icon: phoneIcon,
-    component: <p><span class="protectedNumber" title="+34 - 676 49 69 19"></span></p>
+    component: <p><span className="protectedNumber" title="+34 - 676 49 69 19"></span></p>
   }
 ];

@@ -92,12 +92,12 @@ const PortfolioPage = () => {
           >
             {project?.videos?.length < 1
               ? project?.images?.map((image, index) => (
-                <div key={index} data-src={image} class='not-clickable-image' />
+                <div key={index} data-src={image} className='not-clickable-image' />
               ))
               : project?.images?.map((image, index) => (
                 index === project?.images.length - 1
-                  ? <div key={index} data-src={image} class='clickable-image' onClick={() => handleVideoClick(true)} />
-                  : <div key={index} data-src={image} class='not-clickable-image' />
+                  ? <div key={index} data-src={image} className='clickable-image' onClick={() => handleVideoClick(true)} />
+                  : <div key={index} data-src={image} className='not-clickable-image' />
               ))
             }
           </AutoplaySlider>

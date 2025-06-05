@@ -10,8 +10,11 @@ const ContactForm = (props) => {
   const form = useRef();
 
   const sendEmail = () => {
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      form.current,
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
     .then(() => {
         toast.success('Your message was sent correctly! I will get back to you soon.', {
           position: toast.POSITION.TOP_RIGHT

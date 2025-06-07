@@ -13,6 +13,7 @@ import Contact from './pages/contact/Contact';
 import Portfolio from './pages/portfolio/Portfolio';
 import PortfolioPage from './pages/portfolio/portfolioPage/PortfolioPage';
 import PageNotFound from './pages/not_found/PageNotFound';
+import Logo from './pages/logo.jsx';
 import './App.scss';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
+            <Route path="/graphicsbyasa-logo" element={<Logo />} />
           </Routes>
         </BlogsProvider>
       </ProjectsProvider>
@@ -40,15 +42,3 @@ function App() {
 }
 
 export default App;
-
-{/* <Route path="/proposals/:proposalId">
-    {({ match }) => (
-        <ProposalDetailsPage talkId={match.params.proposalId}/>
-    )}
-</Route>
-<Route path="/proposals">
-    {() => (
-        <ProposalListPage/>
-    )}
-</Route>
-<Redirect to="/proposals"/> */}

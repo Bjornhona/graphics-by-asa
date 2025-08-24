@@ -14,6 +14,7 @@ import Portfolio from './pages/portfolio/Portfolio';
 import PortfolioPage from './pages/portfolio/portfolioPage/PortfolioPage';
 import PageNotFound from './pages/not_found/PageNotFound';
 import Logo from './pages/logo.jsx';
+import PrivacyPolicy from './pages/legal/PrivacyPolicy';
 import './App.scss';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
             <Route path="/graphicsbyasa-logo" element={<Logo />} />

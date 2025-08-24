@@ -6,25 +6,24 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-D8ZL6SL0B0"
     ></script>
-    <script>
+    <!-- <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
       gtag("config", "G-D8ZL6SL0B0");
-    </script>
+    </script> -->
 
     <!-- TarteauCitron Open Source Cookie Banner -->
     <script src="/tarteaucitron/tarteaucitron.min.js"></script>
     <script type="text/javascript">
       tarteaucitron.init({
-        privacyUrl: "" /* Privacy policy url */,
-        bodyPosition:
-          "top" /* top to bring it as first element for accessibility */,
+        privacyUrl: "/src/pages/legal/PrivacyPolicy.jsx" /* Privacy policy url */,
+        bodyPosition: "top" /* top to bring it as first element for accessibility */,
         hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
         cookieName: "tarteaucitron" /* Cookie name */,
-        orientation: "middle" /* Banner position (top - bottom) */,
+        orientation: "middle" /* Banner position (top - middle - bottom) */,
         groupServices: true /* Group services by category */,
         showDetailsOnClick: true /* Click to expand the description */,
         serviceDefaultState: "wait" /* Default state (true - wait - false) */,
@@ -34,8 +33,7 @@
         closePopup: true /* Show a close X on the banner */,
         showIcon: true /* Show cookie icon to manage cookies */,
         //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
-        iconPosition:
-          "BottomRight" /* Position of the cookie (BottomRight - BottomLeft - TopRight - TopLeft) */,
+        iconPosition: "BottomRight" /* Position of the cookie (BottomRight - BottomLeft - TopRight - TopLeft) */,
         adblocker: false /* Show a Warning if an adblocker is detected */,
         DenyAllCta: true /* Show the deny all button */,
         AcceptAllCta: true /* Show the accept all button */,
@@ -47,7 +45,7 @@
         useExternalCss: false /* Expert mode: do not load the tarteaucitron.css file */,
         useExternalJs: false /* Expert mode: do not load the tarteaucitron js files */,
         //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
-        readmoreLink: "" /* Change the default readmore link */,
+        // readmoreLink: "" /* Change the default readmore link */,
         mandatory: true /* Show a message about mandatory cookies */,
         mandatoryCta: false /* Show the disabled accept button when mandatory on */,
         //"customCloserId": "", /* Optional a11y: Custom element ID used to open the panel */
@@ -66,12 +64,13 @@
         // "gcmadsuserdata",
         "gcmsecurity"
       );
+      (tarteaucitron.job = tarteaucitron.job || []).push('ga');
+      tarteaucitron.user.gaUa = 'G-D8ZL6SL0B0';
     </script>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#0e4e4e" />
     <meta name="Graphics by Åsa" content="Graphics for your business" />
 
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />

@@ -10,8 +10,9 @@
     <!-- TarteauCitron Open Source Cookie Banner -->
     <script src="/tarteaucitron/tarteaucitron.min.js"></script>
     <script type="text/javascript">
+      tarteaucitron.user.gtagUa = 'G-D8ZL6SL0B0';
       tarteaucitron.init({
-        privacyUrl: "/src/pages/legal/PrivacyPolicy.jsx" /* Privacy policy url */,
+        privacyUrl: "/privacy-policy" /* Privacy policy url */,
         bodyPosition: "top" /* top to bring it as first element for accessibility */,
         hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
         cookieName: "tarteaucitron" /* Cookie name */,
@@ -49,7 +50,9 @@
         partnersList: true /* Show the number of partners on the popup/middle banner */,
       });
       (tarteaucitron.job = tarteaucitron.job || []).push(
-        "ga",
+        // "ga",
+        "googleanalytics",
+        // "analytics",
         // "gcmadstorage",
         "gcmanalyticsstorage",
         "gcmfunctionality",
@@ -57,8 +60,8 @@
         // "gcmadsuserdata",
         "gcmsecurity"
       );
-      // (tarteaucitron.job = tarteaucitron.job || []).push('ga');
-      tarteaucitron.user.gaUa = 'G-D8ZL6SL0B0';
+      // tarteaucitron.user.gaUa = 'G-D8ZL6SL0B0';
+      // tarteaucitron.user.analyticsUa = 'G-D8ZL6SL0B0';
     </script>
 
     <meta charset="utf-8" />

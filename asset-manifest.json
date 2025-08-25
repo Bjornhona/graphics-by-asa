@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.224df160.css",
-    "main.js": "/static/js/main.49743915.js",
-    "static/js/787.fa40aa6e.chunk.js": "/static/js/787.fa40aa6e.chunk.js",
+    "main.css": "/static/css/main.8859e52e.css",
+    "main.js": "/static/js/main.86e9665e.js",
+    "static/js/453.b7e0acdc.chunk.js": "/static/js/453.b7e0acdc.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/TLW-real-estate.mp4": "/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
     "static/media/Stringvibe by Åsa Eriksson.mp4": "/static/media/Stringvibe by Åsa Eriksson.24b351ff5f550afb6713.mp4",
@@ -72,12 +72,12 @@
     "static/media/facebook.svg": "/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/index.html",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.224df160.css.map": "/static/css/main.224df160.css.map",
-    "main.49743915.js.map": "/static/js/main.49743915.js.map",
-    "787.fa40aa6e.chunk.js.map": "/static/js/787.fa40aa6e.chunk.js.map"
+    "main.8859e52e.css.map": "/static/css/main.8859e52e.css.map",
+    "main.86e9665e.js.map": "/static/js/main.86e9665e.js.map",
+    "453.b7e0acdc.chunk.js.map": "/static/js/453.b7e0acdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.224df160.css",
-    "static/js/main.49743915.js"
+    "static/css/main.8859e52e.css",
+    "static/js/main.86e9665e.js"
   ]
 }

@@ -1,15 +1,12 @@
-import { useState, useRef, useEffect } from 'react';
-import {
-  Outlet,
-  NavLink,
-} from "react-router-dom";
-import './layout.scss';
-import logo from '../logo2.svg';
-import { ReactComponent as BurgerIcon } from './burger-icon.svg';
-import { ReactComponent as CloseIcon } from './close-button.svg';
-import { socialMediaIcons } from './social_media';
-import { navigation } from './navigation';
-import 'tarteaucitronjs';
+import { useState, useRef, useEffect } from "react";
+import { Outlet, NavLink } from "react-router-dom";
+import "./layout.scss";
+import logo from "../logo2.svg";
+import { ReactComponent as BurgerIcon } from "./burger-icon.svg";
+import { ReactComponent as CloseIcon } from "./close-button.svg";
+import { socialMediaIcons } from "./social_media";
+import { navigation } from "./navigation";
+import "tarteaucitronjs";
 
 const Layout = () => {
   const [showNav, setShowNav] = useState(false);
@@ -20,7 +17,8 @@ const Layout = () => {
   useEffect(() => {
     window.tarteaucitron.init({
       privacyUrl: "/privacy-policy" /* Privacy policy url */,
-      bodyPosition: "top" /* top to bring it as first element for accessibility */,
+      bodyPosition:
+        "top" /* top to bring it as first element for accessibility */,
       hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
       cookieName: "tarteaucitron" /* Cookie name */,
       orientation: "middle" /* Banner position (top - middle - bottom) */,
@@ -33,7 +31,8 @@ const Layout = () => {
       closePopup: true /* Show a close X on the banner */,
       showIcon: true /* Show cookie icon to manage cookies */,
       // "iconSrc": "🍪", /* Optionnal: URL or base64 encoded image */
-      iconPosition: "BottomRight" /* Position of the cookie (BottomRight - BottomLeft - TopRight - TopLeft) */,
+      iconPosition:
+        "BottomRight" /* Position of the cookie (BottomRight - BottomLeft - TopRight - TopLeft) */,
       adblocker: false /* Show a Warning if an adblocker is detected */,
       DenyAllCta: true /* Show the deny all button */,
       AcceptAllCta: true /* Show the accept all button */,
@@ -73,7 +72,7 @@ const Layout = () => {
       if (ref.current && !ref.current.contains(event.target)) {
         setShowNav(false);
       }
-    }
+    };
 
     document.addEventListener("mouseup", handleClickOutside);
 
@@ -82,40 +81,57 @@ const Layout = () => {
     };
   }, [ref]);
 
-  const MyLogo = () =>
+  const MyLogo = () => (
     <a href="https://www.graphicsbyasa.com/">
-      <div className="logo-container"><img src={logo} className="App-logo" alt="logo" /></div>
-    </a>;
+      <div className="logo-container">
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
+    </a>
+  );
 
-  const MyNavigation = ({innerRef}) =>
-    <nav ref={innerRef} className={!showNav ? 'show-nav-navigation' : null}>
-      {navigation.map((nav, index) => 
-        <NavLink to={nav.link} key={index} onClick={() => setShowNav(false)}>{nav.name}</NavLink>)}
+  const MyNavigation = ({ innerRef }) => (
+    <nav ref={innerRef} className={!showNav ? "show-nav-navigation" : null}>
+      {navigation.map((nav, index) => (
+        <NavLink to={nav.link} key={index} onClick={() => setShowNav(false)}>
+          {nav.name}
+        </NavLink>
+      ))}
       <CloseIcon onClick={() => setShowNav(false)} />
-    </nav>;
+    </nav>
+  );
 
-  const FollowMe = () =>
+  const FollowMe = () => (
     <div className="follow-me">
       <h5>Follow me</h5>
       <div className="social-media-icons">
-        {socialMediaIcons.map((social, index) =>
+        {socialMediaIcons.map((social, index) => (
           <a href={social.link} target="_blank" rel="noreferrer" key={index}>
-            <img src={social.icon} key={index} className="social-media-icon" alt={"Social Media Icon"} />
+            <img
+              src={social.icon}
+              key={index}
+              className="social-media-icon"
+              alt={"Social Media Icon"}
+            />
           </a>
-        )}
+        ))}
       </div>
-    </div>;
+    </div>
+  );
 
-  const Copyrights = () =>
-    <div className={showNav ? 'header-bottom nav-bottom' : 'header-bottom'}>
-      <p>{year} | All rights reserved | <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a></p>
-    </div>;
+  const Copyrights = () => (
+    <div className={showNav ? "header-bottom nav-bottom" : "header-bottom"}>
+      <p>
+        {year} | All rights reserved |{" "}
+        <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a>
+      </p>
+    </div>
+  );
 
   return (
     <div id="layout">
       {showNav && <MyNavigation innerRef={ref} />}
       <header>
-        <div className='inside'>
+        <div className="inside">
           <div className="header-top">
             <MyLogo />
             <MyNavigation />
@@ -124,11 +140,16 @@ const Layout = () => {
           <Copyrights />
         </div>
       </header>
-      <div className={`top-header ${showNav ? 'show-nav-top-header' : null}`}>
+      <div className={`top-header ${showNav ? "show-nav-top-header" : null}`}>
         <MyLogo />
-        {!showNav && <BurgerIcon className="burger-menu" onClick={() => setShowNav(!showNav)} />}
+        {!showNav && (
+          <BurgerIcon
+            className="burger-menu"
+            onClick={() => setShowNav(!showNav)}
+          />
+        )}
       </div>
-      <div className={showNav ? 'layout-body nav-body' : 'layout-body'}>
+      <div className={showNav ? "layout-body nav-body" : "layout-body"}>
         <Outlet />
         <FollowMe />
       </div>
@@ -136,7 +157,7 @@ const Layout = () => {
         <Copyrights />
       </footer>
     </div>
-  )
-}
+  );
+};
 
 export default Layout;

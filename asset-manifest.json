@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8859e52e.css",
-    "main.js": "/static/js/main.86e9665e.js",
+    "main.js": "/static/js/main.04e9cf6f.js",
     "static/js/453.b7e0acdc.chunk.js": "/static/js/453.b7e0acdc.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/TLW-real-estate.mp4": "/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
@@ -73,11 +73,11 @@
     "index.html": "/index.html",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.8859e52e.css.map": "/static/css/main.8859e52e.css.map",
-    "main.86e9665e.js.map": "/static/js/main.86e9665e.js.map",
+    "main.04e9cf6f.js.map": "/static/js/main.04e9cf6f.js.map",
     "453.b7e0acdc.chunk.js.map": "/static/js/453.b7e0acdc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8859e52e.css",
-    "static/js/main.86e9665e.js"
+    "static/js/main.04e9cf6f.js"
   ]
 }

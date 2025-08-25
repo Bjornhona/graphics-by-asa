@@ -18,10 +18,10 @@ const Layout = () => {
 
   // TarteauCitron Open Source Cookie Banner
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "/tarteaucitron/tarteaucitron.min.js";
-    script.async = true;
-    script.onload = () => {
+    // const script = document.createElement("script");
+    // script.src = "/tarteaucitron/tarteaucitron.min.js";
+    // script.async = true;
+    // script.onload = () => {
       window.tarteaucitron.init({
         privacyUrl: "/privacy-policy" /* Privacy policy url */,
         bodyPosition: "top" /* top to bring it as first element for accessibility */,
@@ -70,8 +70,8 @@ const Layout = () => {
         // "gcmadsuserdata",
         "gcmsecurity"
       );
-    };
-    document.body.appendChild(script);
+    // };
+    // document.body.appendChild(script);
   }, []);
 
   useEffect(() => {

@@ -1,0 +1,20 @@
+{
+  "id": "024",
+  "tags": ["Web"],
+  "thumb": {
+    "title": "Tech Beach Mama",
+    "text": "Tech Beach Mama is a high-converting website built with Next.js, Tailwind CSS, and Shadcn UI. It combines modern web design with strategic marketing to inspire single mothers to build profitable tech careers by the beach."
+  },
+  "page": {
+    "title": "Tech Beach Mama",
+    "subTitle": "Inpirational Web page for Women who want to start a Tech Career",
+    "text": "Tech Beach Mama is a high-converting personal brand website designed and developed in Next.js, Tailwind CSS, and Shadcn UI. It blends clean, modern aesthetics with conversion-focused UX to attract and engage aspiring tech-minded mothers. The platform showcases educational resources, a newsletter funnel, and digital products — all structured to inspire single mothers to gain financial freedom through web development, UI/UX design, and project management. Built with scalability and performance in mind, Tech Beach Mama is more than a website — it’s a movement empowering women to design a life they love, both online and by the beach.",
+    "project": "Web application",
+    "programLanguages": "Next.js, HTML, Tailwind, Shadcn",
+    "design": "Figma",
+    "demos": [{
+      "text": "Tech Beach Mama demo",
+      "link": "https://techbeachmama.com/"
+    }]
+  }
+}

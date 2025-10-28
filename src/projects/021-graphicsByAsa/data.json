@@ -1,0 +1,23 @@
+{
+  "id": "021",
+  "tags": ["Web", "UX/UI"],
+  "thumb": {
+    "title": "Graphics by Åsa",
+    "text": "Graphics by Åsa is my personal portfolio showcasing web design, UX/UI, and frontend development projects. It highlights my creative process, technical skills, and passion for building elegant, user-centered digital experiences. Created in React."
+  },
+  "page": {
+    "subTitle": "Graphics by Åsa – Personal Portfolio",
+    "text": "Graphics by Åsa is my personal portfolio — a curated collection of my work in web design, UX/UI, and frontend development. The site showcases both creative and technical projects, reflecting my journey from design to code. Each section emphasizes simplicity, clarity, and usability, featuring responsive layouts, thoughtful color palettes, and refined typography. Beyond presenting my work, this portfolio represents my philosophy: blending design and technology to craft digital experiences that are both beautiful and intuitive.",
+    "project": "Webpage",
+    "programLanguages": "React, HTML, SCSS",
+    "design": "AdobeXD",
+    "github": [{
+      "text": "Graphics by Åsa",
+      "link": "https://github.com/Bjornhona/graphics-by-asa"
+    }],
+    "demos": [{
+      "text": "Graphics by Åsa demo",
+      "link": "https://graphicsbyasa.com"
+    }]
+  }
+}

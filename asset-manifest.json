@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.8859e52e.css",
-    "main.js": "/static/js/main.7106eff7.js",
+    "main.js": "/static/js/main.0627fcb5.js",
     "static/js/453.b7e0acdc.chunk.js": "/static/js/453.b7e0acdc.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/1027.mp4": "/static/media/1027.c2a9211f4a255f09bc97.mp4",
+    "static/media/Portfolio Websites Presentation-with sound.mp4": "/static/media/Portfolio Websites Presentation-with sound.8e7ffebf5b88910e5369.mp4",
     "static/media/TLW-real-estate.mp4": "/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
     "static/media/Stringvibe by Åsa Eriksson.mp4": "/static/media/Stringvibe by Åsa Eriksson.24b351ff5f550afb6713.mp4",
     "static/media/Sculpted Goddess - compressed.mp4": "/static/media/Sculpted Goddess - compressed.be42cf5bfdc34cb11683.mp4",
@@ -26,6 +27,7 @@
     "static/media/Beerio-hemsida.jpg": "/static/media/Beerio-hemsida.e0dd9b2732ead77d1814.jpg",
     "static/media/2.png": "/static/media/2.cde3a7574ab19f426394.png",
     "static/media/Future4Homes-hemsida.jpg": "/static/media/Future4Homes-hemsida.0a4aa8438f34635b1c79.jpg",
+    "static/media/4.png": "/static/media/4.934a5d57ff60fdf05105.png",
     "static/media/TLW-hemsida2.jpg": "/static/media/TLW-hemsida2.7157226861bbd7b0ad0d.jpg",
     "static/media/designer-profile.jpg": "/static/media/designer-profile.7d86ea4b5c66e390c837.jpg",
     "static/media/2.jpeg": "/static/media/2.06d1257fd7b20b690375.jpeg",
@@ -41,7 +43,6 @@
     "static/media/TLW-hemsida.jpg": "/static/media/TLW-hemsida.e1cd0593307c6306f1a0.jpg",
     "static/media/CV-AsaEriksson2025.pdf": "/static/media/CV-AsaEriksson2025.59389881113d4431e8b5.pdf",
     "static/media/BullseyeMedia-hemsida.jpg": "/static/media/BullseyeMedia-hemsida.e3c9497b1f806eb1ddab.jpg",
-    "static/media/4.png": "/static/media/4.934a5d57ff60fdf05105.png",
     "static/media/1.jpg": "/static/media/1.224c8a705b0cb3416ec9.jpg",
     "static/media/Raleway-Medium.ttf": "/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
     "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
@@ -74,11 +75,11 @@
     "index.html": "/index.html",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.8859e52e.css.map": "/static/css/main.8859e52e.css.map",
-    "main.7106eff7.js.map": "/static/js/main.7106eff7.js.map",
+    "main.0627fcb5.js.map": "/static/js/main.0627fcb5.js.map",
     "453.b7e0acdc.chunk.js.map": "/static/js/453.b7e0acdc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8859e52e.css",
-    "static/js/main.7106eff7.js"
+    "static/js/main.0627fcb5.js"
   ]
 }

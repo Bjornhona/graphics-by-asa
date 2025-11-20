@@ -5,7 +5,7 @@ import SmallImageHeader from './smallImageHeader/SmallImageHeader';
 import myCV from './CV-AsaEriksson2025.pdf';
 import { saveAs } from 'file-saver';
 import WorkExperience from './workExperience/WorkExperience';
-import { softwareSkillsData, languageSkillsData, contactData } from './data';
+import { softwareSkillsData, languageSkillsData, contactData, expertiseData, programmingSkillsData } from './data';
 
 const Resume = () => {
 
@@ -34,12 +34,12 @@ const Resume = () => {
 
             <h5>Areas of expertise</h5>
             <div className='areas-of-expertise'>
-              <p>Web Development · Graphic Design · Web Design · Industrial Design · UX/UI · Project Management</p>
+              <p>{expertiseData.map((expertise) => expertise).join(' · ')}</p>
             </div>
 
             <h5>Programming skills</h5>
             <div className='programming-skills'>
-              <p>Javascript · React · Redux · React Native · NextJs · TypeScript · Jest · Node.js · Express · ES6 · HTML5 · CSS</p>
+              <p>{programmingSkillsData.map((skill) => skill).join(' · ')}</p>
             </div>
 
             <h5>Software skills</h5>

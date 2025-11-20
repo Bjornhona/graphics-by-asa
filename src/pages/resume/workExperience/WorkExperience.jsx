@@ -6,7 +6,7 @@ const WorkExperience = () => {
       <h5>Work Experience</h5>
       <div>
         <p><strong>Hexad SL · Frontend Developer and UX/UI Designer · Jul 2019 - Jun 2025</strong></p>
-        <p>Designing and developing customized software for larger clients. JavaScript, React, React Native, Jest, Agile, Jira, Figma, Sketch and Adobe XD.</p>
+        <p>Designing and developing customized software for larger clients. JavaScript, React, Next.js, Jest, Agile, Jira, Figma, Sketch and Adobe XD.</p>
 
         <p><strong>Grant Thornton · Frontend Developer and UX/UI Designer · Dec 2018 - Jun 2019</strong></p>
         <p>Designing and developing customized internal software adapted to company regulations and current laws. JavaScript, React, Node.js, TypeScript, Docker, Agile, DevOps and Adobe XD.</p>

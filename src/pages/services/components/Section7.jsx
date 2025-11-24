@@ -7,8 +7,8 @@ const FinalCTA = ({ text }) => {
       <div className="cta-banner">
         <h2>{text.title}</h2>
         <p>{text.description}</p>
-        <Link to={text.buttonLink || "/contact"} className="cta-link">
-          <button className="cta-button">{text.buttonText || "Contact me"}</button>
+        <Link to={text.buttonLink} className="cta-link">
+          <button className="cta-button">{text.buttonText}</button>
         </Link>
       </div>
     </div>

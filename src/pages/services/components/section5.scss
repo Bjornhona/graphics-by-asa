@@ -23,7 +23,6 @@
   .step-card {
     background-color: s.$white;
     border: 1px solid s.$lighter-gray;
-    border-radius: 12px;
     padding: s.$l;
     position: relative;
     display: flex;
@@ -43,7 +42,6 @@
       left: 0;
       width: 8px;
       height: 100%;
-      border-radius: 12px 0 0 12px;
       background: linear-gradient(180deg, s.$lighter-blue, s.$medium-blue);
     }
   }

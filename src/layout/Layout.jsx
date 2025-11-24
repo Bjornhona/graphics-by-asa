@@ -82,7 +82,7 @@ const Layout = () => {
   }, [ref]);
 
   const MyLogo = () => (
-    <a href="https://www.graphicsbyasa.com/">
+    <a href="/">
       <div className="logo-container">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
@@ -122,7 +122,7 @@ const Layout = () => {
     <div className={showNav ? "header-bottom nav-bottom" : "header-bottom"}>
       <p>
         {year} | All rights reserved |{" "}
-        <a href="https://www.graphicsbyasa.com">Graphics by Åsa</a>
+        <a href="/">Graphics by Åsa</a>
       </p>
     </div>
   );

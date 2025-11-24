@@ -15,6 +15,7 @@ import PortfolioPage from './pages/portfolio/portfolioPage/PortfolioPage';
 import PageNotFound from './pages/not_found/PageNotFound';
 import Logo from './pages/logo.jsx';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy';
+import Services from './pages/services/Services';
 import './App.scss';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/portfolio/:id" element={<PortfolioPage />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:id" element={<BlogPost />} />

@@ -1,0 +1,110 @@
+@use "../../../App.scss" as s;
+@import '../../../styles/breakpoints.scss';
+
+#section5 {
+  margin: s.$xl 0;
+
+  .section-head {
+    margin-bottom: s.$xl;
+    text-align: center;
+
+    .subtitle {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: s.$l;
+  }
+
+  .step-card {
+    background-color: s.$white;
+    border: 1px solid s.$lighter-gray;
+    border-radius: 12px;
+    padding: s.$l;
+    position: relative;
+    display: flex;
+    gap: s.$m;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 100%;
+      border-radius: 12px 0 0 12px;
+      background: linear-gradient(180deg, s.$lighter-blue, s.$medium-blue);
+    }
+  }
+
+  .step-number {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: s.$dark-blue;
+    color: s.$white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .step-body {
+    h3 {
+      margin: 0 0 s.$s 0;
+      font-size: 1rem;
+      text-transform: none;
+      color: s.$dark-gray;
+    }
+
+    p {
+      margin: 0;
+      color: s.$medium-gray;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  #section5 {
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #section5 {
+    margin: s.$l 0;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #section5 {
+    .step-card {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .step-number {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+

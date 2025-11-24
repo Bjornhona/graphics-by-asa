@@ -1,4 +1,4 @@
-# GRAPHICS BY ÅSA - My Personal Portfolio - Graphics for Your Business
+# GRAPHICS BY ÅSA - My Personal Portfolio - Elegant Web Experiences for Modern Brands
 
 This project showcases my past and present projects, giving a good understanding of my development from a well experienced UX/UI Designer and then evolving into a Senior Frontend Developer. Here you can find my resume to download and some shared experiences in my personal blog. Feel free to contact me using my contact form. I created this homepage in Javascript with React framework. Styling in plain SCSS and of course all graphics are my own.
 

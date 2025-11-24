@@ -1,0 +1,110 @@
+@use "../../../App.scss" as s;
+@import '../../../styles/breakpoints.scss';
+
+#section3 {
+  margin: s.$xl 0;
+  text-align: center;
+
+  .subtitle {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: s.$m;
+    margin-top: s.$l;
+
+    .project-card {
+      background-color: s.$white;
+      border: 1px solid s.$lighter-gray;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        border-color: s.$medium-blue;
+        box-shadow: 0 4px 12px rgba(114, 170, 170, 0.15);
+        transform: translateY(-2px);
+      }
+
+      .project-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .project-content {
+        padding: s.$l;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        h3 {
+          margin-bottom: s.$m;
+          color: s.$medium-blue;
+          font-size: 0.875rem;
+          line-height: 1.3;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin: 0 0 s.$m 0;
+          color: s.$medium-gray;
+          line-height: 1.6;
+          font-size: 0.875rem;
+          flex-grow: 1;
+        }
+
+        .project-link {
+          color: s.$medium-blue;
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-decoration: none;
+          margin-top: auto;
+          display: inline-block;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: s.$light-blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  #section3 {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #section3 {
+    margin: s.$l 0;
+
+    .projects-grid {
+      gap: s.$m;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #section3 {
+    .projects-grid {
+      .project-card {
+        .project-content {
+          padding: s.$m;
+        }
+      }
+    }
+  }
+}
+

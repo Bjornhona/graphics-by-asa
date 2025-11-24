@@ -1,4 +1,5 @@
 @use "../../../app.scss" as s;
+@import '../../../styles/breakpoints.scss';
 
 #image-header-reference {
   position: relative;
@@ -85,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet) {
   #image-header-reference {
     .background-image {
       left: -30px;
@@ -107,7 +108,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: $small-mobile) {
   #image-header-reference {
     .background-image {
       left: -15px;

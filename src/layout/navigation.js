@@ -1,11 +1,11 @@
 export const navigation = [
   {
-    name: 'home',
-    link: '/'
-  },
-  {
     name: 'portfolio',
     link: '/portfolio'
+  },
+  {
+    name: 'services',
+    link: '/services'
   },
   {
     name: 'resume',

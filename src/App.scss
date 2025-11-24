@@ -72,14 +72,20 @@ p {
 .App button {
   font-size: 1rem; // 16px
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   color: $medium-blue;
   border: 2px solid $medium-blue;
   background-color: $white;
   padding: 15px 45px;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+
+  // font-size: 1.125rem;
+  // padding: 18px 50px;
 
   &.inverted {
     border-color: $white;
@@ -97,7 +103,14 @@ p {
   &:hover {
     color: $white;
     background-color: $medium-blue;
+    border-color: $white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 

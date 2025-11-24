@@ -1,0 +1,150 @@
+@use "../../../App.scss" as s;
+@import '../../../styles/breakpoints.scss';
+
+#section6 {
+  margin: s.$xl 0;
+  text-align: center;
+
+  .subtitle {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: s.$m;
+    margin-top: s.$l;
+  }
+
+  .faq-item {
+    background-color: s.$white;
+    border: 1px solid s.$lighter-gray;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-color: s.$medium-blue;
+      box-shadow: 0 4px 12px rgba(114, 170, 170, 0.1);
+    }
+
+    &.open {
+      box-shadow: 0 4px 12px rgba(114, 170, 170, 0.15);
+
+      .faq-question {
+        background-color: s.$medium-blue;
+
+        .question-text {
+          color: s.$white;
+        }
+
+        .accordion-icon {
+          transform: rotate(180deg);
+          color: s.$white;
+        }
+      }
+
+      .faq-answer {
+        max-height: 500px;
+        padding: s.$l;
+        opacity: 1;
+      }
+    }
+  }
+
+  .faq-question {
+    width: 100%;
+    padding: s.$m;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: s.$m;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: s.$ultra-light-gray;
+    }
+
+    &:focus {
+      outline: 2px solid s.$medium-blue;
+      outline-offset: -2px;
+    }
+
+    .question-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: s.$dark-gray;
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .accordion-icon {
+      flex-shrink: 0;
+      color: s.$medium-blue;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 s.$l;
+    opacity: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+
+    p {
+      margin: 0;
+      color: s.$medium-gray;
+      line-height: 1.6;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #section6 {
+    margin: s.$l 0;
+
+    .faq-question {
+      padding: s.$m;
+      font-size: 0.9375rem;
+
+      .question-text {
+        font-size: 0.9375rem;
+      }
+    }
+
+    .faq-item.open .faq-answer {
+      padding: 0 s.$m s.$m s.$m;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #section6 {
+    .faq-question {
+      padding: s.$m;
+
+      .question-text {
+        font-size: 0.875rem;
+      }
+
+      .accordion-icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+

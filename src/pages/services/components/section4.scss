@@ -1,0 +1,98 @@
+@use "../../../App.scss" as s;
+@import '../../../styles/breakpoints.scss';
+
+#section4 {
+  margin: s.$xl 0;
+
+  .experience-banner {
+    background: linear-gradient(135deg, s.$medium-blue, s.$dark-blue);
+    padding: s.$l;
+    display: flex;
+    align-items: center;
+    gap: s.$xl;
+    color: s.$white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .experience-highlights {
+    display: flex;
+    gap: s.$m;
+    flex-wrap: wrap;
+  }
+
+  .experience-highlight {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: s.$l;
+    text-align: center;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: s.$s;
+  }
+
+  .years {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+  }
+
+  .label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: s.$m;
+
+    h2 {
+      margin: 0;
+      color: s.$white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  #section4 {
+    margin: s.$l 0;
+
+    .experience-banner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .experience-highlights {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #section4 {
+    .experience-banner {
+      padding: s.$m;
+      gap: s.$m;
+    }
+
+    .experience-content {
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+

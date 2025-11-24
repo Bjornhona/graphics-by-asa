@@ -1,0 +1,9 @@
+@use "../../App.scss" as s;
+
+#services {
+  .page-body {
+      display: flex;
+      flex-direction: column;
+      gap: s.$xl;
+  }
+}

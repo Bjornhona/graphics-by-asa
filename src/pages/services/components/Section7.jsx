@@ -7,7 +7,7 @@ const FinalCTA = ({ text }) => {
       <div className="cta-banner">
         <div>
           <h3>{text.title}</h3>
-          {text.descriptions.map(description => <p>{description}</p>)}
+          {text.descriptions.map((description, index) => <p key={index}>{description}</p>)}
         </div>
         <Link to={text.buttonLink}>
           <button>{text.buttonText}</button>

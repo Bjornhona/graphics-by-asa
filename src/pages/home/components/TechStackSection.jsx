@@ -24,13 +24,7 @@ const TechStackSection = ({ text }) => {
       {text.question && (
         <div className="why-stack-section">
           <h4>{text.question}</h4>
-          <div className="answer-badges">
-            {text.answer.map((benefit, index) => (
-              <span key={index} className="answer-badge">
-                {benefit}
-              </span>
-            ))}
-          </div>
+          <p>{text.answer.join(' · ')}</p>
         </div>
       )}
     </div>

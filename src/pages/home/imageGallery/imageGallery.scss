@@ -12,7 +12,6 @@
   display: grid;
   grid-template-columns: repeat(var(--items), 1fr);
   width: var(--width);
-  background-color: red;
 
   .image {
     position: relative;
@@ -24,7 +23,6 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #ff82a9;
 
     img {
       position: absolute;

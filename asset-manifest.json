@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8d6574b.css",
-    "main.js": "/static/js/main.870ea53a.js",
+    "main.css": "/static/css/main.95af996b.css",
+    "main.js": "/static/js/main.4adf3f5a.js",
     "static/js/453.b7e0acdc.chunk.js": "/static/js/453.b7e0acdc.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/1027.mp4": "/static/media/1027.c2a9211f4a255f09bc97.mp4",
@@ -61,9 +61,6 @@
     "static/media/4.jpg": "/static/media/4.29855c905ea8a161f94d.jpg",
     "static/media/Email.png": "/static/media/Email.5e8ade7d92f6deff5ef8.png",
     "static/media/Home.png": "/static/media/Home.87ad14abfb5cf207a965.png",
-    "static/media/More-exposure2.png": "/static/media/More-exposure2.591da69b0465dcec4c8d.png",
-    "static/media/Conversion-rates2.png": "/static/media/Conversion-rates2.8f69ef16fd1816fc8902.png",
-    "static/media/More-sales2.png": "/static/media/More-sales2.80a2a0d5f24b66958320.png",
     "static/media/logo2.svg": "/static/media/logo2.3f6d50256b8560aa56edc5b40af9b10c.svg",
     "static/media/close-button.svg": "/static/media/close-button.c6864f4fc8a04ecb94c155d0c6c0f0db.svg",
     "static/media/github.svg": "/static/media/github.44beb4b7a4b9b055023a.svg",
@@ -74,12 +71,12 @@
     "static/media/facebook.svg": "/static/media/facebook.b422f75ac100bfc3beba.svg",
     "index.html": "/index.html",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
-    "main.b8d6574b.css.map": "/static/css/main.b8d6574b.css.map",
-    "main.870ea53a.js.map": "/static/js/main.870ea53a.js.map",
+    "main.95af996b.css.map": "/static/css/main.95af996b.css.map",
+    "main.4adf3f5a.js.map": "/static/js/main.4adf3f5a.js.map",
     "453.b7e0acdc.chunk.js.map": "/static/js/453.b7e0acdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8d6574b.css",
-    "static/js/main.870ea53a.js"
+    "static/css/main.95af996b.css",
+    "static/js/main.4adf3f5a.js"
   ]
 }

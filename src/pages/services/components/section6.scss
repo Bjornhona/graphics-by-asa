@@ -2,7 +2,6 @@
 @import '../../../styles/breakpoints.scss';
 
 #section6 {
-  margin: s.$xl 0;
   text-align: center;
 
   .subtitle {
@@ -114,8 +113,6 @@
 
 @media screen and (max-width: $tablet) {
   #section6 {
-    margin: s.$l 0;
-
     .faq-question {
       padding: s.$m;
       font-size: 0.9375rem;
@@ -126,7 +123,7 @@
     }
 
     .faq-item.open .faq-answer {
-      padding: 0 s.$m s.$m s.$m;
+      padding: s.$m;
     }
   }
 }

@@ -1,4 +1,4 @@
-import './testimonials.scss';
+import './testimonialsSection.scss';
 
 const Testimonials = ({ animate, localRef }) => {
 

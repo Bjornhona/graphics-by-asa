@@ -1,7 +1,7 @@
-import './imageHeader.scss';
+import './mainHeroSection.scss';
 import FlowersImage from '../../../styles/images/FlowerPortfolio1.jpg';
 
-const ImageHeader = () => {
+const MainHeroSection = () => {
   return (
     <div id='image-header'>
       <div className="body-image-over">
@@ -19,4 +19,4 @@ const ImageHeader = () => {
   );
 }
 
-export default ImageHeader;
+export default MainHeroSection;

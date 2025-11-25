@@ -1,0 +1,73 @@
+@use "../../../App.scss" as s;
+@import '../../../styles/breakpoints.scss';
+
+#trust-row-section {
+  overflow: hidden;
+  background-color: s.$dark-blue;
+  padding: s.$m 0;
+  position: relative;
+  margin: 0 -30px;
+
+  .trust-banner-wrapper {
+    display: flex;
+    width: fit-content;
+    animation: scroll 80s linear infinite;
+  }
+
+  .trust-banner {
+    display: flex;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .trust-item {
+    display: inline-block;
+    color: s.$white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0 s.$m;
+    white-space: nowrap;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Pause animation on hover (optional)
+#trust-row-section:hover .trust-banner-wrapper {
+  animation-play-state: paused;
+}
+
+@media screen and (max-width: $tablet) {
+  #trust-row-section {
+    padding: s.$s 0;
+
+    .trust-item {
+      font-size: 0.8125rem;
+      padding: 0 s.$s;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #trust-row-section {
+    .trust-item {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: $small-mobile) {
+  #trust-row-section {
+    margin: 0 -15px;
+    .trust-item {
+      font-size: 0.75rem;
+    }
+  }
+}

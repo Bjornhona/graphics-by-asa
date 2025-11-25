@@ -2,54 +2,30 @@
 @import '../../../styles/breakpoints.scss';
 
 #section7 {
-  margin: s.$xl 0;
-
   .cta-banner {
+    display: flex;
+    flex-direction: column;
+    gap: s.$m;
     background: linear-gradient(135deg, s.$medium-blue, s.$dark-blue);
     padding: s.$xl;
     text-align: center;
     color: s.$white;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 
-    h2 {
-      margin-bottom: s.$m;
+    h3 {
       color: s.$white;
-      text-transform: uppercase;
-      font-size: 1.5rem;
-      line-height: 1.2;
-      font-weight: 600;
     }
 
     p {
-      margin: 0 0 s.$xl 0;
       color: s.$white;
-      font-size: 1.125rem;
-      line-height: 1.6;
-      opacity: 0.95;
-    }
-
-    .cta-link {
-      display: inline-block;
-      text-decoration: none;
     }
   }
 }
 
 @media screen and (max-width: $tablet) {
   #section7 {
-    margin: s.$l 0;
-
     .cta-banner {
       padding: s.$l;
-
-      h2 {
-        font-size: 1.25rem;
-      }
-
-      p {
-        font-size: 1rem;
-        margin-bottom: s.$l;
-      }
     }
   }
 }
@@ -58,15 +34,6 @@
   #section7 {
     .cta-banner {
       padding: s.$l s.$m;
-
-      h2 {
-        font-size: 1.125rem;
-      }
-
-      p {
-        font-size: 0.9375rem;
-        margin-bottom: s.$l;
-      }
     }
   }
 }

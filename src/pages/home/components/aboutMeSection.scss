@@ -1,0 +1,44 @@
+@use "../../../app.scss" as s;
+@import "../../../styles/breakpoints.scss";
+
+#home {
+  .title-container {
+    max-width: calc(50% - 15px);
+  }
+
+  .title-button {
+    display: flex;
+  }
+
+  .portfolio-button {
+    display: none;
+  }
+
+  h2 {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  #home {
+    .title-container {
+      max-width: 100%;
+    }
+
+    .portfolio-button {
+      display: block;
+      margin-top: 30px;
+    }
+    .home-inner-container {
+      display: block;
+
+      .title-button {
+        display: none;
+      }
+
+      h2 {
+        margin-right: 0;
+      }
+    }
+  }
+}

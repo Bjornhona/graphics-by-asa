@@ -3,6 +3,16 @@
 #image-header {
   position: relative;
   height: 550px;
+  margin-bottom: s.$l * 2;
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
   .body-image-over {
     position: absolute;
@@ -46,16 +56,38 @@
           font-size: 55px;
         }
 
-        h1, p {
-          padding-right: 15px;
-          padding-left: 15px;
+        h1,
+        p {
+          padding-right: s.$l;
+          padding-left: s.$l;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: s.$desktop) {
+  #image-header {
+    .body-image-over {
+      .body-image-text {
+        top: calc(50% - 45px);
+        right: 0;
+        left: 320px;
+        justify-content: left;
+
+        .inner-text {
+          max-width: 70%;
+
+          h1 {
+            font-size: 3em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: s.$tablet) {
   #image-header {
     .body-image-over {
       left: -30px;
@@ -69,30 +101,20 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: s.$small-mobile) {
   #image-header {
     .body-image-over {
       left: -15px;
       .body-image-text {
         .inner-text {
-          margin: 0 15px;
-
-          h1 {
-            font-size: 3em;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 200px) {
-  #image-header {
-    .body-image-over {
-      .body-image-text {
-        .inner-text {
           h1 {
             font-size: 2em;
+          }
+
+          h1,
+          p {
+            padding-right: s.$m;
+            padding-left: s.$m;
           }
         }
       }

@@ -2,8 +2,6 @@
 @import '../../../styles/breakpoints.scss';
 
 #section5 {
-  margin: s.$xl 0;
-
   .section-head {
     margin-bottom: s.$xl;
     text-align: center;
@@ -82,12 +80,6 @@
     .steps-grid {
       grid-template-columns: 1fr;
     }
-  }
-}
-
-@media screen and (max-width: $tablet) {
-  #section5 {
-    margin: s.$l 0;
   }
 }
 

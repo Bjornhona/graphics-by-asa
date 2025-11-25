@@ -2,7 +2,6 @@
 @import '../../../styles/breakpoints.scss';
 
 #section1 {
-  margin: s.$xl 0;
   text-align: center;
 
   .subtitle {
@@ -57,8 +56,6 @@
 
 @media screen and (max-width: $tablet) {
   #section1 {
-    margin: s.$l 0;
-
     .services-grid {
       grid-template-columns: repeat(2, 1fr);
     }

@@ -2,80 +2,29 @@
 @import '../../styles/breakpoints.scss';
 
 #home {
-  .mobile-button {
-    display: none;
-  }
+  .home-inner-container {
+    @include s.container;
 
-  .home-kpi-container {
-    display: flex;
-    gap: 30px;
-    padding-bottom: 50px;
-
-    .home-kpi {
-      text-align: center;
-      display: flex;
+    &__centered {
+      @include s.container;
       flex-direction: column;
-      overflow-wrap: break-word;
-      width: 29%;
+      justify-content: center;
+      text-align: center;
 
-      .home-kpi-image {
-        margin: 0 auto;
-        width: 80px;
-        height: 80px;
-
-        img {
-          height: 100%;
-          overflow: hidden;
-          object-fit: cover;
-        }
-      }
-
-      h3 {
-        margin: 30px 0 15px;
-      }
-    }
-  }
-}
-
-@keyframes zoom-in {
-  0% {
-    transform: scale(1.6);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@media screen and (max-width: $desktop) {
-  #home {
-    .mobile-button {
-      display: block;
-      margin-top: 30px;
-    }
-
-    .home-kpi-container {
-      display: block;
-  
-      .home-kpi {
-        width: 100%;
+      p {
         margin-bottom: 30px;
       }
+
+      .home-inner-text {
+        max-width: 290px;
+        margin: 0 auto;
+      }
     }
   }
 
-  .body-image-over {
-    top: 106px;
-
-    .body-image-text {
-      top: calc(50% - 45px);
-      right: 0;
-      left: 320px;
-      justify-content: left;
-  
-      .inner-text {
-        max-width: 90%;
-        margin: 0 30px;
-      }
-    }
+  .page-body {
+    display: flex;
+    flex-direction: column;
+    gap: s.$xl * 2;
   }
 }

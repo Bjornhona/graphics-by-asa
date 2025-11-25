@@ -2,7 +2,6 @@
 @import '../../../styles/breakpoints.scss';
 
 #section2 {
-  margin: s.$xl 0;
   text-align: center;
 
   .subtitle {
@@ -82,8 +81,6 @@
 
 @media screen and (max-width: $tablet) {
   #section2 {
-    margin: s.$l 0;
-
     .packages-grid {
       gap: s.$m;
     }

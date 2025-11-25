@@ -135,7 +135,7 @@ export   const texts = {
   },
   section7: {
     title: "Ready to improve your website?",
-    description: "Let’s make something modern, beautiful, and high-converting.",
+    descriptions: ["Let’s make something modern, beautiful, and high-converting."],
     buttonText: "Contact me",
     buttonLink: "/contact",
   },

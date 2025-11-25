@@ -8,6 +8,26 @@ export const homeTexts = {
       link: "/portfolio",
     },
   },
+  techStackSection: {
+    title: "Technologies I Work With",
+    description: "I work with a modern, reliable tech stack that allows me to build fast, scalable, and beautifully designed web experiences.",
+    content: [
+      {
+        title: "Core Framework",
+        description: ["Next.js 14/15", "React 18+", "TypeScript"],
+      },
+      {
+        title: "Styling & UI",
+        description: ["Tailwind CSS", "Shadcn/UI", "CSS Modules", "SASS", "Framer Motion"],
+      },
+      {
+        title: "Development",
+        description: ["HTML5", "CSS3", "JavaScript", "Git", "RESTful APIs", "Responsive Design"],
+      },
+    ],
+    question: "Why This Stack?",
+    answer: ["Fast development", "Type-safe code", "Beautiful UIs", "Easy maintenance", "Scalable architecture"],
+  },
   trustRowSection: {
     text: "Trusted by small businesses and startups • {devYears}+ years in web development • {designYears}+ years in digital design"
   },
@@ -35,7 +55,7 @@ export const homeTexts = {
   },
   finalCTA: {
     title: "Ready to improve your website?",
-    description: "Let’s make something modern, beautiful, and high-converting.",
+    descriptions: ["Let’s make something modern, beautiful, and high-converting. Whether you're launching a new product or scaling an existing platform, I'm here to help.", "Book a free 30-minute consultation to discuss your project, or send me the details and I'll respond within 48 hours.", "Currently Available: Immediate start for the right project"],
     buttonText: "Contact me",
     buttonLink: "/contact",
   },

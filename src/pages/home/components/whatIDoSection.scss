@@ -51,36 +51,6 @@
       display: inline-block;
     }
   }
-
-  // .home-kpi-container {
-  //   display: flex;
-  //   gap: 30px;
-  //   padding-bottom: 50px;
-
-  //   .home-kpi {
-  //     text-align: center;
-  //     display: flex;
-  //     flex-direction: column;
-  //     overflow-wrap: break-word;
-  //     width: 29%;
-
-  //     .home-kpi-image {
-  //       margin: 0 auto;
-  //       width: 80px;
-  //       height: 80px;
-
-  //       img {
-  //         height: 100%;
-  //         overflow: hidden;
-  //         object-fit: cover;
-  //       }
-  //     }
-
-  //     h3 {
-  //       margin: 30px 0 15px;
-  //     }
-  //   }
-  // }
 }
 
 @media screen and (max-width: $desktop) {
@@ -88,15 +58,6 @@
     .services-cards {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    // .home-kpi-container {
-    //   display: block;
-  
-    //   .home-kpi {
-    //     width: 100%;
-    //     margin-bottom: 30px;
-    //   }
-    // }
   }
 }
 

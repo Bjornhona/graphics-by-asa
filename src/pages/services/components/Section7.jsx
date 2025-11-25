@@ -7,11 +7,12 @@ const FinalCTA = ({ text }) => {
       <div className="cta-banner">
         <div>
           <h3>{text.title}</h3>
-          <p>{text.description}</p>
+          {text.descriptions.map(description => <p>{description}</p>)}
         </div>
         <Link to={text.buttonLink}>
           <button>{text.buttonText}</button>
         </Link>
+        <p>Based in Barcelona 🇪🇸 | Serving clients worldwide 🌍</p>
       </div>
     </div>
   );

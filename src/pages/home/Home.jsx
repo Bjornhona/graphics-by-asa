@@ -10,6 +10,7 @@ import WhatIDoSection from "./components/WhatIDoSection";
 import TrustRowSection from "./components/TrustRowSection";
 import FinalCTA from "../services/components/Section7";
 import GetInTouchSection from "./components/GetInTouchSection";
+import TechStackSection from "./components/TechStackSection";
 import { homeTexts } from "./home-texts";
 
 const Home = () => {
@@ -36,6 +37,8 @@ const Home = () => {
       <StyledContent title="home">
         <MainHeroSection />
         <AboutMeSection text={homeTexts.aboutMeSection} />
+        <Separator />
+        <TechStackSection text={homeTexts.techStackSection} />
         <TrustRowSection text={homeTexts.trustRowSection} />
         <WhatIDoSection text={homeTexts.whatIDoSection} />
         <ImageGallery />

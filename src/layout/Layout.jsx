@@ -120,8 +120,9 @@ const Layout = () => {
 
   const Copyrights = () => (
     <div className={showNav ? "header-bottom nav-bottom" : "header-bottom"}>
+      <p>Registered in Sweden | VAT: SE730613670101</p>
       <p>
-        {year} | All rights reserved |{" "}
+        © {year} | All rights reserved |{" "}
         <a href="/">Graphics by Åsa</a>
       </p>
     </div>

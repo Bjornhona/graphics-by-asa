@@ -34,10 +34,6 @@
         gap: 10px;
         overflow-y: scroll;
         margin-bottom: 80px;
-
-        h5 {
-          padding-top: 10px;
-        }
       }
 
       .logo-container {
@@ -51,7 +47,7 @@
 
       .social-media-icons {
         display: flex;
-        gap: 15px;
+        gap: 10px 15px;
         flex-wrap: wrap;
         margin-right: 15px;
     

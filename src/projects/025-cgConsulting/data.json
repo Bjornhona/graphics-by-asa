@@ -10,7 +10,13 @@
     "subTitle": "Strategy-driven website design and development using a modern, scalable tech stack.",
     "text": "The cg-consulting website was created to reflect a modern consulting brand: clear, structured, and professional. The goal was to design a digital presence that communicates credibility and strategic thinking while remaining simple and easy to navigate. The project covers the full process from design to implementation. I worked on the visual structure, content hierarchy, and responsive layout to ensure the site feels approachable and trustworthy across devices. Subtle animations and transitions were added to enhance the experience without distracting from the content. On the technical side, the website was built with a modern frontend stack focused on performance, scalability, and maintainability. The result is a fast, lightweight website that is easy to extend and adapt as the business grows. This project demonstrates my approach to building websites for consultants and service-based businesses: combining design clarity, technical precision, and real-world usability.",
     "project": "Web application",
-    "programLanguages": "Next.js, TypeScript, Tailwind, Framer Motion",
+    "programLanguages": "Next.js + Sanity CMS, TypeScript, Tailwind, Framer Motion",
+    "github": [
+      {
+        "text": "CG Consulting",
+        "link": "https://github.com/Bjornhona/cg-consulting"
+      }
+    ],
     "demos": [{
       "text": "CG Consulting demo",
       "link": "https://cg-consulting.vercel.app/"

@@ -1,8 +1,9 @@
 // Import project images
 import techBeachMamaImage from "../../projects/024-techBeachMama/images/1.png";
+import cgConsultingImage from "../../projects/025-cgConsulting/images/1.png";
 import graphicsByAsaImage from "../../projects/021-graphicsByAsa/images/1.png";
 import sculptedGoddessImage from "../../projects/023-sculptedGoddess/images/1.png";
-import beerioImage from "../../projects/019-beerio/images/1.jpg";
+// import beerioImage from "../../projects/019-beerio/images/1.jpg";
 
 export   const texts = {
   heroSection: {
@@ -78,6 +79,12 @@ export   const texts = {
     subtitle: "Real examples of how I design and build clean, high-impact digital experiences that elevate brands and improve user flow.",
     projects: [
       {
+        title: "CG Consulting — Modern consulting website",
+        description: "A clean, modern website designed and built for cg-consulting to establish a professional digital presence. The project focuses on clarity, trust, and performance, combining thoughtful UX design with a fast, maintainable frontend architecture.",
+        projectUrl: "https://cg-consulting.vercel.app/",
+        image: cgConsultingImage,
+      },
+      {
         title: "Tech Beach Mama — Next.js website",
         description: "A fully responsive, high-converting personal brand site built with Next.js for women entering tech. I created the design system, page structure, and funnel-ready layout from scratch. The result is a modern, polished website optimized for email capture and storytelling.",
         projectUrl: "https://techbeachmama.com/",
@@ -95,12 +102,12 @@ export   const texts = {
         projectUrl: "https://sculpted-goddess.vercel.app/",
         image: sculptedGoddessImage,
       },
-      {
-        title: "Beerio — React app with API integration",
-        description: "A fun, minimalist beer browsing app built with React and API integrations for smooth user flow. I designed the interface and developed the frontend with focus on clean components, fast performance, and intuitive filtering. The transformation showcases my ability to combine playful UI with solid engineering structure.",
-        projectUrl: "https://beerio-aa491.web.app/",
-        image: beerioImage,
-      },
+      // {
+      //   title: "Beerio — React app with API integration",
+      //   description: "A fun, minimalist beer browsing app built with React and API integrations for smooth user flow. I designed the interface and developed the frontend with focus on clean components, fast performance, and intuitive filtering. The transformation showcases my ability to combine playful UI with solid engineering structure.",
+      //   projectUrl: "https://beerio-aa491.web.app/",
+      //   image: beerioImage,
+      // },
     ]
   },
   section4: {

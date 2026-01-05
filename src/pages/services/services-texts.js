@@ -81,7 +81,7 @@ export   const texts = {
       {
         title: "CG Consulting — Modern consulting website",
         description: "A clean, modern website designed and built for cg-consulting to establish a professional digital presence. The project focuses on clarity, trust, and performance, combining thoughtful UX design with a fast, maintainable frontend architecture.",
-        projectUrl: "https://cg-consulting.vercel.app/",
+        projectUrl: "https://cg-consulting.es/",
         image: cgConsultingImage,
       },
       {

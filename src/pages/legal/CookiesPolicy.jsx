@@ -1,13 +1,13 @@
 import { settings } from './settings';
+import StyledContent from '../../components/styledContent/StyledContent';
 import './legal.scss';
 
-const CookiesPolicyContents = () => {
+const CookiesPolicy = () => {
   const LAST_UPDATED = "2026-01-08";
 
   return (
-    <main className="container mx-auto">
-      <div className="mx-auto max-w-5xl px-6 py-20 flex flex-col gap-4">
-        <h1>Cookies Policy</h1>
+    <div id="legal-page">
+      <StyledContent title="cookies policy">
         <p><strong>Last updated:</strong> {LAST_UPDATED}</p>
         <p>
           This website uses cookies to improve the user experience and to analyze
@@ -66,21 +66,21 @@ const CookiesPolicyContents = () => {
         <h3>3. Cookie list</h3>
         <table>
           <thead>
-            <tr className="border-b border-gray-200">
-              <th className="text-left">Cookie name</th>
-              <th className="text-left">Provider</th>
-              <th className="text-left p-2">Purpose</th>
-              <th className="text-left p-2">Duration</th>
+            <tr>
+              <th>Cookie name</th>
+              <th>Provider</th>
+              <th>Purpose</th>
+              <th>Duration</th>
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-gray-100">
+            <tr>
               <td>cookie_consent</td>
               <td>This website</td>
-              <td>Stores the user’s cookie preference</td>
+              <td>Stores the user's cookie preference</td>
               <td>1 year</td>
             </tr>
-            <tr className="border-b border-gray-100">
+            <tr>
               <td>_ga, _ga_*</td>
               <td>Google Analytics</td>
               <td>Website usage analytics (only if accepted)</td>
@@ -88,11 +88,11 @@ const CookiesPolicyContents = () => {
             </tr>
           </tbody>
         </table>
-        <p className="text-gray-200"> * This list may be updated if new services are added.</p>
+        <p> * This list may be updated if new services are added.</p>
         
         <h3>4. Managing cookie preferences</h3>
         <p>When you first visit this website, you can:</p>
-        <ul className="list-disc list-inside">
+        <ul>
           <li><strong>Accept cookies</strong></li>
           <li><strong>Reject cookies</strong></li>
         </ul>
@@ -107,7 +107,7 @@ const CookiesPolicyContents = () => {
           website.
         </p>
         <p>Instructions for popular browsers:</p>
-        <ul className="list-disc list-inside">
+        <ul>
           <li>Chrome: <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">https://support.google.com/chrome/answer/95647</a></li>
           <li>
             Firefox:
@@ -131,9 +131,9 @@ const CookiesPolicyContents = () => {
         </p>
         <p><strong>{settings.companyName}</strong></p>
         <p><strong>Email:</strong> {settings.email}</p>
-      </div>
-    </main>
+      </StyledContent>
+    </div>
   );
 }
 
-export default CookiesPolicyContents
+export default CookiesPolicy

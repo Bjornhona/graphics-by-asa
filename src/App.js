@@ -15,6 +15,8 @@ import PortfolioPage from './pages/portfolio/portfolioPage/PortfolioPage';
 import PageNotFound from './pages/not_found/PageNotFound';
 import Logo from './pages/logo.jsx';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy';
+import CookiesPolicy from './pages/legal/CookiesPolicy';
+import LegalNotice from './pages/legal/LegalNotice';
 import Services from './pages/services/Services';
 import './App.scss';
 
@@ -35,6 +37,8 @@ function App() {
               <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/cookies-policy" element={<CookiesPolicy />} />
+              <Route path="/legal-notice" element={<LegalNotice />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
             <Route path="/graphicsbyasa-logo" element={<Logo />} />

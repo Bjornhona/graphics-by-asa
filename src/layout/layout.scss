@@ -101,6 +101,31 @@
     color: s.$light-gray;
     padding-top: 20px;
     padding-bottom: 15px;
+
+    .legal-links {
+      margin-top: s.$s;
+      font-size: 0.75rem;
+
+      a {
+        color: s.$medium-blue;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: s.$light-blue;
+        }
+
+        &.active {
+          color: s.$dark-gray;
+          font-weight: 600;
+        }
+      }
+
+      span {
+        color: s.$medium-gray;
+        margin: 0 s.$xs;
+      }
+    }
   }
 }
 
@@ -245,6 +270,31 @@
 
       p {
         margin: 0;
+      }
+
+      .legal-links {
+        margin-top: s.$s;
+        font-size: 0.75rem;
+
+        a {
+          color: s.$medium-blue;
+          text-decoration: none;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: s.$light-blue;
+          }
+
+          &.active {
+            color: s.$dark-gray;
+            font-weight: 600;
+          }
+        }
+
+        span {
+          color: s.$medium-gray;
+          margin: 0 s.$xs;
+        }
       }
 
       &.nav-bottom {

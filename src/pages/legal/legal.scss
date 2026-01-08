@@ -1,0 +1,96 @@
+@use "../../App.scss" as s;
+
+#legal-page {
+  h1 {
+    margin-bottom: s.$l;
+    color: s.$dark-gray;
+  }
+
+  h3 {
+    margin-top: s.$xl;
+    margin-bottom: s.$m;
+    color: s.$dark-gray;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  h5 {
+    margin-top: s.$l;
+    margin-bottom: s.$m;
+    color: s.$dark-gray;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: s.$m;
+    color: s.$medium-gray;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin-bottom: s.$m;
+    padding-left: s.$xl;
+
+    li {
+      margin-bottom: s.$s;
+      color: s.$medium-gray;
+      line-height: 1.6;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: s.$l 0;
+    border: 1px solid s.$lighter-gray;
+
+    thead {
+      background-color: s.$ultra-light-gray;
+
+      th {
+        padding: s.$m;
+        text-align: left;
+        font-weight: 600;
+        color: s.$dark-gray;
+        border-bottom: 2px solid s.$lighter-gray;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid s.$lighter-gray;
+
+        &:hover {
+          background-color: s.$ultra-light-gray;
+        }
+
+        td {
+          padding: s.$m;
+          color: s.$medium-gray;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  a {
+    color: s.$medium-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: s.$light-blue;
+      text-decoration: underline;
+    }
+  }
+
+  strong {
+    color: s.$dark-gray;
+    font-weight: 600;
+  }
+}
+

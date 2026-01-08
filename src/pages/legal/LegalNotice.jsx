@@ -1,11 +1,11 @@
 import { settings } from './settings';
+import StyledContent from '../../components/styledContent/StyledContent';
 import './legal.scss';
 
 const LegalNotice = () => {
   return (
-    <main className="container mx-auto">
-      <div className="mx-auto max-w-5xl px-6 py-20">
-        <h1 className="mb-4">Aviso Legal</h1>
+    <div id="legal-page">
+      <StyledContent title="legal notice">
         <p className="mb-4">
           En cumplimiento con el deber de información establecido en la Ley
           34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y
@@ -18,7 +18,7 @@ const LegalNotice = () => {
           <ul>
             <li><p>Nombre comercial: {settings?.siteTitle}</p></li>
             {settings?.companyName && <li><p>Razón social: {settings.companyName}</p></li>}
-            {settings?.companyNIF && <li><p>NIF/CIF: {settings.companyNIF}</p></li>}
+            {settings?.companyNIF && <li><p>VAT number: {settings.companyNIF}</p></li>}
             {settings?.location && <li><p>Domicilio social: {settings.location}</p></li>}
             {settings?.email && <li><p>Correo electrónico: {settings.email}</p></li>}
             {settings?.phone && <li><p>Teléfono: {settings.phone}</p></li>}
@@ -55,8 +55,8 @@ const LegalNotice = () => {
           controversia que pudiera derivarse, ambas partes se someterán a los
           juzgados y tribunales de Barcelona.</p>
         </div>
-      </div>
-    </main>
+      </StyledContent>
+    </div>
   )
 }
 

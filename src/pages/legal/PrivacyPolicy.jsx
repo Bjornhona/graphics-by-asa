@@ -1,17 +1,17 @@
 import { settings } from './settings';
+import StyledContent from '../../components/styledContent/StyledContent';
 import './legal.scss';
 
 const PrivacyPolicy = () => {
   return (
-    <main className="container mx-auto">
-      <div className="mx-auto max-w-5xl px-6 py-20">
-        <h1 className="mb-4">Política de Privacidad</h1>
+    <div id="legal-page">
+      <StyledContent title="privacy policy">
         <div className="mb-4">
           <p><strong>Responsable del tratamiento:</strong></p>
           <ul>
             {settings?.companyName && <li><p>Nombre comercial: {settings.companyName}</p></li>}
             {settings?.companyName && <li><p>Razón social: {settings.contactPerson}</p></li>}
-            {settings?.companyNIF && <li><p>NIF/CIF: {settings.companyNIF}</p></li>}
+            {settings?.companyNIF && <li><p>VAT number: {settings.companyNIF}</p></li>}
             {settings?.location && <li><p>Dirección: {settings.location}</p></li>}
             {settings?.email && <li><p>Correo electrónico: {settings.email}</p></li>}
           </ul>
@@ -52,8 +52,8 @@ const PrivacyPolicy = () => {
           El titular adopta las medidas técnicas y organizativas necesarias para garantizar la
           seguridad de los datos personales.
         </p>
-      </div>
-    </main>
+      </StyledContent>
+    </div>
   )
 }
 

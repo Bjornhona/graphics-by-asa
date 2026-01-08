@@ -116,6 +116,7 @@ const ContactForm = (props) => {
       </div>
 
       <button type="submit">Send</button>
+      <p>I usually respond within 24 hours. Your information is kept private and never shared.</p>
       <ToastContainer />
     </form>
   );

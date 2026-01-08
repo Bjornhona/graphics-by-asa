@@ -3,7 +3,8 @@ const paths = reqSvgs.keys();
 
 const linksList = {
   facebook: "https://www.facebook.com/graphicsbyasa/",
-  twitter: "https://twitter.com/AsaGraphics",
+  // twitter: "https://twitter.com/AsaGraphics",
+  malt: "https://en.malt.es/profile/asaeriksson",
   instagram: "https://www.instagram.com/graphicsbyasa/",
   linkedin: "https://www.linkedin.com/in/asaeri3/",
   github: "https://github.com/Bjornhona",

@@ -1,0 +1,89 @@
+@use "../../../App.scss" as s;
+@import '../../../styles/breakpoints.scss';
+
+#calendly-section {
+  margin: s.$xl 0;
+  padding-top: s.$xl;
+  border-top: 1px solid s.$lighter-gray;
+
+  .calendly-header {
+    margin-bottom: s.$l;
+    text-align: center;
+
+    h4 {
+      margin-bottom: s.$m;
+      color: s.$dark-gray;
+      font-size: 1.125rem;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0;
+      color: s.$medium-gray;
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+  }
+
+  .calendly-container {
+    background-color: s.$white;
+    border: 1px solid s.$lighter-gray;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(114, 170, 170, 0.1);
+    }
+
+    .calendly-iframe {
+      width: 100%;
+      min-width: 320px;
+      height: 700px;
+      border: none;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #calendly-section {
+    margin: s.$l 0;
+    padding-top: s.$l;
+
+    .calendly-header {
+      margin-bottom: s.$m;
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8125rem;
+      }
+    }
+
+    .calendly-container {
+      .calendly-iframe {
+        height: 650px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #calendly-section {
+    .calendly-container {
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+
+      .calendly-iframe {
+        height: 600px;
+        min-width: 100%;
+      }
+    }
+  }
+}

@@ -1,14 +1,21 @@
+import './calendly.scss';
+
 const Calendly = () => {
   return (
-    <div>
-      <h4>Prefer to talk it through?</h4>
-      <p>You can book a free 20-minute intro call with me:</p>
-      <iframe
-        title="Calendly"
-        src="https://calendly.com/asaeri3/30min"
-        style={{ width: "100%", minWidth: "320px", height: "700px" }}
-        frameborder="0"
-      ></iframe>
+    <div id="calendly-section">
+      <div className="calendly-header">
+        <h4>Prefer to talk it through?</h4>
+        <p>You can book a free 20-minute intro call with me:</p>
+      </div>
+      <div className="calendly-container">
+        <iframe
+          title="Calendly"
+          src="https://calendly.com/asaeri3/30min?hide_event_type_details=1"
+          className="calendly-iframe"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   );
 };

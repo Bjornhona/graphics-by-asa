@@ -14,7 +14,7 @@
       left: -999999999px;
     }
 
-    input, textarea {
+    input:not([type="checkbox"]), textarea {
       width: 100%;
       background-color: s.$white;
       color: s.$medium-gray;
@@ -24,7 +24,7 @@
       border-radius: 0px;
     }
 
-    input {
+    input:not([type="checkbox"]) {
       height: 30px;
     }
 
@@ -43,7 +43,77 @@
     }
   }
 
+  .privacy-checkbox {
+    margin-bottom: s.$l;
+
+    .checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: s.$s;
+      cursor: pointer;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: s.$medium-gray;
+
+      input[type="checkbox"] {
+        width: auto;
+        height: auto;
+        margin-top: 3px;
+        cursor: pointer;
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        accent-color: s.$medium-blue;
+
+        &:checked::before {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 10px;
+          border: solid white; /* Color of the checkmark */
+          border-width: 0 3px 3px 0;
+          transform: rotate(37deg);
+          margin: 1px 0 0 5px;
+        }
+      }
+
+      span {
+        flex: 1;
+
+        a {
+          color: s.$medium-blue;
+          text-decoration: none;
+
+          &:hover {
+            color: s.$light-blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .error-message {
+      position: static;
+      margin-top: s.$xs;
+    }
+  }
+
   button {
     margin: 0 auto 30px 0;
+    transition: all 0.2s ease-in-out;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background-color: s.$light-gray;
+      border-color: s.$light-gray;
+      color: s.$dark-gray;
+
+      &:hover {
+        background-color: s.$light-gray;
+        border-color: s.$light-gray;
+        color: s.$dark-gray;
+      }
+    }
   }
 }

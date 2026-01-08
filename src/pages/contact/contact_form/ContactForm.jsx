@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './contactForm.scss';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
@@ -31,7 +32,8 @@ const ContactForm = (props) => {
       name: '',
       username: '',
       email: '',
-      message: ''
+      message: '',
+      privacyAccepted: false
     },
     validationSchema: yup.object({
       name: yup.string()
@@ -42,6 +44,9 @@ const ContactForm = (props) => {
         .required('Required'),
       message: yup.string()
         .max(800, 'Must be 800 characters or less'),
+      privacyAccepted: yup.boolean()
+        .oneOf([true], 'You must accept the Privacy Policy to continue')
+        .required('You must accept the Privacy Policy to continue'),
     }),
     onSubmit: (values, { resetForm }) => {
       // https://www.makeuseof.com/react-google-recaptcha-integrate/
@@ -115,7 +120,29 @@ const ContactForm = (props) => {
         ) : null}
       </div>
 
-      <button type="submit">Send</button>
+      <div className='form-box privacy-checkbox'>
+        <label htmlFor="privacyAccepted" className="checkbox-label">
+          <input
+            id="privacyAccepted"
+            name="privacyAccepted"
+            type="checkbox"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            checked={formik.values.privacyAccepted}
+          />
+          <span>I've read and accept the <Link to="/privacy-policy" target="_blank">Privacy Policy</Link>.</span>
+        </label>
+        {formik.touched.privacyAccepted && formik.errors.privacyAccepted ? (
+          <div className='error-message'>{formik.errors.privacyAccepted}</div>
+        ) : null}
+      </div>
+
+      <button 
+        type="submit" 
+        disabled={!formik.isValid || !formik.values.privacyAccepted}
+      >
+        Send
+      </button>
       <p>I usually respond within 24 hours. Your information is kept private and never shared.</p>
       <ToastContainer />
     </form>

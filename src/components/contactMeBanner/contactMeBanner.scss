@@ -2,7 +2,6 @@
 @import '../../styles/breakpoints.scss';
 
 #contact-me-banner {
-  // background: linear-gradient(135deg, s.$medium-blue, s.$dark-blue);
   background-color: s.$dark-blue;
   color: s.$white;
   text-decoration: none;
@@ -62,6 +61,7 @@
     font-weight: 600;
     transition: transform 0.3s ease;
     display: inline-block;
+    padding-bottom: 5px;
   }
 
   &:hover .banner-arrow {

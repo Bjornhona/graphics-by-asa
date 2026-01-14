@@ -1,6 +1,8 @@
 @use "../../app.scss" as s;
 
 #styled-content {
+  padding-top: 40px;
+
   .content {
     position: relative;
     background-color: s.$white;

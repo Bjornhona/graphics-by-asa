@@ -1,10 +1,6 @@
 @use "../../app.scss" as s;
 
 #portfolio {
-  margin-top: 14px;
-  margin-bottom: -(s.$xl);
-  margin-top: -(s.$xl);
-
   .tag-banner {
     display: inline-flex;
     gap: s.$xs;

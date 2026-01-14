@@ -1,0 +1,142 @@
+@use "../../App.scss" as s;
+@import '../../styles/breakpoints.scss';
+
+#contact-me-banner {
+  // background: linear-gradient(135deg, s.$medium-blue, s.$dark-blue);
+  background-color: s.$dark-blue;
+  color: s.$white;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  animation: slideUp 0.5s ease-out;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, s.$light-blue, s.$medium-blue);
+  }
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: s.$s;
+    padding: s.$xs s.$s;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .banner-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: s.$xs s.$s;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .banner-text-container {
+    display: flex;
+    align-items: center;
+    gap: s.$s;
+  }
+
+  .banner-text {
+    margin: 0;
+    font-size: 0.75rem;
+    color: s.$white;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .banner-arrow {
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  &:hover .banner-arrow {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #contact-me-banner {
+    .banner-content {
+      padding: s.$s s.$m;
+      gap: s.$s;
+    }
+
+    .banner-badge {
+      font-size: 0.6875rem;
+      padding: s.$xs s.$s;
+    }
+
+    .banner-text {
+      flex: 1 1 100%;
+      order: 2;
+    }
+
+    .banner-arrow {
+      font-size: 1.125rem;
+      order: 3;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #contact-me-banner {
+    .banner-content {
+      padding: s.$s s.$m;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .banner-badge {
+      order: 1;
+    }
+
+    .banner-text-container {
+      display: block;
+    }
+
+    .banner-text {
+      padding-top: s.$xs;
+      order: 2;
+    }
+
+    .banner-arrow {
+      order: 3;
+      display: none;
+    }
+  }
+}

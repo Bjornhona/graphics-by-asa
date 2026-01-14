@@ -1,12 +1,6 @@
 @use "../../../app.scss" as s;
 
 #blog-post {
-  #blog-container {
-    display: flex;
-    flex-direction: column;
-    gap: s.$xl;
-  }
-
   .page-body {
     display: flex;
     flex-direction: column;

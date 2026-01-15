@@ -5,6 +5,9 @@ const WorkExperience = () => {
     <div id="home-inner-container">
       <h5>Work Experience</h5>
       <div>
+        <p><strong>Graphics by Åsa · Founder & Frontend Consultant, · Jun 2025 - Present</strong></p>
+        <p>Designing and developing custom websites and landing pages. React, Next.js, TypeScript, Tailwind CSS, Sanity, CSS Modules, HTML5, JavaScript, Git, RESTful APIs, Responsive Design.</p>
+
         <p><strong>Hexad SL · Frontend Developer and UX/UI Designer · Jul 2019 - Jun 2025</strong></p>
         <p>Designing and developing customized software for larger clients. JavaScript, React, Next.js, Jest, Agile, Jira, Figma, Sketch and Adobe XD.</p>
 
@@ -23,6 +26,7 @@ const WorkExperience = () => {
         <h5>NON RELATED EXPERIENCE</h5>
 
         <p>
+          Founder & Creator of Tech Beach Mama (2025-Present),
           Technical support at Brother Project by Sellbytel (2013-2014)<br/>
           Product Design and Innovation at Tambakunda (2012-2013)<br/>
           Co-founder of ViLetarUpp.se (2010-2012)<br/>

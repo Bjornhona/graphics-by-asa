@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import StyledContent from '../../components/styledContent/StyledContent';
 import './resume.scss';
 import SmallImageHeader from './smallImageHeader/SmallImageHeader';
-import myCV from './CV-AsaEriksson2025.pdf';
+import myCV from './CV-AsaEriksson2026.pdf';
 import { saveAs } from 'file-saver';
 import WorkExperience from './workExperience/WorkExperience';
 import { softwareSkillsData, languageSkillsData, contactData, expertiseData, programmingSkillsData } from './data';
@@ -10,7 +10,7 @@ import { softwareSkillsData, languageSkillsData, contactData, expertiseData, pro
 const Resume = () => {
 
   const downloadCv = () => {
-    saveAs(myCV, 'CV-AsaEriksson2025.pdf');
+    saveAs(myCV, 'CV-AsaEriksson2026.pdf');
   }
   
   return (

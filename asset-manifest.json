@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a227a677.css",
-    "main.js": "/static/js/main.338c0b1f.js",
+    "main.js": "/static/js/main.7e49b439.js",
     "static/js/453.b7e0acdc.chunk.js": "/static/js/453.b7e0acdc.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/1027.mp4": "/static/media/1027.c2a9211f4a255f09bc97.mp4",
@@ -43,7 +43,7 @@
     "static/media/NotoSansDisplay-Medium.ttf": "/static/media/NotoSansDisplay-Medium.f4664e7d038311210fa1.ttf",
     "static/media/NotoSansDisplay-Bold.ttf": "/static/media/NotoSansDisplay-Bold.bbad6c3f6d5f0c04c553.ttf",
     "static/media/NotoSansDisplay-Regular.ttf": "/static/media/NotoSansDisplay-Regular.a66de150ab8ede866e1f.ttf",
-    "static/media/CV-AsaEriksson2025.pdf": "/static/media/CV-AsaEriksson2025.59389881113d4431e8b5.pdf",
+    "static/media/CV-AsaEriksson2026.pdf": "/static/media/CV-AsaEriksson2026.98d90021403d5af36573.pdf",
     "static/media/015.jpg": "/static/media/015.e3c9497b1f806eb1ddab.jpg",
     "static/media/1.jpg": "/static/media/1.224c8a705b0cb3416ec9.jpg",
     "static/media/Raleway-Medium.ttf": "/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
@@ -73,11 +73,11 @@
     "static/media/facebook.svg": "/static/media/facebook.b422f75ac100bfc3beba.svg",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.a227a677.css.map": "/static/css/main.a227a677.css.map",
-    "main.338c0b1f.js.map": "/static/js/main.338c0b1f.js.map",
+    "main.7e49b439.js.map": "/static/js/main.7e49b439.js.map",
     "453.b7e0acdc.chunk.js.map": "/static/js/453.b7e0acdc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a227a677.css",
-    "static/js/main.338c0b1f.js"
+    "static/js/main.7e49b439.js"
   ]
 }

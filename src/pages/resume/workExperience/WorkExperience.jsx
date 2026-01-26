@@ -9,7 +9,7 @@ const WorkExperience = () => {
         <p>Designing and developing custom websites and landing pages. React, Next.js, TypeScript, Tailwind CSS, Sanity, CSS Modules, HTML5, JavaScript, Git, RESTful APIs, Responsive Design.</p>
 
         <p><strong>Hexad SL · Frontend Developer and UX/UI Designer · Jul 2019 - Jun 2025</strong></p>
-        <p>Designing and developing customized software for larger clients. JavaScript, React, Next.js, Jest, Agile, Jira, Figma, Sketch and Adobe XD.</p>
+        <p>Designing and developing large-scale, client-specific web applications from concept to production. Frontend ownership across React and Next.js projects, close collaboration with product and design, and long-term maintenance of complex codebases. JavaScript, React, Next.js, Jest, Agile, Jira, Figma, Sketch, Adobe XD.</p>
 
         <p><strong>Grant Thornton · Frontend Developer and UX/UI Designer · Dec 2018 - Jun 2019</strong></p>
         <p>Designing and developing customized internal software adapted to company regulations and current laws. JavaScript, React, Node.js, TypeScript, Docker, Agile, DevOps and Adobe XD.</p>

@@ -45,7 +45,7 @@ const WorkExperience = () => {
           Web development MERN: JavaScript, MongoDB, Express, React, Node.js</p>
 
         <p><strong>Master of Digital Communications in Engineering Projects</strong><br/>
-          Technical University of Cataluña, Cataluña, Spain<br/>
+          Technical University of Cataluña, Cataluña, Spain, Aug 2012 – Jul 2013<br/>
           Product Design and Project Management. 3D renderings and animations in CatiaV5, SolidWorks, Blender, Sketch-Up.</p>
 
         <p><strong>Graphic Design</strong><br/>
@@ -53,7 +53,7 @@ const WorkExperience = () => {
           Graphic Design studies using Dreamweaver, Photoshop, Illustrator, InDesign and Flash.</p>
 
         <p><strong>Master of Science in Industrial Engineering and Technical Design</strong><br/>
-          Luleå University of Technology, Luleå, Sweden<br/>
+          Luleå University of Technology, Luleå, Sweden, Aug 1993 – Jun 1999<br/>
           Ergonomic Design, Product Design and Industrial Design of machinery considering ergonomic aspects.</p>
       </div>
     </div>

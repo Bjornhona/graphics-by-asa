@@ -1,7 +1,7 @@
 // Import project images
 import techBeachMamaImage from "../../projects/024-techBeachMama/images/1.png";
 import cgConsultingImage from "../../projects/025-cgConsulting/images/1.png";
-import graphicsByAsaImage from "../../projects/021-graphicsByAsa/images/1.png";
+// import graphicsByAsaImage from "../../projects/021-graphicsByAsa/images/1.png";
 import sculptedGoddessImage from "../../projects/023-sculptedGoddess/images/1.png";
 // import beerioImage from "../../projects/019-beerio/images/1.jpg";
 
@@ -90,12 +90,12 @@ export   const texts = {
         projectUrl: "https://techbeachmama.com/",
         image: techBeachMamaImage,
       },
-      {
-        title: "Graphics by Asa — React portfolio",
-        description: "A clean and visually rich portfolio showcasing my design and frontend capabilities. I implemented every component by hand using React, focusing on elegant UI, smooth interactions, and strong visual hierarchy. The transformation demonstrates how I elevate a brand through consistency, simplicity, and modern aesthetics.",
-        projectUrl: "https://graphicsbyasa.com/",
-        image: graphicsByAsaImage,
-      },
+      // {
+      //   title: "Graphics by Asa — React portfolio",
+      //   description: "A clean and visually rich portfolio showcasing my design and frontend capabilities. I implemented every component by hand using React, focusing on elegant UI, smooth interactions, and strong visual hierarchy. The transformation demonstrates how I elevate a brand through consistency, simplicity, and modern aesthetics.",
+      //   projectUrl: "https://graphicsbyasa.com/",
+      //   image: graphicsByAsaImage,
+      // },
       {
         title: "Sculpted Goddess — Next.js landing page for a brand",
         description: "A bold and energetic landing page designed and developed for a fitness and lifestyle brand. I combined strong visuals, feminine color palettes, and crisp responsive layouts to create an inspiring user experience. The result is a high-impact brand presence optimized for conversions and first impressions.",

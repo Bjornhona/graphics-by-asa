@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.a227a677.css",
-    "main.js": "/static/js/main.494e6c93.js",
+    "main.js": "/static/js/main.fcf11c6a.js",
     "static/js/453.b7e0acdc.chunk.js": "/static/js/453.b7e0acdc.chunk.js",
     "static/media/eStarkIT.mp4": "/static/media/eStarkIT.f5beda86b84b2ab6bf38.mp4",
     "static/media/1027.mp4": "/static/media/1027.c2a9211f4a255f09bc97.mp4",
-    "static/media/Portfolio Websites Presentation-with sound.mp4": "/static/media/Portfolio Websites Presentation-with sound.8e7ffebf5b88910e5369.mp4",
     "static/media/TLW-real-estate.mp4": "/static/media/TLW-real-estate.f002139ded1c091e2736.mp4",
     "static/media/Stringvibe by Åsa Eriksson.mp4": "/static/media/Stringvibe by Åsa Eriksson.24b351ff5f550afb6713.mp4",
     "static/media/Sculpted Goddess - compressed.mp4": "/static/media/Sculpted Goddess - compressed.be42cf5bfdc34cb11683.mp4",
@@ -13,7 +12,7 @@
     "static/media/AsanonaTrike.mp4": "/static/media/AsanonaTrike.27682f8825c1c3f6b0a0.mp4",
     "static/media/bullseye-media.mp4": "/static/media/bullseye-media.4f43e6dc233651dad168.mp4",
     "static/media/racingGoKart.mp4": "/static/media/racingGoKart.9865d6ec90f5de6788a7.mp4",
-    "static/media/2.jpg": "/static/media/2.f123fcf05ba369360d38.jpg",
+    "static/media/2.jpg": "/static/media/2.b3893ee9ee80c49f89f8.jpg",
     "static/media/F4H-bostäder.mp4": "/static/media/F4H-bostäder.7c53601dc0979b4f1c6e.mp4",
     "static/media/013.jpg": "/static/media/013.5ffa405a35fd3cc14808.jpg",
     "static/media/Brf Angviolen homepage video.mp4": "/static/media/Brf Angviolen homepage video.52ab250722ac6d1d3dbc.mp4",
@@ -22,13 +21,12 @@
     "static/media/Screenshot 2023-12-01 at 15.00.14.png": "/static/media/Screenshot 2023-12-01 at 15.00.14.68c9dcf7c95b73fd028a.png",
     "static/media/3.jpg": "/static/media/3.ec0b7f7994f9a1086546.jpg",
     "static/media/012.jpg": "/static/media/012.2d5fb65ae7c36591d6b4.jpg",
-    "static/media/1.png": "/static/media/1.33c6099b949a9c5fc460.png",
     "static/media/3.png": "/static/media/3.616097109068ff6a6449.png",
     "static/media/6.jpg": "/static/media/6.e3cd9cefbfa57e8be042.jpg",
     "static/media/019.jpg": "/static/media/019.e0dd9b2732ead77d1814.jpg",
+    "static/media/1.png": "/static/media/1.33c6099b949a9c5fc460.png",
     "static/media/021.png": "/static/media/021.838690dfd14abf4a45bd.png",
     "static/media/2.png": "/static/media/2.cde3a7574ab19f426394.png",
-    "static/media/4.png": "/static/media/4.934a5d57ff60fdf05105.png",
     "static/media/014.jpg": "/static/media/014.7157226861bbd7b0ad0d.jpg",
     "static/media/designer-profile.jpg": "/static/media/designer-profile.7d86ea4b5c66e390c837.jpg",
     "static/media/024.png": "/static/media/024.c2e4490220c5d46a568b.png",
@@ -45,7 +43,8 @@
     "static/media/NotoSansDisplay-Regular.ttf": "/static/media/NotoSansDisplay-Regular.a66de150ab8ede866e1f.ttf",
     "static/media/CV-AsaEriksson2026.pdf": "/static/media/CV-AsaEriksson2026.98d90021403d5af36573.pdf",
     "static/media/015.jpg": "/static/media/015.e3c9497b1f806eb1ddab.jpg",
-    "static/media/1.jpg": "/static/media/1.224c8a705b0cb3416ec9.jpg",
+    "static/media/4.png": "/static/media/4.934a5d57ff60fdf05105.png",
+    "static/media/1.jpg": "/static/media/1.b43be87e9ffb6fa10eb3.jpg",
     "static/media/Raleway-Medium.ttf": "/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
     "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
     "static/media/Raleway-SemiBold.ttf": "/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
@@ -73,11 +72,11 @@
     "static/media/facebook.svg": "/static/media/facebook.b422f75ac100bfc3beba.svg",
     "static/media/burger-icon.svg": "/static/media/burger-icon.43a78ca8a628548d79f7090c67df007f.svg",
     "main.a227a677.css.map": "/static/css/main.a227a677.css.map",
-    "main.494e6c93.js.map": "/static/js/main.494e6c93.js.map",
+    "main.fcf11c6a.js.map": "/static/js/main.fcf11c6a.js.map",
     "453.b7e0acdc.chunk.js.map": "/static/js/453.b7e0acdc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a227a677.css",
-    "static/js/main.494e6c93.js"
+    "static/js/main.fcf11c6a.js"
   ]
 }

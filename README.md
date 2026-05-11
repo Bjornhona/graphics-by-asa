@@ -32,4 +32,4 @@ This app is deployed in GitHub at [https://github.com/Bjornhona/graphics-by-asa]
 
 ### Visit My Page Live
 
-Visit my page live at: [https://graphicsbyasa.com/](https://graphicsbyasa.com/)
+Visit my page live at: [https://bjornhona.github.io](https://bjornhona.github.io/)

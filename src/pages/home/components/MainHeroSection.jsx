@@ -11,7 +11,7 @@ const MainHeroSection = () => {
         <div className="body-image-text">
           <div className="inner-text">
             <h1>Elegant Web Experiences for Modern Brands</h1>
-            <p>www.graphicsbyasa.com</p>
+            <p>https://bjornhona.github.io/graphics-by-asa</p>
           </div>
         </div>
       </div>

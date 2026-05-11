@@ -82,7 +82,7 @@ const Layout = () => {
   }, [ref]);
 
   const MyLogo = () => (
-    <a href="/">
+    <a href="/graphics-by-asa">
       <div className="logo-container">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
